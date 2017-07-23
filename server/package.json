@@ -9,7 +9,11 @@
   "author": "Joe Turner <jturner@thinkful.com>",
   "license": "MIT",
   "dependencies": {
+    "body-parser": "^1.17.2",
+    "brewerydb-node": "0.0.1",
     "express": "^4.14.1",
-    "nodemon": "^1.11.0"
+    "nodemon": "^1.11.0",
+    "whatwg-fetch": "^2.0.3",
+    "yelp-fusion": "^1.0.3"
   }
 }
