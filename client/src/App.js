@@ -30,12 +30,14 @@ export class App extends Component {
           <footer className="Landing-footer">
             <p className="Subtitle">The beer boss tells you what beers and breweries to try!</p>
           </footer>
-        <div>
-          <LocalBreweries className="breweryResults"/>
+        <div className="brewery-list">
+          <LocalBreweries />
         </div>
       </div>
     );
   }
 }
-
+// const mapDispatchToProps = (dispatch) => ({
+//   LocalBreweries: () => dispatch(fetchLocalBrewery)
+// })
 export default connect()(App);

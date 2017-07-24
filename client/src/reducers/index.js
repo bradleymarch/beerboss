@@ -10,7 +10,7 @@ const reducer = (state=initialState, action) => {
       console.log(action)
           return {
             ...state,
-            breweries: action.LocalBreweries
+            breweries: action.localBreweries
           }
       }
       else  {

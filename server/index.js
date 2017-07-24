@@ -31,9 +31,9 @@ app.post('/api/brewery-results', (req, res) => {
     const client = yelp.client(response.jsonBody.access_token);
 
     client.search(searchRequest).then(response => {
-      const firstResult = response.jsonBody.businesses[0];
-      const prettyJson = JSON.stringify(firstResult, null, 4);
-      return res.json(firstResult);
+      const topTwentyResults = response.jsonBody.businesses;
+      const prettyJson = JSON.stringify(topTwentyResults, null, 4);
+      return res.json(topTwentyResults);
       //console.log();
     });
   }).catch(e => {
