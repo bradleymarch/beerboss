@@ -5,32 +5,34 @@ export const fetchBrewerySuccess = localBreweries => ({
     localBreweries
 });
 export const FETCH_BEER_SUCCESS = 'FETCH_BEER_SUCCESS';
-export const fetchBeerSuccess = SpecificBeer => ({
+export const fetchBeerSuccess = specificBeer => ({
   type: FETCH_BEER_SUCCESS,
-  SpecificBeer
+  specificBeer
 })
 
-export const fetchLocalBrewery = (userInput) => (dispatch) => {
-console.log('hi');
-    // fetch('/api/brewery-results', {
-    //     method: "POST",
-    //     body: {location: userInput},
-    //
-    // })
-    // .then(response => {
-    //   //  if (!response.ok) {
-    //   //         return Promise.reject(response.statusText);
-    //   //       }
-    //   console.log('yo');
-    //     return response.json();
-    //
-    // })
-    // .then(LocalBreweries => {
-    //   console.log(LocalBreweries)
-    //     dispatch(fetchBrewerySuccess(LocalBreweries));
-    // });
+export const ADD_SPECIFIC_BEER = 'ADD_SPECIFIC_BEER';
+export const addSpecificBeer = addedBeer => ({
+  type: ADD_SPECIFIC_BEER,
+  addedBeer
+})
+
+export const CLEAR_BEER_RESULTS = 'CLEAR_BEER_RESULTS';
+export const clearBeerResults = () => ({
+  type: CLEAR_BEER_RESULTS,
+})
+
+export const CLEAR_BREWERY_RESULTS = 'CLEAR_BREWERY_RESULTS';
+export const clearBreweryResults = () => ({
+  type: CLEAR_BREWERY_RESULTS,
+})
+
+
+
+export const fetchLocalBrewery = (locationInput) => (dispatch) => {
+console.log(locationInput);
     axios.post('/api/brewery-results', {
-      location: userInput
+      location: locationInput,
+
       })
       .then(function (response) {
         return response;
@@ -43,20 +45,18 @@ console.log('hi');
         console.log(error);
       });
 };
-//
-// export const fetchSpecificBeer = (SpecificBeer) => (dispatch, res) => {
-// console.log('yo');
-//     fetch('/beer-results', {
-//         method: "GET",
-//         data: JSON.stringify(`${res.json}`),
-// })
-//     .then(res => {
-//         if (!res.ok) {
-//             return Promise.reject(res.statusText);
-//         }
-//         return `${res.json}`;
-//     }).then(SpecificBeer => {
-//       console.log(SpecificBeer);
-//         //dispatch(fetchSpecificBeer(SpecificBeer));
-//     });
-// };
+
+export const fetchSpecificBeer = (beerInput) => (dispatch) => {
+
+  axios.get(`/api/beer-results?nameInput=${beerInput}`)
+    .then(function (response) {
+      return response;
+    })
+    .then(specificBeer => {
+
+        dispatch(fetchBeerSuccess(specificBeer.data.data));
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+};

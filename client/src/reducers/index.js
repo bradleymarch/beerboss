@@ -1,21 +1,14 @@
-import React from 'react';
+import { combineReducers } from 'redux'
+import breweryReducer from './brewery'
+import specificBeerReducer from './beer'
+import addSpecificBeerReducer from './addBeer'
 
-const initialState = {
-  breweries: [],
-  name: 'Brad'
-};
 
-const reducer = (state=initialState, action) => {
-    if (action.type === 'FETCH_BREWERY_SUCCESS') {
-      console.log(action)
-          return {
-            ...state,
-            breweries: action.localBreweries
-          }
-      }
-      else  {
-      return state;
-      }
-};
+const rootReducer = combineReducers({
+  breweryReducer,
+  specificBeerReducer,
+  addSpecificBeerReducer
 
-export default reducer
+})
+
+export default rootReducer

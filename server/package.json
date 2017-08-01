@@ -9,6 +9,7 @@
   "author": "Joe Turner <jturner@thinkful.com>",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.16.2",
     "body-parser": "^1.17.2",
     "brewerydb-node": "0.0.1",
     "express": "^4.14.1",
