@@ -282,21 +282,30 @@
   border-radius: 2px;
   background-color: #43C0F6;
   outline: none;
-  border: solid #F81884 2px;
-  color: #F81884;
+  border: solid #FF3B3F 2px;
+  color: #FF3B3F;
   font-size: 16px;
+}
+
+.welcomeSubtitle, .breweryFormDescription {
+  text-align: center;
+}
+.breweryFormDescription {
+  margin-top: 25px;
 }
 
 .clearResultsButton {
   width: 120px;
   height: 30px;
   border-radius: 2px;
-  background-color: #43C0F6;
+  background-color: white;
   outline: none;
-  border: solid #F81884 2px;
-  color: #F81884;
+  border: solid #FF3B3F 2px;
+  color: #FF3B3F;
   font-size: 16px;
-  margin: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 50%;
 }
 
 .topOfResultsButton {
@@ -305,11 +314,26 @@
   border-radius: 2px;
   background-color: #43C0F6;
   outline: none;
-  border: solid #F81884 2px;
-  color: #F81884;
+  border: solid #FF3B3F 2px;
+  color: #FF3B3F;
   font-size: 14px;
   float: right;
   margin-top: -80px;
+}
+
+.logoutButton {
+  margin-top: 25px;
+  position: fixed;
+  margin-left: 520px;
+  width: 60px;
+  height: 30px;
+  border-radius: 2px;
+  background-color: white;
+  outline: none;
+  border: solid #FF3B3F 2px;
+  color: #FF3B3F;
+  font-size: 14px;
+
 }
 
 .bossList {
@@ -318,10 +342,11 @@
 
 .breweryForm {
   background-color: #f2c025;
+  margin-top: 0px;
 }
 
 .beerForm {
-  background-color: #F81884;
+  background-color: #FF3B3F;
 }
 
 .welcomeHeader {
@@ -331,7 +356,7 @@
   font-family: 'Jacques Francois Shadow', cursive;
   font-weight: normal;
   color: #43C0F6;
-  text-shadow: .5px .5px .5px #F81884;
+  text-shadow: .5px .5px .5px #FF3B3F;
 }
 
 .breweryDiv {
@@ -413,7 +438,7 @@
 nav a {
   margin-left: 120px;
   margin-right: 120px;
-  color: #F81884;
+  color: #FF3B3F;
   text-decoration: none;
   outline: none;
   letter-spacing: 6px;
@@ -467,7 +492,7 @@ nav a:hover {
 	display:block;
 	width:100%;
 	border:none;
-	color:#F81884;
+	color:#FF3B3F;
 	border-bottom:1px solid #757575;
 	background: transparent;
 
@@ -479,7 +504,7 @@ nav a:hover {
 
 
 .floating-label {
-	color:#F81884;
+	color:#FF3B3F;
 	/*text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);*/
 	font-size:14px;
 	font-weight:normal;
@@ -499,7 +524,7 @@ nav a:hover {
 .floating-label-input:valid ~ .floating-label 		{
 	top:-20px;
 	font-size:14px;
-	color:#F81884;
+	color:#FF3B3F;
   opacity: 0.5;
 
 }
@@ -533,7 +558,7 @@ nav a:hover {
   font-size: 32px;
   margin-bottom: 40px;
   color: white;
-  text-shadow: 1px 1px 1px #F81884;
+  text-shadow: 1px 1px 1px #FF3B3F;
 }
 
 /* active state */
@@ -587,7 +612,7 @@ input:focus ~ .bar:before, input:focus ~ .bar:after {
 }
 
 .Landing-footer {
-  background-color: #F81884;
+  background-color: #FF3B3F;
   height: 71px;
   color: #43C0F6;
   font-size: 16px;
@@ -739,10 +764,10 @@ nav {
 .aboutContent {
   width: 75%;
   margin: auto;
-  border: 4px solid #F81884;
+  border: 4px solid #FF3B3F;
   padding: 20px;
   background-color: white;
-  color: #F81884;
+  color: #FF3B3F;
 }
 
 .About-container {
@@ -755,7 +780,7 @@ nav {
   font-family: 'Jacques Francois Shadow', cursive;
   font-weight: normal;
   color: #f2c025;
-  text-shadow: 1px 1px 1px #F81884;
+  text-shadow: 1px 1px 1px #FF3B3F;
 }
 .emptyAboutSpace {
   height: 80px;
@@ -779,7 +804,7 @@ form {
 
 .beerTitle, .breweryTitle {
   color: #43C0F6;
-  text-shadow: 1px 1px 1px #F81884;
+  text-shadow: 1px 1px 1px #FF3B3F;
   font-weight: normal;
   font-size: 28px;
 
@@ -787,7 +812,7 @@ form {
 
 .bossListHeader {
   color: #f2c025;
-  text-shadow: 1px 1px 1px #F81884;
+  text-shadow: 1px 1px 1px #FF3B3F;
   font-weight: normal;
   font-size: 28px;
 }
@@ -821,7 +846,7 @@ form {
   font-family: 'Jacques Francois Shadow', cursive;
   margin-bottom: 20px;
   font-weight: normal;
-  text-shadow: 1px 1px 1px #F81884;
+  text-shadow: 1px 1px 1px #FF3B3F;
   z-index: 9;
   position: relative !important;
 

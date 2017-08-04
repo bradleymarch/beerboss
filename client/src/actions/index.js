@@ -16,6 +16,12 @@ export const addSpecificBeer = addedBeer => ({
   addedBeer
 })
 
+const ADD_BEERS_TO_DB = 'ADD_BEER_TO_DB';
+const addBeersToDb = addBeer => ({
+  type: ADD_BEERS_TO_DB,
+  addBeer
+})
+
 export const CLEAR_BEER_RESULTS = 'CLEAR_BEER_RESULTS';
 export const clearBeerResults = () => ({
   type: CLEAR_BEER_RESULTS,
@@ -27,6 +33,24 @@ export const clearBreweryResults = () => ({
 })
 
 
+
+export const REGISTER_USER_SUCCESS = 'REGISTER_USER_SUCCESS';
+export const registerUserSuccess = registeredUser => ({
+  type: REGISTER_USER_SUCCESS,
+  registeredUser
+})
+
+export const LOGIN_USER_SUCCESS = 'LOGIN_USER_SUCCESS';
+export const loginUserSuccess = loggedInUser => ({
+  type: LOGIN_USER_SUCCESS,
+  loggedInUser
+})
+
+export const GET_LOGGEDIN_USER = 'GET_LOGGEDIN_USER';
+export const getLoggedinUser = user => ({
+  type: GET_LOGGEDIN_USER,
+  user
+})
 
 export const fetchLocalBrewery = (locationInput) => (dispatch) => {
 console.log(locationInput);
@@ -59,4 +83,90 @@ export const fetchSpecificBeer = (beerInput) => (dispatch) => {
     .catch(function (error) {
       console.log(error);
     });
+};
+
+export const addBeerToDb = (value) => (dispatch) => {
+console.log('here')
+  axios.post('/api/users/beerlist', {
+    beerlist: value
+  })
+  .then(response => {
+    return response;
+  })
+  .then(addBeer => {
+    dispatch(addBeersToDb(addBeer.data.data));
+  })
+  .catch(error => {
+    console.log(error);
+  });
+};
+
+export const registerUser = (usernameInput, passwordInput) => (dispatch) => {
+console.log(usernameInput, passwordInput);
+    axios.post('/api/users/register', {
+      username: usernameInput,
+      password: passwordInput,
+      })
+      .then(function (response) {
+        console.log('oh')
+        return response;
+      })
+      .then(registeredUser => {
+        console.log('what')
+          dispatch(registerUserSuccess(registeredUser));
+          setTimeout(function(){return location.href = '/login'}, 1000);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+};
+
+export const loginUser = (usernameInput, passwordInput) => (dispatch) => {
+console.log(usernameInput, passwordInput);
+    axios.post('/api/users/login', {
+      username: usernameInput,
+      password: passwordInput,
+      })
+      .then(response => {
+        console.log(response)
+        return response;
+      })
+      .then(loggedInUser => {
+        console.log('what', loggedInUser)
+          dispatch(loginUserSuccess(loggedInUser));
+          setTimeout(function(){return location.href = '/dashboard'}, 1000);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+};
+
+export const getUser = () => (dispatch) => {
+
+  axios.get('/api/users/me')
+  .then(response => {
+    return response;
+  })
+  .then(response => {
+    console.log(response, 'user')
+    dispatch(getLoggedinUser(response.data.user));
+    //setTimeout(function(){return location.href = '/dashboard'}, 1000);
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+};
+
+export const logout = () => (dispatch) => {
+  console.log('doesitgethere')
+  axios.get('/api/logout')
+  .then(response => {
+    return response;
+  })
+  .then(response => {
+    dispatch(logout());
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
 };

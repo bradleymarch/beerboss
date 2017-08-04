@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import Dashboard from './components/dashboard/Dashboard'
 import LocalBreweries from './components/dashboard/LocalBreweries'
 import SpecificBeer from './components/dashboard/SpecificBeer'
+import Register from './components/Register'
 import './App.css';
 
 class App extends Component {
@@ -54,7 +55,6 @@ class App extends Component {
                 <h3 className="aboutHeader">About</h3>
           </header>
           <div className="aboutContent">
-          <p>[<em>photo</em>]</p>
           <p>The beer boss knows what's up.  This guy will tell you the best breweries wherever you are!  He'll also keep track of what beers you add to the Boss List, which you can edit and rank later!</p>
         <div>
           <header>
@@ -67,34 +67,13 @@ class App extends Component {
           <header>
               <h3>Create a dream-list of beers that you'll rank once you've tried them!</h3>
           </header>
-          <p>[<em>photo</em>]</p>
           <p>Got some beers you love but can never remember them?  With the Boss List, and help from the BreweryDB API,
-           you'll be able to add, update, and rank items on your list whenever!  You can add beers to try, rank beers, and even add some notes!</p>
+           you'll be able to add, update, and rank items on your list whenever!  You can add beers to try and rank them.  Who needs beer advocate when you can rate them yourself?!?  Register below to get Bossing today!</p>
         </div>
         </div>
       </section>
       <section id="register_landing">
-      <div className="empty-register-space"></div>
-      <div className="register-container js-register-container register-overlay js-register-overlay">
-
-        <h3 className="login-logo js-login-logo">Register</h3>
-        <form className="login-form register-form js-register-form">
-          <div className="form-group">
-            <input className="floating-label-input" name="username" id="register_form_username" type="text" required />
-            <span className="highlight"></span>
-            <span className="bar"></span>
-            <label className="floating-label" for="register_form_username">New Username</label>
-          </div>
-
-          <div className="form-group">
-            <input className="floating-label-input" name="password" id="register_form_password" type="password" required />
-            <span className="highlight"></span>
-            <span className="bar"></span>
-            <label className="floating-label" for="register_form_password">New Password</label>
-          </div>
-          <button id="create-username" className="login-button js-login-button" type="submit">Create</button>
-        </form>
-        </div>
+      <Register />
         </section>
       </div>
     );

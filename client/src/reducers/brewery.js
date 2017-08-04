@@ -5,7 +5,7 @@ const initialState = {
 
 const breweryReducer = (state=initialState, action) => {
     if (action.type === 'FETCH_BREWERY_SUCCESS') {
-      console.log(action)
+      
           return {
             ...state,
             breweries: action.localBreweries

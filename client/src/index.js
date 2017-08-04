@@ -26,7 +26,7 @@ ReactDOM.render(
             <a href="/">Home</a>
             <a href="/login">Login</a>
             <img src={require("./beer.png")} className="Beer-img" alt="Beer"/>
-            <a href="#register_landing">Register</a>
+            <a href="/register">Register</a>
             <a href="/dashboard">Demo</a>
           </nav>
           <Route exact path="/" component={App}/>

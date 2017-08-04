@@ -1,14 +1,14 @@
 const initialState = {
-  beerList: [],
+  beerlist: [],
 
 };
 
 const addSpecificBeerReducer = (state=initialState, action) => {
     if (action.type === 'ADD_SPECIFIC_BEER') {
-      console.log(action)
+
           return {
             ...state,
-            beerList: action.addedBeer
+            beerlist: [...state.beerlist, action.addedBeer],
           }
       }
       else {
