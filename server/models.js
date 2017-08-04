@@ -9,13 +9,14 @@ const userSchema = mongoose.Schema({
 	username: {type: String, required: true},
 	password: {type: String, required: true},
 	beerlist: {type: Array, default: []},
-
+	beerRating: {type: Array, default: []}
 });
 
 userSchema.methods.apiRepr = function() {
 	return {
 		username: this.username || '',
 		beerlist: this.beerlist,
+		beerRating: this.beerRating,
 	};
 }
 

@@ -171,6 +171,15 @@ app.post('/api/users/beerlist', loggedIn, (req, res) => {
     });
 });
 
+app.post('/api/users/rating', loggedIn, (req,res) => {
+  User
+  .findByIdAndUpdate(req.user._id,
+    { $push: {beerRating: req.body.beerRating} }, { new: true }, (err, user) => {
+      if (err) res.send(err);
+      res.json(user);
+    });
+});
+
 app.post('/api/brewery-results', (req, res) => {
 
   const { location } = req.body

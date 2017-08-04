@@ -77,7 +77,7 @@ render() {
   }
 }
 const mapStateToProps = state => {
-
+  
   return {username: state.getUserReducer.user.username}
 
 }

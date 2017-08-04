@@ -231,7 +231,7 @@
   font-size: 20px;
   background: transparent;
   outline: none;
-  border: teal;
+  border: white;
   letter-spacing: 4px;
 }
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -537,7 +537,7 @@ nav a:hover {
 	width:0;
 	bottom:1px;
 	position:absolute;
-	background:#176D81;
+	background:#A9A9A9;
 	transition:0.2s ease all;
 	-moz-transition:0.2s ease all;
 	-webkit-transition:0.2s ease all;
