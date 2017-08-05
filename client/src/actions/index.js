@@ -32,8 +32,8 @@ export const clearBreweryResults = () => ({
   type: CLEAR_BREWERY_RESULTS,
 })
 
-export const SAVE_RATING_SUCCESS = 'SAVE_RATING_SUCCESS'
-export const saveRatingSuccess = (beerRating) => ({
+const SAVE_RATING_SUCCESS = 'SAVE_RATING_SUCCESS'
+const saveRatingSuccess = (beerRating) => ({
   type: SAVE_RATING_SUCCESS,
   beerRating
 })
@@ -106,16 +106,16 @@ console.log('here')
   });
 };
 
-export const saveBeer = (selectedValue) => (dispatch) => {
+export const saveRating = (beerRating) => (dispatch) => {
   console.log('ok')
   axios.post('/api/users/rating', {
-    selectedValue: selectedValue
+    beerRating: beerRating
   })
   .then(response => {
     return response;
   })
   .then(beerRating => {
-    dispatch(saveRatingSuccess(beerRating.data.data));
+    dispatch(saveRatingSuccess(beerRating.data.user));
   })
   .catch(error => {
     console.log(error);

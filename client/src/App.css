@@ -829,8 +829,16 @@ form {
 
 .bossList {
   text-align: center;
+  position: relative
 }
 
+.bossListItems {
+
+}
+
+.bossListRatings {
+
+}
 .Boss-logo {
   margin-top: 0px;
   height: 400px;

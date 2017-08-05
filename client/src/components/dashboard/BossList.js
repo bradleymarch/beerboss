@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { addSpecificBeer, saveRatingSuccess } from '../../actions';
+import { addSpecificBeer, saveRating } from '../../actions';
 import { connect } from 'react-redux';
 import SpecificBeer from './SpecificBeer'
 import '../../App.css';
@@ -17,8 +17,12 @@ class BossList extends Component {
   }
   rateBeer(event) {
     event.preventDefault();
+    console.log('yep')
     const ratingValue = event.target.value
-    this.props.dispatch(saveRatingSuccess(ratingValue))
+    console.log(ratingValue)
+    event.stopPropagation();
+    this.props.dispatch(saveRating(ratingValue))
+  
   }
   render() {
 
@@ -27,38 +31,38 @@ class BossList extends Component {
         <h2 className="bossListHeader">Boss List</h2>
         {this.props.bosslist.map((beer, index) => {
         return (
-          <div key={index}>
+            <div key={index} className="bossListItems">
 
-            <div>Beer: {beer},
+              <div>Beer: {beer},
 
-            <form className="ratingForm" onChange={(e) => this.rateBeer(e)}>
-               <select className="ratingSelect" value={this.ratingSelect}>
-                  <option value="Rating?">Rating?</option>
-                  <option value="5 stars">5 stars</option>
-                  <option value="4 stars">4 stars</option>
-                  <option value="3 stars">3 stars</option>
-                  <option value="2 stars">3 stars</option>
-                  <option value="1 star">1 star</option>
-               </select>
-            </form>
+              <form className="ratingForm" onChange={(e) => this.rateBeer(e)}>
+                 <select className="ratingSelect" value={this.ratingSelect}>
+                    <option value="Rating?">Rating?</option>
+                    <option value="5 stars">5 stars</option>
+                    <option value="4 stars">4 stars</option>
+                    <option value="3 stars">3 stars</option>
+                    <option value="2 stars">3 stars</option>
+                    <option value="1 star">1 star</option>
+                 </select>
+              </form>
+              </div>
+
             </div>
-
-          </div>
         )
       })}
       {this.props.beerRating.map((rating, index) => {
       return (
-        <div key={index}>
+          <div key={index} className="bossListRatings">
 
-          <div>Rating: {rating}</div>
+            <div>Rating: {rating}</div>
 
+          </div>
+        )
+      })}
+          <form>
+            <button onClick={() => this.refresh()} className="saveBeerButton">Save</button>
+          </form>
         </div>
-      )
-    })}
-        <form>
-          <button onClick={() => this.refresh()} className="saveBeerButton">Save</button>
-        </form>
-      </div>
     )
   }
 }
