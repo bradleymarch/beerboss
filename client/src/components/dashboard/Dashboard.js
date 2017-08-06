@@ -41,7 +41,7 @@ render() {
         </form>
       <header>
         <h1 className="welcomeHeader">Welcome, {this.props.username} </h1>
-          <p className="welcomeSubtitle">Search any beer to add to your BossList, then save it to your account!</p>
+          <p className="welcomeSubtitle">Search any beer to add to your BossList, rate it, then save it to your account!</p>
       </header>
       </div>
         <section>
@@ -77,7 +77,7 @@ render() {
   }
 }
 const mapStateToProps = state => {
-  
+
   return {username: state.getUserReducer.user.username}
 
 }

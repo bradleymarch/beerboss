@@ -279,14 +279,37 @@
   text-decoration: none;
   outline: none;
   border: none;
-  border-radius: 4px;
+  border-radius: 2px;
 }
 
-.addBeerButton, .login-button, .saveBeerButton {
+.addBeerButton {
+  width: 80px;
+  height: 40px;
+  border-radius: 2px;
+  background-color: white;
+  outline: none;
+  border: solid #FF3B3F 2px;
+  color: #FF3B3F;
+  font-size: 16px;
+}
+
+.login-button {
   width: 80px;
   height: 40px;
   border-radius: 2px;
   background-color: #43C0F6;
+  outline: none;
+  border: solid #FF3B3F 2px;
+  color: #FF3B3F;
+  font-size: 16px;
+
+}
+
+.saveBeerButton {
+  width: 80px;
+  height: 40px;
+  border-radius: 2px;
+  background-color: white;
   outline: none;
   border: solid #FF3B3F 2px;
   color: #FF3B3F;
@@ -318,7 +341,7 @@
   width: 60px;
   height: 30px;
   border-radius: 2px;
-  background-color: #43C0F6;
+  background-color: white;
   outline: none;
   border: solid #FF3B3F 2px;
   color: #FF3B3F;
@@ -376,8 +399,18 @@
   text-align: center;
 }
 
-.eachBeerResult, .eachBreweryResult {
-  border: 4px solid #F2EEE2;
+.eachBeerResult {
+  border: 2px solid #FF3B3F;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 2px;
+}
+
+.eachBreweryResult {
+  border: 2px solid #f2c025;
   width: 75%;
   margin-left: auto;
   margin-right: auto;
@@ -397,9 +430,9 @@
 }
 
 .flash-button{
-	background:black;
-	color:#fff;
-
+	background: white;
+	color: black;
+  border: 2px solid #43C0F6;
 	animation-name: flash;
 	animation-duration: 1s;
 	animation-timing-function: linear;
