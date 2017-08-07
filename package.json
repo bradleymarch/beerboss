@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "build": "react-scripts build",
-    "app": "agile-badlands-53716",
+    "app": "pure-inlet-71931",
     "heroku-postbuild": "cd client && npm install --only=dev && npm run build",
     "dev": "run-p dev:server dev:client start",
     "dev:client": "cd client && cross-env BROWSER=none npm start -- --color=always | xp http://localhost:3000/ http://localhost:8080/",
