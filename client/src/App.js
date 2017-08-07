@@ -33,11 +33,11 @@ class App extends Component {
             <div className="foam-15"></div>
             </div>
             <div id="liquid">
-            <div className="bubble bubble1"></div>
-            <div className="bubble bubble2"></div>
-            <div className="bubble bubble3"></div>
-            <div className="bubble bubble4"></div>
-            <div className="bubble bubble5"></div>
+              <div className="bubble bubble1"></div>
+              <div className="bubble bubble2"></div>
+              <div className="bubble bubble3"></div>
+              <div className="bubble bubble4"></div>
+              <div className="bubble bubble5"></div>
             </div>
           </div>
           <div className="bossHeader">Beer Boss</div>
