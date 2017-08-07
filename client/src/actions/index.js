@@ -56,6 +56,18 @@ export const getLoggedinUser = user => ({
   user
 })
 
+const DELETE_TO_TRY_SUCCESS = 'DELETE_TO_TRY_SUCCESS';
+const deleteToTrySuccess = toTrylistItem  => ({
+  type: DELETE_TO_TRY_SUCCESS,
+  toTrylistItem
+})
+
+const DELETE_FAVE_SUCCESS = 'DELETE_FAVE_SUCCESS';
+const deleteFaveSuccess = faveListItem  => ({
+  type: DELETE_FAVE_SUCCESS,
+  faveListItem
+})
+
 export const fetchLocalBrewery = (locationInput) => (dispatch) => {
 console.log(locationInput);
     axios.post('/api/brewery-results', {
@@ -116,6 +128,38 @@ export const saveRating = (beerRating) => (dispatch) => {
   })
   .then(beerRating => {
     dispatch(saveRatingSuccess(beerRating.data.user));
+  })
+  .catch(error => {
+    console.log(error);
+  });
+}
+
+export const deleteToTry = (value) => (dispatch) => {
+  console.log('ok')
+  axios.post('/api/delete-to-try', {
+    beerlist: value
+  })
+  .then(response => {
+    return response;
+  })
+  .then(response => {
+    dispatch(deleteToTrySuccess(response));
+  })
+  .catch(error => {
+    console.log(error);
+  });
+}
+
+export const deleteFave = (value) => (dispatch) => {
+  console.log('ok')
+  axios.post('/api/delete-fave', {
+    beerRating: value
+  })
+  .then(response => {
+    return response;
+  })
+  .then(response => {
+    dispatch(deleteFaveSuccess(response));
   })
   .catch(error => {
     console.log(error);

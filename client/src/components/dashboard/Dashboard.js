@@ -40,8 +40,8 @@ render() {
           <button className="logoutButton">Logout</button>
         </form>
       <header>
-        <h1 className="welcomeHeader">Welcome, {this.props.username} </h1>
-          <p className="welcomeSubtitle">Search any beer to add to your BossList, rate it, then save it to your account!</p>
+        <h1 className="welcomeHeader">Welcome, {this.props.username}! </h1>
+          <p className="welcomeSubtitle">Search for any beer below.  Add it to the Boss List if you wanna try it.<br/>  Move it to favorites if it was great OR remove it if it sucked!</p>
       </header>
       </div>
         <section>

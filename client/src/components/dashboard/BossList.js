@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { addSpecificBeer, saveRating } from '../../actions';
+import { addSpecificBeer, saveRating, deleteToTry, deleteFave } from '../../actions';
 import { connect } from 'react-redux';
 import SpecificBeer from './SpecificBeer'
 import '../../App.css';
@@ -8,60 +8,71 @@ class BossList extends Component {
   constructor() {
     super()
 
-    this.refresh = this.refresh.bind(this)
-    this.rateBeer = this.rateBeer.bind(this)
+    this.addFave = this.addFave.bind(this)
+    this.deleteToTry = this.deleteToTry.bind(this)
+  }
 
-  }
-  refresh() {
-    location.href = "/dashboard/dashboard_section"
-  }
-  rateBeer(event) {
+  addFave(event) {
     event.preventDefault();
     console.log('yep')
-    const ratingValue = event.target.value
-    console.log(ratingValue)
-    event.stopPropagation();
-    this.props.dispatch(saveRating(ratingValue))
-  
+    const nameOfFave = event.target.beerName.value
+    console.log(nameOfFave)
+    this.props.dispatch(saveRating(nameOfFave))
+    this.props.dispatch(deleteToTry(nameOfFave))
+    location.href = "/dashboard/dashboard_section"
   }
+  deleteToTry(event) {
+    event.preventDefault();
+    const nameToDelete = event.target.beername.value
+    this.props.dispatch(deleteToTry(nameToDelete))
+    location.href = "/dashboard/dashboard_section"
+  }
+  deleteFave(event) {
+    event.preventDefault();
+    const faveToDelete = event.target.faveName.value
+    this.props.dispatch(deleteFave(faveToDelete))
+    location.href = "/dashboard/dashboard_section"
+  }
+
   render() {
 
     return (
       <div className="bossList">
         <h2 className="bossListHeader">Boss List</h2>
+        <h3 className="bossListSubheader">Here are your Beers To Try...</h3>
+        <hr className="bossListHr"/>
         {this.props.bosslist.map((beer, index) => {
         return (
-            <div key={index} className="bossListItems">
-
-              <div>Beer: {beer},
-
-              <form className="ratingForm" onChange={(e) => this.rateBeer(e)}>
-                 <select className="ratingSelect" value={this.ratingSelect}>
-                    <option value="Rating?">Rating?</option>
-                    <option value="5 stars">5 stars</option>
-                    <option value="4 stars">4 stars</option>
-                    <option value="3 stars">3 stars</option>
-                    <option value="2 stars">3 stars</option>
-                    <option value="1 star">1 star</option>
-                 </select>
+            <div key={index}>
+                <div className="bossListItems">{beer}</div>
+              <div className="bossListFormsDiv">
+              <form className="addFaveForm" onSubmit={(e) => this.addFave(e)}>
+                <input type="hidden" name="beerName" value={beer} />
+                <button type="submit" className="addFaveButton flash-button" onSubmit={(e) => this.deleteToTry(e)} value={beer}>Favorite</button>
+              </form>
+              <form className="deleteToTryForm" onSubmit={(e) => this.deleteToTry(e)}>
+                <input type="hidden" name="beername" value={beer} />
+                <button type="submit" className="deleteButton" value={beer}>Remove</button>
               </form>
               </div>
-
             </div>
         )
       })}
-      {this.props.beerRating.map((rating, index) => {
+      <h3 className="bossListSubheader">Here are your Favorite Beers!</h3>
+      <hr className="bossListHr"/>
+      {this.props.beerRating.map((fave, index) => {
       return (
-          <div key={index} className="bossListRatings">
+          <div key={index}>
 
-            <div>Rating: {rating}</div>
-
+            <div className="bossListItems">{fave}</div>
+            <form className="deleteFaveForm" onSubmit={(e) => this.deleteFave(e)}>
+              <input type="hidden" name="faveName" value={fave} />
+              <button type="submit" className="deleteButton" value={fave}>Remove</button>
+            </form>
           </div>
         )
       })}
-          <form>
-            <button onClick={() => this.refresh()} className="saveBeerButton">Save</button>
-          </form>
+
         </div>
     )
   }

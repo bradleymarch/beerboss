@@ -55,6 +55,7 @@ class App extends Component {
                 <h3 className="aboutHeader">About</h3>
           </header>
           <div className="aboutContent">
+          <h3>Beer Boss, that's what!</h3>
           <p>The beer boss knows what's up.  This guy will tell you the best breweries wherever you are!  He'll also keep track of what beers you add to the Boss List, which you can edit and rank later!</p>
         <div>
           <header>
@@ -65,10 +66,10 @@ class App extends Component {
         </div>
         <div>
           <header>
-              <h3>Create a dream-list of beers that you'll rank once you've tried them!</h3>
+              <h3>Create a dream-list of beers where you can add them to your favorites list once you've tried them.  Whenever you can't remember those complicated craft brew names, Beer Boss is here for you!</h3>
           </header>
           <p>Got some beers you love but can never remember them?  With the Boss List, and help from the BreweryDB API,
-           you'll be able to add, update, and rank items on your list whenever!  You can add beers to try and rank them.  Who needs beer advocate when you can rate them yourself?!?  Register below to get Bossing today!</p>
+           you'll be able to add, update, add beers to your favorite list whenever!  You can add beers to try and rank them.  Register below to get Bossing today!</p>
         </div>
         </div>
       </section>

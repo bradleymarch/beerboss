@@ -219,6 +219,26 @@ app.get('/api/beer-results', (req, res) => {
 
   });
 });
+app.post('/api/delete-to-try', loggedIn, (req, res) => {
+  User
+  .findByIdAndUpdate(req.user._id,
+     { $pull: {beerlist: req.body.beerlist} }, { new: true }, (err, user) => {
+    if (err) res.send(err);
+    res.json(user);
+  });
+});
+
+app.post('/api/delete-fave', loggedIn, (req, res) => {
+  User
+  .findByIdAndUpdate(req.user._id,
+     { $pull: {beerRating: req.body.beerRating} }, { new: true }, (err, user) => {
+       console.log('eh');
+    if (err) res.send(err);
+    res.json(user);
+     console.log('hmm');
+  });
+});
+
 app.use(express.static(path.resolve(__dirname, '../client/build')));
 
 // Unhandled requests which aren't for the API should serve index.html so

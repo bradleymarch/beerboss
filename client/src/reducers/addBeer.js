@@ -1,5 +1,5 @@
 const initialState = {
-  beerlist: [],
+beerlist: []
 
 };
 
@@ -8,6 +8,7 @@ const addSpecificBeerReducer = (state=initialState, action) => {
 
           return {
             ...state,
+
             beerlist: [...state.beerlist, action.addedBeer],
           }
       }

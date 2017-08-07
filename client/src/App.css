@@ -230,7 +230,8 @@
 
 #locationInput, #beerInput {
   margin-left: 45px;
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   height: 30px;
   width: 300px;
   color: black;
@@ -268,17 +269,17 @@
   z-index: 10;
 }
 .localBrewButton {
-  color: white;
-  background-color: black;
+  background: white;
+	color: #43C0F6;
+  border: 2px solid #43C0F6;
   font-size: 20px;
-  height: 30px;
+  height: 40px;
   width: 200px;
   margin-right: 10px;
   margin-left: 6px;
   margin-top: -4px;
   text-decoration: none;
   outline: none;
-  border: none;
   border-radius: 2px;
 }
 
@@ -320,7 +321,8 @@
   text-align: center;
 }
 .breweryFormDescription {
-  margin-top: 25px;
+  margin-top: 40px;
+  color: #FF3B3F;
 }
 
 .clearResultsButton {
@@ -347,7 +349,7 @@
   color: #FF3B3F;
   font-size: 14px;
   float: right;
-  margin-top: -80px;
+  margin-top: -70px;
 }
 
 .logoutButton {
@@ -379,16 +381,18 @@
 .beerForm {
   border: 2px solid #FF3B3F;
   background-color: white;
+  margin-top: 10px;
 }
 
 .welcomeHeader {
   margin-top: 85px;
+  margin-bottom: 20px;
   text-align: center;
-  font-size: 64px;
+  font-size: 72px;
   font-family: 'Jacques Francois Shadow', cursive;
   font-weight: normal;
   color: #43C0F6;
-  text-shadow: .5px .5px .5px #FF3B3F;
+  letter-spacing: 4px;
 }
 
 .breweryDiv {
@@ -430,9 +434,6 @@
 }
 
 .flash-button{
-	background: white;
-	color: black;
-  border: 2px solid #43C0F6;
 	animation-name: flash;
 	animation-duration: 1s;
 	animation-timing-function: linear;
@@ -474,20 +475,22 @@
 #breweryLabel, #beerLabel {
   margin-right: 10px;
   margin-top: 25px;
+  margin-bottom: 25px;
   margin-left: 20px;
   font-size: 20px;
+  color: #43C0F6;
 }
 nav a {
   margin-left: 120px;
   margin-right: 120px;
-  color: #FF3B3F;
+  color: white;
   text-decoration: none;
   outline: none;
   letter-spacing: 6px;
 }
 
 nav a:hover {
-  color: white;
+  color: #FF3B3F;
 }
 .dashboardContainer {
   height: 100%;
@@ -546,7 +549,7 @@ nav a:hover {
 
 
 .floating-label {
-	color:#FF3B3F;
+	color:white;
 	/*text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);*/
 	font-size:14px;
 	font-weight:normal;
@@ -599,8 +602,9 @@ nav a:hover {
 .login-logo {
   font-size: 32px;
   margin-bottom: 40px;
+  padding-top: 40px;
   color: white;
-  text-shadow: 1px 1px 1px #FF3B3F;
+
 }
 
 /* active state */
@@ -670,16 +674,16 @@ nav {
 
 .register {
   text-decoration: none;
-  color: #F2EEE2
+  color: white;
 }
 
 .empty-login-space {
-	height: 180px;
+	height: 130px;
 	width: 100%;
   color: white;
 }
 .empty-register-space {
-	height: 180px;
+	height: 130px;
 	width: 100%;
 }
 .profile-view {
@@ -752,11 +756,11 @@ nav {
 	background-repeat: no-repeat;
 	/*background-size: 100vw 100vh;*/
 	width: 360px;
-	height: 100%;
+	height: 400px;
 	background-position: center center;
 	background-attachment: fixed;
 	/*background-color: rgba(0, 0, 0, 0.75);*/
-	filter: blur(50px);
+	/*filter: blur(50px);*/
 	display: block;
 	box-sizing: border-box;
 	z-index: -1;
@@ -767,7 +771,7 @@ nav {
 .login-overlay {
 	position: relative;
 	width: 360px;
-	height: 50%;
+	height: 100%;
 	margin: auto;
 	border-radius: 2px;
 	padding: 0px;
@@ -786,11 +790,11 @@ nav {
 	background-repeat: no-repeat;
 	/*background-size: 100vw 100vh;*/
 	width: 360px;
-	height: 100%;
+	height: 400px;
 	background-position: center center;
 	background-attachment: fixed;
 	/*background-color: rgba(0, 0, 0, 0.75);*/
-	filter: blur(50px);
+	/*filter: blur(50px);*/
 	display: block;
 	box-sizing: border-box;
 	z-index: -1;
@@ -846,17 +850,88 @@ form {
 
 .beerTitle, .breweryTitle {
   color: #43C0F6;
-  text-shadow: 1px 1px 1px #FF3B3F;
   font-weight: normal;
-  font-size: 28px;
+  font-size: 24px;
 
 }
 
 .bossListHeader {
   color: #43C0F6;
-  text-shadow: 1px 1px 1px #FF3B3F;
   font-weight: normal;
-  font-size: 28px;
+  font-size: 40px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.addFaveForm {
+  margin-top: 2px !important;
+  margin-bottom: 2px !important;
+
+}
+
+.deleteToTryForm {
+  margin-top: 2px !important;
+  margin-bottom: 10px !important;
+
+}
+.bossListFormsDiv {
+  display: inline;
+}
+.deleteFaveForm {
+  margin-top: 2px !important;
+  margin-bottom: 10px !important;
+
+}
+.bossListItems {
+  color: #43C0F6;
+  font-size: 24px;
+}
+.bossListSubheader {
+  font-size: 20px;
+  color: #FF3B3F;
+  margin-bottom: 4px;
+  letter-spacing: 4px;
+}
+.welcomeSubtitle {
+  width: 75%;
+  color: #43C0F6;
+  border: 2px solid #f2c025;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  padding: 4px;
+  font-weight: normal;
+}
+
+.bossListHr {
+ width: 50%;
+ display: block;
+ height: 1px;
+ border: 0;
+ border-top: 1px solid #FF3B3F;
+ margin-top: 0px;
+}
+
+.addFaveButton {
+  width: 50px;
+  height: 18px;
+  border-radius: 2px;
+  background-color: white;
+  outline: none;
+  border: solid #FF3B3F 1px;
+  color: #FF3B3F;
+  font-size: 10px;
+}
+
+.deleteButton {
+  width: 50px;
+  height: 18px;
+  border-radius: 2px;
+  background-color: white;
+  outline: none;
+  border: solid #A9A9A9 1px;
+  color: #A9A9A9;
+  font-size: 10px;
 }
 
 #beer_results, #brewery_results {
@@ -872,10 +947,6 @@ form {
 .bossList {
   text-align: center;
   position: relative
-}
-
-.bossListItems {
-
 }
 
 .bossListRatings {
