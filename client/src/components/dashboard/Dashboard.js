@@ -50,7 +50,7 @@ render() {
         <form className="beerForm" onSubmit={e => this.submitBeer(e)}>
                 <input type="text" name="userBeer" id="beerInput"
                     className="text" maxLength="35" autoComplete="off"
-                    placeholder="Search beers..........?" required
+                    placeholder="Search beers?" required
                     ref={input => this.input2 = input} />
               <label id="beerLabel">Enter any beer then click here ->
                 <input type="submit" id="beerButton" className="localBrewButton flash-button" name="submit" value="Search Beers" />
@@ -63,7 +63,7 @@ render() {
       <form className="breweryForm" id="brewery_list" onSubmit={e => this.submitLocation(e)}>
               <input type="text" name="userLocation" id="locationInput"
                   className="text" maxLength="35" autoComplete="off"
-                  placeholder="Where are you........?" required
+                  placeholder="Where you at?" required
                 ref={input => this.input = input}    />
             <label id="breweryLabel">Enter location then click here ->
               <input type="submit" id="localBreweryButton" className="localBrewButton flash-button" name="submit" value="Top Local Breweries" />

@@ -48,28 +48,28 @@ class App extends Component {
             <p className="Subtitle">The beer boss tells you what beers and breweries to try!</p>
           </footer>
         </section>
-        <section className="About-container">
+        <section id="about" className="About-container">
           <header>
             <div className="emptyAboutSpace">
             </div>
                 <h3 className="aboutHeader">About</h3>
           </header>
           <div className="aboutContent">
-          <h3>Beer Boss, that's what!</h3>
+          <h4 className="aboutH4">Beer Boss, that's what!</h4>
           <p>The beer boss knows what's up.  This guy will tell you the best breweries wherever you are!  He'll also keep track of what beers you add to the Boss List, which you can edit and rank later!</p>
         <div>
           <header>
-              <h3>Find the best breweries wherever you are!</h3>
+              <h4 className="aboutH4">Find the best breweries wherever you are!</h4>
           </header>
           <p></p>
           <p>Ever traveled to a new city and find yourself in need of a refreshing cold brew?  Look no further than Beer Boss.  With help from the Yelp API, Beer Boss tells you the top breweries, as ranked by customers, in your current location!</p>
         </div>
         <div>
           <header>
-              <h3>Create a dream-list of beers where you can add them to your favorites list once you've tried them.  Whenever you can't remember those complicated craft brew names, Beer Boss is here for you!</h3>
+              <h4 className="aboutH4">When you can't remember those complicated craft brew names, Beer Boss is here for you!</h4>
           </header>
-          <p>Got some beers you love but can never remember them?  With the Boss List, and help from the BreweryDB API,
-           you'll be able to add, update, add beers to your favorite list whenever!  You can add beers to try and rank them.  Register below to get Bossing today!</p>
+          <p>Create a dream-list of beers that you can add to your favorites list once you've tried them.  With the Boss List, and help from the BreweryDB API,
+           you'll be able to add, update, add beers to your favorite list whenever!  You can add beers to try, add them to favorites, or get rid of them if they sucked!  Register below to get Bossing today!</p>
         </div>
         </div>
       </section>

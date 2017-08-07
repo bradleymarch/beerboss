@@ -8,6 +8,8 @@ import BossList from './components/dashboard/BossList'
 import Root from './components/Root'
 import Login from './components/Login'
 import Register from './components/Register'
+import DemoLogin from './components/DemoLogin'
+import {Dropdown, DropdownMenu, DropdownItem} from './components/Dropdown'
 import {
   BrowserRouter as Router,
   Route,
@@ -27,13 +29,20 @@ ReactDOM.render(
             <a href="/login">Login</a>
             <img src={require("./beer.png")} className="Beer-img" alt="Beer"/>
             <a href="/register">Register</a>
-            <a href="/dashboard">Demo</a>
+            <a href="/demo-login">Demo</a>
           </nav>
+          <div className="dropdownDiv">
+          <Dropdown label="Dropdown Label">
+            <DropdownItem label="Choice 1" value="Number 1" />
+            <DropdownItem label="Choice 2" value="2" />
+          </Dropdown>
+          </div>
           <Route exact path="/" component={App}/>
             <Route path="/dashboard" component={Dashboard}/>
               <Route path="/dashboard/BossList" component={BossList}/>
             <Route exact path="/login" component={Login}/>
             <Route exact path="/register" component={Register}/>
+            <Route exact path="/demo-login" component={DemoLogin}/>
         </div>
       </Router>
     </Provider>,
