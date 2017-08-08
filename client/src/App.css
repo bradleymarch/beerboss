@@ -22,7 +22,7 @@
 }
 @import url(https://fonts.googleapis.com/css?family=Lato:700,900);
 
-@media screen and (min-width: 0px) and (max-width: 1105px) {
+@media screen and (min-width: 0px) and (max-width: 1120px) {
   nav a {
     display: none;
   }
