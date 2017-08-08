@@ -28,17 +28,17 @@ class DemoLogin extends React.Component {
     			<h3 className="login-logo js-login-logo">Demo Login</h3>
     			<form className="login-form js-login-form" onSubmit={(e) => this.handleLogin(e)}>
     				<div className="form-group">
-    					<input className="floating-label-input" value="UncleSam" id="login_form_username" type="text" required ref={input => this.input = input} />
+    					<input className="floating-label-input" value="BenFranklin" id="login_form_username" type="text" required ref={input => this.input = input} />
     					<span className="highlight"></span>
     					<span className="bar"></span>
     					<label className="floating-label" htmlFor="login_form_username">Demo Username</label>
     				</div>
 
     				<div className="form-group">
-    					<input className="floating-label-input" value="unclesam" id="login_form_password" type="password" required ref={input => this.input2 = input} />
+    					<input className="floating-label-input" value="123" id="login_form_password" type="password" required ref={input => this.input2 = input} />
     					<span className="highlight"></span>
     					<span className="bar"></span>
-    					<label className="floating-label" htmlFor="login_form_password">Demo Password</label>
+    					<label className="floating-label" htmlFor="login_form_password">Demo Password: use 123</label>
     				</div>
     				<button className="login-button js-login-button" type="submit">Enter</button>
     			</form>

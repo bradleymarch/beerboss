@@ -9,7 +9,7 @@
 
 .aboutH4 {
   letter-spacing: 4px;
-  color: #43C0F6;
+  color: #5190ED;
   font-size: 20px;
 }
 .dropdown-container {
@@ -58,7 +58,7 @@
     letter-spacing: 8px;
   }
   .dropdown-label:hover {
-    color: #FF3B3F;
+    color: #5190ED;
   }
   .dropdown-label:after {
     content: "";
@@ -107,7 +107,7 @@
 
   .dropdown-option {
     text-align: center;
-    color: #43C0F6;
+    color: #5190ED;
     padding: 12px;
     margin-left: 15px;
     cursor: pointer;
@@ -118,7 +118,7 @@
   }
 
   .dropdown-option:hover {
-    background: #43C0F6;
+    background: #5190ED;
   }
 }
 
@@ -382,8 +382,8 @@
 
 .localBrewButton {
   background: white;
-	color: #43C0F6;
-  border: 2px solid #43C0F6;
+	color: #5190ED;
+  border: 2px solid #5190ED;
   font-size: 20px;
   height: 40px;
   width: 200px;
@@ -410,7 +410,7 @@
   width: 80px;
   height: 40px;
   border-radius: 2px;
-  background-color: #43C0F6;
+  background-color: white;
   outline: none;
   border: solid #FF3B3F 2px;
   color: #FF3B3F;
@@ -480,7 +480,7 @@
 }
 
 .bossList {
-  border: 2px solid #43C0F6;
+  border: 2px solid #5190ED;
   background-color: white;
 }
 
@@ -503,7 +503,7 @@
   font-size: 70px;
   font-family: 'Jacques Francois Shadow', cursive;
   font-weight: normal;
-  color: #43C0F6;
+  color: #5190ED;
   letter-spacing: 4px;
 }
 
@@ -548,7 +548,7 @@
 button:hover {
   cursor: pointer;
   cursor: hand;
-  color: white;
+
 }
 
 .flash-button{
@@ -596,7 +596,7 @@ button:hover {
   margin-bottom: 25px;
   margin-left: 20px;
   font-size: 20px;
-  color: #43C0F6;
+  color: #5190ED;
 }
 nav a {
   margin-left: 100px;
@@ -608,7 +608,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #FF3B3F;
+  color: #5190ED;
 }
 .dashboardContainer {
   height: 100%;
@@ -790,7 +790,7 @@ input:focus ~ .bar:before, input:focus ~ .bar:after {
 .Landing-footer {
   background-color: #FF3B3F;
   height: 71px;
-  color: #43C0F6;
+  color: white;
   font-size: 16px;
   padding: 0 0 10px 0;
   letter-spacing: 4px;
@@ -882,7 +882,7 @@ nav {
 	top: 0;
 	right: 0;
 	bottom: 0;
-	background-color: #43C0F6;
+	background-color: #5190ED;
 	background-repeat: no-repeat;
 	/*background-size: 100vw 100vh;*/
 	width: 360px;
@@ -916,7 +916,7 @@ nav {
 	top: 0;
 	right: 0;
 	bottom: 0;
-	background-color: #43C0F6;
+	background-color: #5190ED;
 	background-repeat: no-repeat;
 	/*background-size: 100vw 100vh;*/
 	width: 360px;
@@ -954,7 +954,7 @@ nav {
 
 .About-container {
   height: 782px;
-  background-color: #43C0F6;
+  background-color: #5190ED;
 }
 .aboutHeader {
   font-size: 48px;
@@ -962,7 +962,6 @@ nav {
   font-family: 'Jacques Francois Shadow', cursive;
   font-weight: normal;
   color: #f2c025;
-  text-shadow: 1px 1px 1px #FF3B3F;
 }
 .emptyAboutSpace {
   height: 80px;
@@ -974,7 +973,7 @@ nav {
   width: 40px;
   box-sizing: border-box;
   animation: App-logo-spin infinite 20s linear;
-
+  margin-left: 20px;
 }
 
 form {
@@ -985,14 +984,14 @@ form {
 }
 
 .beerTitle, .breweryTitle {
-  color: #43C0F6;
+  color: #5190ED;
   font-weight: normal;
   font-size: 24px;
 
 }
 
 .bossListHeader {
-  color: #43C0F6;
+  color: #5190ED;
   font-weight: normal;
   font-size: 40px;
   margin-top: 5px;
@@ -1019,7 +1018,7 @@ form {
 
 }
 .bossListItems {
-  color: #43C0F6;
+  color: #5190ED;
   font-size: 24px;
 }
 .bossListSubheader {
@@ -1030,7 +1029,7 @@ form {
 }
 .welcomeSubtitle {
   width: 75%;
-  color: #43C0F6;
+  color: #5190ED;
   border: 2px solid #f2c025;
   margin-left: auto;
   margin-right: auto;
@@ -1108,11 +1107,11 @@ form {
 
   margin-top: 70px;
   font-size: 92px;
-  color: #43C0F6;
+  color: #5190ED;
   font-family: 'Jacques Francois Shadow', cursive;
   margin-bottom: 20px;
   font-weight: normal;
-  text-shadow: 1px 1px 1px #FF3B3F;
+  /*text-shadow: 1px 1px 1px #FF3B3F;*/
   z-index: 9;
   position: relative !important;
 
