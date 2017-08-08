@@ -22,9 +22,15 @@
 }
 @import url(https://fonts.googleapis.com/css?family=Lato:700,900);
 
-@media screen and (max-width: 1115px) {
+@media screen (min-width: 0px) and (max-width: 1110px) {
   nav a {
     display: none;
+  }
+  .About-container {
+    height: 100%;
+  }
+  .aboutContent {
+    height: 100%;
   }
   .bossHeader {
     font-size: 72px !important;
