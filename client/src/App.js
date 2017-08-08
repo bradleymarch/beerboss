@@ -56,7 +56,7 @@ class App extends Component {
           </header>
           <div className="aboutContent">
           <h4 className="aboutH4">Beer Boss, that's what!</h4>
-          <p>The beer boss knows what's up.  This guy will tell you the best breweries wherever you are!  He'll also keep track of what beers you add to the Boss List, which you can edit and rank later!</p>
+          <p>The beer boss knows what's up.  This guy will tell you the best breweries wherever you are!  He'll also keep track of what beers you add to the Boss List, which you can edit at any time!</p>
         <div>
           <header>
               <h4 className="aboutH4">Find the best breweries wherever you are!</h4>
@@ -69,7 +69,7 @@ class App extends Component {
               <h4 className="aboutH4">When you can't remember those complicated craft brew names, Beer Boss is here for you!</h4>
           </header>
           <p>Create a dream-list of beers that you can add to your favorites list once you've tried them.  With the Boss List, and help from the BreweryDB API,
-           you'll be able to add, update, add beers to your favorite list whenever!  You can add beers to try, add them to favorites, or get rid of them if they sucked!  Register below to get Bossing today!</p>
+           you'll be able to add, update, and add beers to your favorite list whenever!  You can add beers to try, add them to favorites, or get rid of them if they sucked!  Register below to get Bossing today!</p>
         </div>
         </div>
       </section>
