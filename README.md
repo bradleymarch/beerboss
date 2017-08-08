@@ -104,7 +104,7 @@ export default connect(mapStateToProps)(Dashboard);
 ```
 
 
-Here is some example code form the backend:
+Here is some example code from the backend:
 ```
 const basicStrategy = new BasicStrategy((username, password, callback) => {
   let user;
