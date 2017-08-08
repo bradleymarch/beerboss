@@ -33,6 +33,8 @@ ReactDOM.render(
           </nav>
           <div className="dropdownDiv">
           <Dropdown label="Dropdown Label">
+            <DropdownItem />
+            <DropdownItem />
           </Dropdown>
           </div>
           <Route exact path="/" component={App}/>

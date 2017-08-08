@@ -22,33 +22,25 @@
 }
 @import url(https://fonts.googleapis.com/css?family=Lato:700,900);
 
-@media screen and (min-width: 0px) and (max-width: 1110px) {
+@media screen and (min-width: 0px) and (max-width: 1105px) {
   nav a {
     display: none;
   }
   .About-container {
-    height: 100%;
+    height: 100% !important;
+    padding-bottom: 80px !important;
   }
   .aboutContent {
-    height: 100%;
+    height: 100% !important;
   }
   .bossHeader {
     font-size: 72px !important;
   }
   .logoutButton {
-    display: none;
+    display: none !important;
   }
   .topOfResultsButton {
-    width: 60px;
-    height: 30px;
-    border-radius: 2px;
-    background-color: white;
-    outline: none;
-    border: solid #FF3B3F 2px;
-    color: #FF3B3F;
-    font-size: 14px;
-    float: right;
-    margin-top: -90px;
+    display: none !important;
   }
   .welcomeHeader {
     font-size: 40px !important;

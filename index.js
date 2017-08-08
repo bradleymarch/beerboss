@@ -1,7 +1,6 @@
 const express = require('express');
 const proxy = require('http-proxy-middleware');
-const {PORT, DATABASE_URL} = require('./server/config');
-
+const runServer = require('./server').runServer;
 const app = express();
 
 if (process.env.NODE_ENV === 'production') {
@@ -11,7 +10,7 @@ if (process.env.NODE_ENV === 'production') {
     // in development
     const runServer = require('./server').runServer;
     // Just run the server
-    runServer(DATABASE_URL, PORT);
+    runServer(process.env.PORT || 8080);
 }
 else {
     const app = express();
@@ -24,5 +23,6 @@ else {
             'localhost:8080/api': 'http://localhost:3001'
         }
     }));
-    app.listen(process.env.PORT || 8080);
+    app.listen(process.env.PORT || 9999, () => {
+      console.log(`Your app is listening on port 9999`)});
 }

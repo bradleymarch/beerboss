@@ -16,7 +16,6 @@ class SpecificBeer extends React.Component {
 				this.props.dispatch(addBeerToDb(value));
 				this.props.dispatch(addSpecificBeer(value));
 				window.scrollTo(0,0);
-
 		}
 
  clearResults() {
@@ -47,7 +46,7 @@ class SpecificBeer extends React.Component {
 }
 
 const mapStateToProps = state => {
-				
+
 		return {beers: state.specificBeerReducer.beers,
 						beerlist: state.addSpecificBeerReducer.beerlist}
 }
