@@ -11,7 +11,7 @@ const app = express();
     // in development
     const runServer = require('./server').runServer;
     // Just run the server
-    runServer(process.env.PORT || 8080);
+    runServer(DATABASE_URL, process.env.PORT);
 // }
 // else {
 //     const app = express();
@@ -24,6 +24,6 @@ const app = express();
 //             'localhost:8080/api': 'http://localhost:3001'
 //         }
 //     }));
-    app.listen(process.env.PORT || DATABASE_URL, () => {
-      console.log(`Your app is listening`)});
-}
+//     app.listen(process.env.PORT || DATABASE_URL, () => {
+//       console.log(`Your app is listening`)});
+// }
