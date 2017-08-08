@@ -11,7 +11,7 @@ const app = express();
     // in development
     const runServer = require('./server').runServer;
     // Just run the server
-    runServer(DATABASE_URL, process.env.PORT);
+    runServer(DATABASE_URL, PORT);
 // }
 // else {
 //     const app = express();
