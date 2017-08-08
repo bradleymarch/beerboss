@@ -22,7 +22,7 @@
 }
 @import url(https://fonts.googleapis.com/css?family=Lato:700,900);
 
-@media screen and (min-width: 0px) and (max-width: 1120px) {
+@media screen and (min-width: 0px) and (max-width: 1125px) {
   nav a {
     display: none;
   }
@@ -406,7 +406,7 @@
 }
 
 .addBeerButton {
-  width: 80px;
+  width: 90px;
   height: 40px;
   border-radius: 2px;
   background-color: white;
