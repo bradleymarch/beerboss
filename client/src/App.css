@@ -22,7 +22,7 @@
 }
 @import url(https://fonts.googleapis.com/css?family=Lato:700,900);
 
-@media screen (min-width: 0px) and (max-width: 1110px) {
+@media screen and (min-width: 0px) and (max-width: 1110px) {
   nav a {
     display: none;
   }
@@ -37,6 +37,18 @@
   }
   .logoutButton {
     display: none;
+  }
+  .topOfResultsButton {
+    width: 60px;
+    height: 30px;
+    border-radius: 2px;
+    background-color: white;
+    outline: none;
+    border: solid #FF3B3F 2px;
+    color: #FF3B3F;
+    font-size: 14px;
+    float: right;
+    margin-top: -90px;
   }
   .welcomeHeader {
     font-size: 40px !important;
