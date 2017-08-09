@@ -29,6 +29,9 @@
   .breweryForm, .beerForm {
     margin-bottom: 4px;
   }
+  #breweryLabel, #beerLabel {
+    margin-bottom: 4px;
+  }
   .About-container {
     height: 100% !important;
     padding-bottom: 80px !important;
