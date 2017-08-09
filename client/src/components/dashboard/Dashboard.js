@@ -52,7 +52,7 @@ render() {
                     className="text" maxLength="35" autoComplete="off"
                     placeholder="Search beers?" required
                     ref={input => this.input2 = input} />
-              <label id="beerLabel">Enter any beer then click here ->
+              <label id="beerLabel">Enter any beer then click button ->
                 <input type="submit" id="beerButton" className="localBrewButton flash-button" name="submit" value="Search Beers" />
               </label>
             </form>
