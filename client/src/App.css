@@ -29,6 +29,9 @@
   .breweryForm, .beerForm {
     margin-bottom: 4px;
   }
+  .localBrewButton {
+    margin-top: 8px !important;
+  }
   #breweryLabel, #beerLabel {
     margin-bottom: 8px !important;
   }
