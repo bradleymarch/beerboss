@@ -69,7 +69,7 @@ class LocalBreweries extends React.Component {
 								<p>City: {this.props.breweries.data[7].location.city}</p>
 					</section>
 					<section className="eachBreweryResult">
-						<a href="https://www.google.com/search?q=" + {this.props.breweries.data[8].name}><p className="breweryTitle">9.) {this.props.breweries.data[8].name}</p></a>
+						<p className="breweryTitle">9.) {this.props.breweries.data[8].name}</p>
 								<p>Yelp Rating: {this.props.breweries.data[8].rating} stars</p>
 								<p>Address: {this.props.breweries.data[8].location.address1}</p>
 								<p>City: {this.props.breweries.data[8].location.city}</p>
