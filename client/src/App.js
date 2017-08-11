@@ -68,8 +68,7 @@ class App extends Component {
           <header>
               <h4 className="aboutH4">When you can't remember those complicated craft brew names, Beer Boss is here for you!</h4>
           </header>
-          <p>Create a dream-list of beers that you can add to your favorites list once you've tried them.  With the Boss List, and help from the BreweryDB API,
-           you'll be able to add, update, and add beers to your favorite list whenever!  You can add beers to try, add them to favorites, or get rid of them if they sucked!  Register below to get Bossing today!</p>
+          <p>With Beer Boss you can search for any beer you want and add it to your Boss List of beers to try.  Once you've tried it, you can add it as a favorite or can it if it's crap.  Register below to get Bossing today!</p>
         </div>
         </div>
       </section>
