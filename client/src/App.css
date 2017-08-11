@@ -26,6 +26,9 @@
   nav a {
     display: none;
   }
+  .Beer-img {
+    margin-left: 10px;
+  }
   .breweryForm, .beerForm {
     margin-bottom: 4px;
   }
