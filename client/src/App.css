@@ -27,7 +27,7 @@
     display: none;
   }
   .Beer-img {
-    margin-left: 10px;
+    margin-left: 0px !important;
   }
   .breweryForm, .beerForm {
     margin-bottom: 4px;
