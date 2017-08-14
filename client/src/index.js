@@ -23,14 +23,14 @@ ReactDOM.render(
     <Router>
         <div>
 
-          <nav className="App-header">
+          <nav className="app-header">
             <a href="/">Home</a>
             <a href="/login">Login</a>
-            <img src={require("./beer.png")} className="Beer-img" alt="Beer"/>
+            <img src={require("./beer.png")} className="beer-img" alt="Beer"/>
             <a href="/register">Register</a>
             <a href="/demo-login">Demo</a>
           </nav>
-          <div className="dropdownDiv">
+          <div className="dropdown-div">
           <Dropdown label="Dropdown Label">
             <DropdownItem />
             <DropdownItem />

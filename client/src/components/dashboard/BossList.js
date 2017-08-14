@@ -35,37 +35,37 @@ class BossList extends Component {
   render() {
 
     return (
-      <div className="bossList">
-        <h2 className="bossListHeader">Boss List</h2>
-        <h3 className="bossListSubheader">Here are your Beers To Try...</h3>
-        <hr className="bossListHr"/>
+      <div className="boss-list">
+        <h2 className="boss-list-header">Boss List</h2>
+        <h3 className="boss-list-subheader">Here are your Beers To Try...</h3>
+        <hr className="boss-list-hr"/>
         {this.props.bosslist.map((beer, index) => {
         return (
             <div key={index}>
-                <div className="bossListItems">{beer}</div>
-              <div className="bossListFormsDiv">
-              <form className="addFaveForm" onSubmit={(e) => this.addFave(e)}>
+                <div className="boss-list-items">{beer}</div>
+              <div className="boss-list-forms-div">
+              <form className="add-fave-form" onSubmit={(e) => this.addFave(e)}>
                 <input type="hidden" name="beerName" value={beer} />
-                <button type="submit" className="addFaveButton flash-button" onSubmit={(e) => this.deleteToTry(e)} value={beer}>Favorite</button>
+                <button type="submit" className="add-fave-button flash-button" onSubmit={(e) => this.deleteToTry(e)} value={beer}>Favorite</button>
               </form>
-              <form className="deleteToTryForm" onSubmit={(e) => this.deleteToTry(e)}>
+              <form className="delete-to-try-form" onSubmit={(e) => this.deleteToTry(e)}>
                 <input type="hidden" name="beername" value={beer} />
-                <button type="submit" className="deleteButton" value={beer}>Remove</button>
+                <button type="submit" className="delete-button" value={beer}>Remove</button>
               </form>
               </div>
             </div>
         )
       })}
-      <h3 className="bossListSubheader">Here are your Favorite Beers!</h3>
-      <hr className="bossListHr"/>
+      <h3 className="boss-list-subheader">Here are your Favorite Beers!</h3>
+      <hr className="boss-list-hr"/>
       {this.props.beerRating.map((fave, index) => {
       return (
           <div key={index}>
 
-            <div className="bossListItems">{fave}</div>
-            <form className="deleteFaveForm" onSubmit={(e) => this.deleteFave(e)}>
+            <div className="boss-list-items">{fave}</div>
+            <form className="delete-fave-form" onSubmit={(e) => this.deleteFave(e)}>
               <input type="hidden" name="faveName" value={fave} />
-              <button type="submit" className="deleteButton" value={fave}>Remove</button>
+              <button type="submit" className="delete-button" value={fave}>Remove</button>
             </form>
           </div>
         )

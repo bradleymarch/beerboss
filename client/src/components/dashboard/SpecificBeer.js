@@ -24,20 +24,20 @@ class SpecificBeer extends React.Component {
 
 	render() {
 			return (
-				<div className="beerResultsList" id="beer_results_list">
-				{this.props.beers.length>0? <button className="clearResultsButton" onClick={() => this.clearResults()}>Clear Results</button> : <div></div>}
+				<div className="beer-results-list" id="beer_results_list">
+				{this.props.beers.length>0? <button className="clear-results-button" onClick={() => this.clearResults()}>Clear Results</button> : <div></div>}
 					{this.props.beers.map((beer, index) => {
 						return (
-								<div className="eachBeerResult" key={index}>
-									<h2 className="beerTitle">{beer.name}</h2>
-									<a href="#dashboard_section"><button className="topOfResultsButton">To Top</button></a>
+								<div className="each-beer-result" key={index}>
+									<h2 className="beer-title">{beer.name}</h2>
+									<a href="#dashboard_section"><button className="top-of-results-button">To Top</button></a>
 									<p>ABV: {beer.abv}</p>
 									<p>Description: {beer.description}</p>
-									<button className="addBeerButton" onClick={() => this.addBeer(beer)}>Add Beer</button>
+									<button className="add-beer-button" onClick={() => this.addBeer(beer)}>Add Beer</button>
 								</div>
 						)
 					})}
-					{this.props.beers.length>0? <button className="clearResultsButton" onClick={() => this.clearResults()}>Clear Results</button> : <div></div>}
+					{this.props.beers.length>0? <button className="clear-results-button" onClick={() => this.clearResults()}>Clear Results</button> : <div></div>}
 					</div>
 
 			)

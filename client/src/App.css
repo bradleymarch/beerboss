@@ -2,12 +2,10 @@
   font-family: 'Signika', sans-serif;
   box-sizing: border-box;
 }
-
-.App {
+.app {
   text-align: center;
 }
-
-.aboutH4 {
+.about-H4 {
   letter-spacing: 4px;
   color: #5190ED;
   font-size: 20px;
@@ -19,7 +17,6 @@
   width: 100%;
   height: 70px;
 }
-
 .dropdown-option {
   display: none;
 }
@@ -29,35 +26,35 @@
   nav a {
     display: none;
   }
-  .Beer-img {
+  .beer-img {
     margin-left: 0px !important;
   }
-  .breweryForm, .beerForm {
+  .brewery-form, .beerForm {
     margin-bottom: 4px;
   }
-  .localBrewButton {
+  .local-brew-button {
     margin-top: 8px !important;
   }
-  #breweryLabel, #beerLabel {
+  #brewery_label, #beer_label {
     margin-bottom: 8px !important;
   }
-  .About-container {
+  .about-container {
     height: 100% !important;
     padding-bottom: 80px !important;
   }
-  .aboutContent {
+  .about-content {
     height: 100% !important;
   }
-  .bossHeader {
+  .boss-header {
     font-size: 72px !important;
   }
-  .logoutButton {
+  .logout-button {
     display: none !important;
   }
-  .topOfResultsButton {
+  .top-of-results-button {
     display: none !important;
   }
-  .welcomeHeader {
+  .welcome-header {
     font-size: 40px !important;
   }
   .dropdown-container {
@@ -98,17 +95,14 @@
     border-right: 4px solid transparent;
     transition: all .1s linear;
   }
-
   .open .dropdown-label:after {
     transform: rotate(180deg);
   }
-
   .dropdown-active {
     height: 30px;
     line-height: 30px;
     vertical-align: middle;
   }
-
   .dropdown-select {
     position: absolute;
     top: 32px;
@@ -124,12 +118,10 @@
     list-style: none;
     padding: 0;
   }
-
   .dropdown-select.open {
     max-height: 225px;
     margin-top: 35px;
   }
-
   .dropdown-option {
     text-align: center;
     color: #5190ED;
@@ -141,12 +133,10 @@
     display: block;
     letter-spacing: 4px;
   }
-
   .dropdown-option:hover {
     background: #5190ED;
   }
 }
-
 #container {
   height: 212px;
   margin-left: auto;
@@ -154,17 +144,15 @@
   margin-top: -70px;
   overflow: hidden;
   position: relative;
-
 }
-
-#container div { position: absolute; }
-
+#container div {
+  position: absolute;
+}
 #top {
   border-top: 0;
   border-radius: 0 0 30px 30px;
   height: 200px;
 }
-
 #liquid {
   background-color: #f2c025;
   border: 10px solid #f2c025;
@@ -173,7 +161,6 @@
   overflow: hidden;
   width: 2500px;
 }
-
 #liquid:after {
   background-color: rgba(255, 255, 255, 0.25);
   bottom: -10px;
@@ -185,7 +172,6 @@
   -webkit-transform: rotate(15deg);
   width: 110px;
 }
-
 #liquid .bubble {
   -webkit-animation-name: bubble;
   -webkit-animation-iteration-count: infinite;
@@ -196,60 +182,49 @@
   height: 20px;
   width: 20px;
 }
-
 @-webkit-keyframes bubble {
-  0% { bottom: 0; }
-
+  0% {
+    bottom: 0;
+  }
   50% {
     background-color: rgba(255, 255, 255, 0.2);
     bottom: 80px;
   }
-
   100% {
     background-color: rgba(255, 255, 255, 0);
     bottom: 160px;
   }
 }
-
 .bubble1 {
   left: 10px;
   -webkit-animation-delay: 1000ms;
   -webkit-animation-duration: 1000ms;
 }
-
 .bubble2 {
   left: 50px;
   -webkit-animation-delay: 700ms;
   -webkit-animation-duration: 1100ms;
 }
-
 .bubble3 {
   left: 100px;
   -webkit-animation-delay: 1200ms;
   -webkit-animation-duration: 1300ms;
 }
-
 .bubble4 {
   left: 130px;
   -webkit-animation-delay: 1100ms;
   -webkit-animation-duration: 700ms;
 }
-
 .bubble5 {
   left: 170px;
   -webkit-animation-delay: 1300ms;
   -webkit-animation-duration: 800ms;
 }
-
-/* Foam */
-
 .beer-foam {
   position: absolute;
   bottom: 10px;
   height: 180px;
-
 }
-
 .foam-1, .foam-2, .foam-3, .foam-4,
 .foam-5, .foam-6, .foam-7, .foam-8,
 .foam-9, .foam-10, .foam-11, .foam-12,
@@ -338,7 +313,6 @@
   -webkit-flex-flow: row wrap;
   justify-content: space-around;
 }
-
 .child {
   padding: 5px;
   width: 400px;
@@ -347,24 +321,19 @@
   background-color: #fff;
   padding: 20px;
 }
-
-.App-logo {
+.app-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
-
 }
-
-.beerResultsList {
+.beer-results-list {
   color: black;
   height: 100%;
 }
-
-.breweryResultsList {
+.brewery-results-list {
   color: black;
   height: 100%
 }
-
-#locationInput, #beerInput {
+#location_input, #beer_input {
   margin-left: 45px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -393,7 +362,7 @@
   color: black;
   opacity: 0.25;
 }
-.App-header {
+.app-header {
   background-color: #f2c025;
   height: 70px;
   color: white;
@@ -404,8 +373,7 @@
   right: 0;
   z-index: 10;
 }
-
-.localBrewButton {
+.local-brew-button {
   background: white;
   color: #5190ED;
   border: 2px solid #5190ED;
@@ -419,8 +387,7 @@
   outline: none;
   border-radius: 2px;
 }
-
-.addBeerButton {
+.add-beer-button {
   width: 90px;
   height: 40px;
   border-radius: 2px;
@@ -430,7 +397,6 @@
   color: #FF3B3F;
   font-size: 16px;
 }
-
 .login-button {
   width: 80px;
   height: 40px;
@@ -440,10 +406,8 @@
   border: solid #FF3B3F 2px;
   color: #FF3B3F;
   font-size: 16px;
-
 }
-
-.saveBeerButton {
+.save-beer-button {
   width: 80px;
   height: 40px;
   border-radius: 2px;
@@ -453,16 +417,14 @@
   color: #FF3B3F;
   font-size: 16px;
 }
-
-.welcomeSubtitle, .breweryFormDescription {
+.welcome-subtitle, .brewery-form-description {
   text-align: center;
 }
-.breweryFormDescription {
+.brewery-form-description {
   margin-top: 40px;
   color: #FF3B3F;
 }
-
-.clearResultsButton {
+.clear-results-button {
   width: 120px;
   height: 30px;
   border-radius: 2px;
@@ -475,8 +437,7 @@
   margin-bottom: 10px;
   margin-left: 50%;
 }
-
-.topOfResultsButton {
+.top-of-results-button {
   width: 60px;
   height: 30px;
   border-radius: 2px;
@@ -488,8 +449,7 @@
   float: right;
   margin-top: -70px;
 }
-
-.logoutButton {
+.logout-button {
   margin-top: 25px;
   position: fixed;
   margin-left: 520px;
@@ -501,27 +461,22 @@
   border: solid #FF3B3F 2px;
   color: #FF3B3F;
   font-size: 14px;
-
 }
-
-.bossList {
+.boss-list {
   border: 2px solid #5190ED;
   background-color: white;
 }
-
-.breweryForm {
+.brewery-form {
   border: 2px solid #f2c025;
   background-color: white;
   margin-top: 0px;
 }
-
-.beerForm {
+.beer-form {
   border: 2px solid #FF3B3F;
   background-color: white;
   margin-top: 10px;
 }
-
-.welcomeHeader {
+.welcome-header {
   margin-top: 0;
   margin-bottom: 0;
   text-align: center;
@@ -531,16 +486,13 @@
   color: #5190ED;
   letter-spacing: 4px;
 }
-
-.breweryDiv {
+.brewery-div {
   text-align: center;
 }
-
-.beerResultsList {
+.beer-results-list {
   text-align: center;
 }
-
-.eachBeerResult {
+.each-beer-result {
   border: 2px solid #FF3B3F;
   width: 75%;
   margin-left: auto;
@@ -549,8 +501,7 @@
   padding: 10px;
   border-radius: 2px;
 }
-
-.eachBreweryResult {
+.each-brewery-result {
   border: 2px solid #f2c025;
   width: 75%;
   margin-left: auto;
@@ -559,23 +510,18 @@
   padding: 10px;
   border-radius: 2px;
 }
-
-.bossList, .breweryForm, .beerForm {
+.boss-list, .brewery-form, .beer-form {
   width: 75%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
   padding: 10px;
   border-radius: 2px;
-
 }
-
 button:hover {
   cursor: pointer;
   cursor: hand;
-
 }
-
 .flash-button{
   animation-name: flash;
   animation-duration: 1s;
@@ -594,28 +540,24 @@ button:hover {
   -moz-animation-timing-function: linear;
   -moz-animation-iteration-count: infinite;
 }
-
 @keyframes flash {
   0% { opacity: 1.0; }
   50% { opacity: 0.5; }
   100% { opacity: 1.0; }
 }
-
 //Firefox 1+
 @-webkit-keyframes flash {
   0% { opacity: 1.0; }
   50% { opacity: 0.5; }
   100% { opacity: 1.0; }
 }
-
 //Safari 3-4
 @-moz-keyframes flash {
   0% { opacity: 1.0; }
   50% { opacity: 0.5; }
   100% { opacity: 1.0; }
 }
-
-#breweryLabel, #beerLabel {
+#brewery_label, #beer_label {
   margin-right: 10px;
   margin-top: 25px;
   margin-bottom: 25px;
@@ -631,16 +573,13 @@ nav a {
   outline: none;
   letter-spacing: 4px;
 }
-
 nav a:hover {
   color: #5190ED;
 }
-.dashboardContainer {
+.dashboard-container {
   height: 100%;
   position: static;
-
 }
-
 .form-group {
   position:relative;
   margin-bottom:45px;
@@ -648,20 +587,15 @@ nav a:hover {
   margin-right: auto;
   width: 300px;
 }
-
-.breweryResultsHeader {
+.brewery-results-header {
   text-align: center;
 }
-
 .login-form, .register-form {
-
   display: block;
   text-align: center;
   margin: auto;
   padding-bottom: 10px;
-
 }
-
 .horizontal-line-subtitle {
   margin-top: 0px;
   margin-bottom: 10px;
@@ -671,7 +605,6 @@ nav a:hover {
   height: 1px;
   text-align: center;
   opacity: 0.5;
-
 }
 .floating-label-input {
   font-size:18px;
@@ -682,30 +615,22 @@ nav a:hover {
   color:white;
   border-bottom:1px solid white;
   background: transparent;
-
 }
-
 input {
   box-shadow: none;
 }
-
 ul li a {
   text-decoration: none;
   color: white;
 }
 ul li a:hover {
   color: #FF3B3F
-
 }
-
-.floating-label-input:focus 		{ outline:none; }
-
-/* LABEL ======================================= */
-
-
+.floating-label-input:focus {
+  outline:none;
+}
 .floating-label {
   color:white;
-  /*text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);*/
   font-size:14px;
   font-weight:normal;
   border-color: transparent;
@@ -716,20 +641,14 @@ ul li a:hover {
   transition:0.2s ease all;
   -moz-transition:0.2s ease all;
   -webkit-transition:0.2s ease all;
-
 }
-
-/* active state */
 .floating-label-input:focus ~ .floating-label,
 .floating-label-input:valid ~ .floating-label 		{
   top:-20px;
   font-size:14px;
   color:#FF3B3F;
   opacity: 0.5;
-
 }
-
-/* BOTTOM BARS ================================= */
 .bar 	{ position:relative; display:block; width:300px; }
 .bar:before, .bar:after 	{
   content:"";
@@ -741,34 +660,22 @@ ul li a:hover {
   transition:0.2s ease all;
   -moz-transition:0.2s ease all;
   -webkit-transition:0.2s ease all;
-
 }
-
 .bar:before {
   left:50%;
-
 }
-
 .bar:after {
   right:50%;
-
 }
-
 .login-logo {
   font-size: 32px;
   margin-bottom: 40px;
   padding-top: 40px;
   color: white;
-
 }
-
-/* active state */
 input:focus ~ .bar:before, input:focus ~ .bar:after {
   width:50%;
-
 }
-
-/* HIGHLIGHTER ================================== */
 .highlight {
   position:absolute;
   height:60%;
@@ -777,61 +684,44 @@ input:focus ~ .bar:before, input:focus ~ .bar:after {
   left:0;
   pointer-events:none;
   opacity:0.5;
-
 }
-
-/* active state */
 .floating-label-input:focus ~ .highlight {
   -webkit-animation:inputHighlighter 0.3s ease;
   -moz-animation:inputHighlighter 0.3s ease;
   animation:inputHighlighter 0.3s ease;
-
 }
-
 /* ANIMATIONS ================ */
 @-webkit-keyframes inputHighlighter {
   from { background:#5264AE; }
   to 	{ width:0; background:transparent; }
-
 }
-
 @-moz-keyframes inputHighlighter {
   from { background:#5264AE; }
   to 	{ width:0; background:transparent; }
-
 }
-
 @keyframes inputHighlighter {
   from { background:#5264AE; }
   to 	{ width:0; background:transparent; }
-
 }
-
-.Logo-container {
+.logo-container {
   background-color: white;
   z-index: 9;
 }
-
-.Landing-footer {
+.landing-footer {
   background-color: #FF3B3F;
   height: 71px;
   color: white;
   font-size: 16px;
   padding: 0 0 10px 0;
   letter-spacing: 4px;
-
 }
-
 nav {
   text-align: center;
-
 }
-
 .register {
   text-decoration: none;
   color: white;
 }
-
 .empty-login-space {
   height: 80px;
   width: 100%;
@@ -850,15 +740,12 @@ nav {
   width: 100%;
   background: #0D3446;
 }
-
 .register-view {
   height: 782px;
   width: 100%;
   background: #0D3446;
-
 }
 .login-container {
-
   text-align: center;
   display: block;
   height: 50%;
@@ -866,10 +753,8 @@ nav {
   z-index: 9;
   margin: auto;
   border-radius: 2px;
-  /*border: 1.5px solid #71ADB5;*/
   box-sizing: border-box;
 }
-
 .register-container {
   text-align: center;
   display: block;
@@ -878,16 +763,12 @@ nav {
   z-index: 9;
   margin: auto;
   border-radius: 2px;
-  /*border: 1.5px solid #71ADB5;*/
   box-sizing: border-box;
-
 }
-
 #register_landing {
   height: 782px;
   background: white;
 }
-
 .register-overlay {
   position: relative;
   width: 360px;
@@ -897,9 +778,7 @@ nav {
   padding: 0px;
   box-sizing: border-box;
   display: block;
-  /*background-color: rgba(0, 0, 0, 0.75);*/
 }
-
 .register-overlay::before {
   content: "";
   position: absolute;
@@ -909,20 +788,15 @@ nav {
   bottom: 0;
   background-color: #5190ED;
   background-repeat: no-repeat;
-  /*background-size: 100vw 100vh;*/
   width: 360px;
   height: 400px;
   background-position: center center;
   background-attachment: fixed;
-  /*background-color: rgba(0, 0, 0, 0.75);*/
-  /*filter: blur(50px);*/
   display: block;
   box-sizing: border-box;
   z-index: -1;
   border-radius: 2px;
-
 }
-
 .login-overlay {
   position: relative;
   width: 360px;
@@ -933,7 +807,6 @@ nav {
   box-sizing: border-box;
   display: block;
 }
-
 .login-overlay::before {
   content: "";
   position: absolute;
@@ -943,26 +816,19 @@ nav {
   bottom: 0;
   background-color: #5190ED;
   background-repeat: no-repeat;
-  /*background-size: 100vw 100vh;*/
   width: 360px;
   height: 400px;
   background-position: center center;
   background-attachment: fixed;
-  /*background-color: rgba(0, 0, 0, 0.75);*/
-  /*filter: blur(50px);*/
   display: block;
   box-sizing: border-box;
   z-index: -1;
   border-radius: 2px;
 }
-
-.Login-container {
-
+.login-container {
   height: 782px;
-  background-color: #F2EEE2;
-
 }
-.aboutContent {
+.about-content {
   width: 75%;
   margin: auto;
   border: 4px solid #FF3B3F;
@@ -970,29 +836,26 @@ nav {
   background-color: white;
   color: #FF3B3F;
 }
-
-.aboutContent p {
+.about-content p {
   width: 75%;
   margin: auto;
   text-align: center;
 }
-
-.About-container {
+.about-container {
   height: 782px;
   background-color: #5190ED;
 }
-.aboutHeader {
+.about-header {
   font-size: 48px;
   margin-top: 0px;
   font-family: 'Jacques Francois Shadow', cursive;
   font-weight: normal;
   color: #f2c025;
 }
-.emptyAboutSpace {
+.empty-about-space {
   height: 80px;
 }
-.Beer-img {
-
+.beer-img {
   margin-top: 10px;
   height: 50px;
   width: 40px;
@@ -1000,59 +863,49 @@ nav {
   animation: App-logo-spin infinite 20s linear;
   margin-left: 20px;
 }
-
 form {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 30px
-
 }
-
-.beerTitle, .breweryTitle {
+.beer-title, .brewery-title {
   color: #5190ED;
   font-weight: normal;
   font-size: 24px;
-
 }
-
-.bossListHeader {
+.boss-list-header {
   color: #5190ED;
   font-weight: normal;
   font-size: 40px;
   margin-top: 5px;
   margin-bottom: 5px;
 }
-
-.addFaveForm {
+.add-fave-form {
   margin-top: 2px !important;
   margin-bottom: 2px !important;
-
 }
-
-.deleteToTryForm {
+.delete-to-try-form {
   margin-top: 2px !important;
   margin-bottom: 10px !important;
-
 }
-.bossListFormsDiv {
+.boss-list-forms-div {
   display: inline;
 }
-.deleteFaveForm {
+.delete-fave-form {
   margin-top: 2px !important;
   margin-bottom: 10px !important;
-
 }
-.bossListItems {
+.boss-list-items {
   color: #5190ED;
   font-size: 24px;
 }
-.bossListSubheader {
+.boss-list-subheader {
   font-size: 20px;
   color: #FF3B3F;
   margin-bottom: 4px;
   letter-spacing: 4px;
 }
-.welcomeSubtitle {
+.welcome-subtitle {
   width: 75%;
   color: #5190ED;
   border: 2px solid #f2c025;
@@ -1062,8 +915,7 @@ form {
   padding: 4px;
   font-weight: normal;
 }
-
-.bossListHr {
+.boss-list-hr {
   width: 50%;
   display: block;
   height: 1px;
@@ -1071,8 +923,7 @@ form {
   border-top: 1px solid #FF3B3F;
   margin-top: 0px;
 }
-
-.navHr {
+.nav-hr {
   width: 90%;
   display: block;
   height: 1px;
@@ -1080,8 +931,7 @@ form {
   border-top: 1px solid white;
   margin-top: 0px;
 }
-
-.addFaveButton {
+.add-fave-button {
   width: 50px;
   height: 18px;
   border-radius: 2px;
@@ -1091,8 +941,7 @@ form {
   color: #FF3B3F;
   font-size: 10px;
 }
-
-.deleteButton {
+.delete-button {
   width: 50px;
   height: 18px;
   border-radius: 2px;
@@ -1102,51 +951,37 @@ form {
   color: #A9A9A9;
   font-size: 10px;
 }
-
 #beer_results, #brewery_results {
   font-family: 'Jacques Francois Shadow', cursive;
   font-size: 32px;
   font-weight: normal;
 }
-
 .hidden {
   display: none;
 }
-
-.bossList {
+.boss-list {
   text-align: center;
   position: relative
 }
-
-.bossListRatings {
-
-}
-.Boss-logo {
+.boss-logo {
   margin-top: 0px;
   height: 400px;
   width: 300px;
   opacity: 0.75;
 }
-
-.bossHeader {
-
+.boss-header {
   margin-top: 70px;
   font-size: 92px;
   color: #5190ED;
   font-family: 'Jacques Francois Shadow', cursive;
   margin-bottom: 20px;
   font-weight: normal;
-  /*text-shadow: 1px 1px 1px #FF3B3F;*/
   z-index: 9;
   position: relative !important;
-
-
 }
-
-.Subtitle {
+.subtitle {
   padding-top: 25px;
 }
-
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
