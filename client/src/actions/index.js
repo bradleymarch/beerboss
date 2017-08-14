@@ -69,7 +69,6 @@ const deleteFaveSuccess = faveListItem  => ({
 })
 
 export const fetchLocalBrewery = (locationInput) => (dispatch) => {
-console.log(locationInput);
     axios.post('/api/brewery-results', {
       location: locationInput,
 
@@ -78,7 +77,6 @@ console.log(locationInput);
         return response;
       })
       .then(localBreweries => {
-        console.log(localBreweries)
           dispatch(fetchBrewerySuccess(localBreweries));
       })
       .catch(function (error) {
@@ -102,7 +100,6 @@ export const fetchSpecificBeer = (beerInput) => (dispatch) => {
 };
 
 export const addBeerToDb = (value) => (dispatch) => {
-console.log('here')
   axios.post('/api/users/beerlist', {
     beerlist: value
   })
@@ -119,7 +116,6 @@ console.log('here')
 };
 
 export const saveRating = (beerRating) => (dispatch) => {
-  console.log('ok')
   axios.post('/api/users/rating', {
     beerRating: beerRating
   })
@@ -135,7 +131,6 @@ export const saveRating = (beerRating) => (dispatch) => {
 }
 
 export const deleteToTry = (value) => (dispatch) => {
-  console.log('ok')
   axios.post('/api/delete-to-try', {
     beerlist: value
   })
@@ -151,7 +146,6 @@ export const deleteToTry = (value) => (dispatch) => {
 }
 
 export const deleteFave = (value) => (dispatch) => {
-  console.log('ok')
   axios.post('/api/delete-fave', {
     beerRating: value
   })
@@ -167,17 +161,14 @@ export const deleteFave = (value) => (dispatch) => {
 }
 
 export const registerUser = (usernameInput, passwordInput) => (dispatch) => {
-console.log(usernameInput, passwordInput);
     axios.post('/api/users/register', {
       username: usernameInput,
       password: passwordInput,
       })
       .then(function (response) {
-        console.log('oh')
         return response;
       })
       .then(registeredUser => {
-        console.log('what')
           dispatch(registerUserSuccess(registeredUser));
           setTimeout(function(){return location.href = '/login'}, 1000);
       })
@@ -187,17 +178,14 @@ console.log(usernameInput, passwordInput);
 };
 
 export const loginUser = (usernameInput, passwordInput) => (dispatch) => {
-console.log(usernameInput, passwordInput);
     axios.post('/api/users/login', {
       username: usernameInput,
       password: passwordInput,
       })
       .then(response => {
-        console.log(response)
         return response;
       })
       .then(loggedInUser => {
-        console.log('what', loggedInUser)
           dispatch(loginUserSuccess(loggedInUser));
           setTimeout(function(){return location.href = '/dashboard'}, 1000);
       })
@@ -213,7 +201,6 @@ export const getUser = () => (dispatch) => {
     return response;
   })
   .then(response => {
-    console.log(response, 'user')
     dispatch(getLoggedinUser(response.data.user));
     //setTimeout(function(){return location.href = '/dashboard'}, 1000);
   })
@@ -223,7 +210,6 @@ export const getUser = () => (dispatch) => {
 };
 
 export const logout = () => (dispatch) => {
-  console.log('doesitgethere')
   axios.get('/api/logout')
   .then(response => {
     return response;

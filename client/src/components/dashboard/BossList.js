@@ -14,9 +14,7 @@ class BossList extends Component {
 
   addFave(event) {
     event.preventDefault();
-    console.log('yep')
     const nameOfFave = event.target.beerName.value
-    console.log(nameOfFave)
     this.props.dispatch(saveRating(nameOfFave))
     this.props.dispatch(deleteToTry(nameOfFave))
     location.href = "/dashboard/dashboard_section"

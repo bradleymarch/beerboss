@@ -11,7 +11,6 @@ class SpecificBeer extends React.Component {
 		this.clearResults = this.clearResults.bind(this)
 	}
 	addBeer(beer) {
-		console.log(beer)
 				const value = beer.name;
 				this.props.dispatch(addBeerToDb(value));
 				this.props.dispatch(addSpecificBeer(value));

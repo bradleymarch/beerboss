@@ -50,7 +50,6 @@ const basicStrategy = new BasicStrategy((username, password, callback) => {
 
 // POST for creating new user account
 app.post('/api/users/register', (req, res) => {
-console.log('hi');
   if (!req.body) {
     return res.status(400).json({message: 'No request body'});
   }
@@ -84,7 +83,6 @@ console.log('hi');
   if (password === '') {
     return res.status(422).json({message: 'Incorrect field length: password'});
   }
-console.log('eh');
 User
   .find({username})
   .count()
@@ -134,8 +132,6 @@ passport.deserializeUser(function(id, done) {
 app.post('/api/users/login',
   passport.authenticate('basic', {session: true}),
   (req, res, err) => {
-    console.log(err);
-    console.log('hello');
     res.json({user: req.user.apiRepr(), message: 'Sign in successful'});
 });
 
@@ -159,8 +155,6 @@ app.get('/api/logout', function (req, res){
 });
 
 app.post('/api/users/beerlist', loggedIn, (req, res) => {
-    console.log('yep');
-    console.log(req.body);
     User
     .findByIdAndUpdate(req.user._id,
        { $push: {beerlist: req.body.beerlist} }, { new: true }, (err, user) => {
@@ -199,12 +193,11 @@ app.post('/api/brewery-results', (req, res) => {
     });
   }).catch(e => {
     res.status(404).json({err: 'not found'})
-    console.log(e);
   });
 });
 
 app.get('/api/beer-results', (req, res) => {
-  console.log(req.query)
+  //console.log(req.query)
   const axios = require('axios');
   const nameInput = req.query.nameInput;
   const BREWDB_URL = 'http://api.brewerydb.com/v2/search?q=' + nameInput + '&max=10&type=beer&key=c025cc66880ab6b95ac281345d38fe2c';
@@ -230,10 +223,8 @@ app.post('/api/delete-fave', loggedIn, (req, res) => {
   User
   .findByIdAndUpdate(req.user._id,
      { $pull: {beerRating: req.body.beerRating} }, { new: true }, (err, user) => {
-       console.log('eh');
     if (err) res.send(err);
     res.json(user);
-     console.log('hmm');
   });
 });
 
@@ -252,13 +243,13 @@ function runServer(databaseUrl=DATABASE_URL, port=PORT) {
 
 	return new Promise((resolve, reject) => {
 		mongoose.connect(databaseUrl, err => {
-      console.log(databaseUrl, 'ok');
+      //console.log(databaseUrl, 'ok');
 
 			if (err) {
 				return reject(err);
 			}
 			server = app.listen(port, () => {
-				console.log(`Your app is listening on port ${port}`);
+				//console.log(`Your app is listening on port ${port}`);
 				resolve();
 			})
 			.on("error", err => {
