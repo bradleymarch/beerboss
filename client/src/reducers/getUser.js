@@ -4,16 +4,16 @@ const initialState = {
 };
 
 const getUserReducer = (state=initialState, action) => {
-    if (action.type === 'GET_LOGGEDIN_USER') {
+  if (action.type === 'GET_LOGGEDIN_USER') {
 
-          return {
-            ...state,
-            user: action.user
-          }
-      }
-      else {
-      return state;
-      }
+    return {
+      ...state,
+      user: action.user
+    }
+  }
+  else {
+    return state;
+  }
 };
 
 export default getUserReducer

@@ -200,15 +200,15 @@
 @-webkit-keyframes bubble {
   0% { bottom: 0; }
 
-   50% {
-     background-color: rgba(255, 255, 255, 0.2);
-      bottom: 80px;
-   }
+  50% {
+    background-color: rgba(255, 255, 255, 0.2);
+    bottom: 80px;
+  }
 
-   100% {
-     background-color: rgba(255, 255, 255, 0);
-      bottom: 160px;
-   }
+  100% {
+    background-color: rgba(255, 255, 255, 0);
+    bottom: 160px;
+  }
 }
 
 .bubble1 {
@@ -254,7 +254,7 @@
 .foam-5, .foam-6, .foam-7, .foam-8,
 .foam-9, .foam-10, .foam-11, .foam-12,
 .foam-13, .foam-14, .foam-15
- {
+{
   float: left;
   position: absolute;
   z-index: 8;
@@ -407,7 +407,7 @@
 
 .localBrewButton {
   background: white;
-	color: #5190ED;
+  color: #5190ED;
   border: 2px solid #5190ED;
   font-size: 20px;
   height: 40px;
@@ -577,42 +577,42 @@ button:hover {
 }
 
 .flash-button{
-	animation-name: flash;
-	animation-duration: 1s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
+  animation-name: flash;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 
-	//Firefox 1+
-	-webkit-animation-name: flash;
-	-webkit-animation-duration: 1s;
-	-webkit-animation-timing-function: linear;
-	-webkit-animation-iteration-count: infinite;
+  //Firefox 1+
+  -webkit-animation-name: flash;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
 
-	//Safari 3-4
-	-moz-animation-name: flash;
-	-moz-animation-duration: 1s;
-	-moz-animation-timing-function: linear;
-	-moz-animation-iteration-count: infinite;
+  //Safari 3-4
+  -moz-animation-name: flash;
+  -moz-animation-duration: 1s;
+  -moz-animation-timing-function: linear;
+  -moz-animation-iteration-count: infinite;
 }
 
 @keyframes flash {
-    0% { opacity: 1.0; }
-    50% { opacity: 0.5; }
-    100% { opacity: 1.0; }
+  0% { opacity: 1.0; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1.0; }
 }
 
 //Firefox 1+
 @-webkit-keyframes flash {
-    0% { opacity: 1.0; }
-    50% { opacity: 0.5; }
-    100% { opacity: 1.0; }
+  0% { opacity: 1.0; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1.0; }
 }
 
 //Safari 3-4
 @-moz-keyframes flash {
-    0% { opacity: 1.0; }
-    50% { opacity: 0.5; }
-    100% { opacity: 1.0; }
+  0% { opacity: 1.0; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1.0; }
 }
 
 #breweryLabel, #beerLabel {
@@ -642,11 +642,11 @@ nav a:hover {
 }
 
 .form-group {
-	position:relative;
-	margin-bottom:45px;
-	margin-left: auto;
-	margin-right: auto;
-	width: 300px;
+  position:relative;
+  margin-bottom:45px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
 }
 
 .breweryResultsHeader {
@@ -655,33 +655,33 @@ nav a:hover {
 
 .login-form, .register-form {
 
-	display: block;
-	text-align: center;
-	margin: auto;
+  display: block;
+  text-align: center;
+  margin: auto;
   padding-bottom: 10px;
 
 }
 
 .horizontal-line-subtitle {
-	margin-top: 0px;
-	margin-bottom: 10px;
-	width: 15%;
-	border: 1px solid white;
-	display: block;
-    height: 1px;
-    text-align: center;
-    opacity: 0.5;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  width: 15%;
+  border: 1px solid white;
+  display: block;
+  height: 1px;
+  text-align: center;
+  opacity: 0.5;
 
 }
 .floating-label-input {
-	font-size:18px;
-	padding:10px 10px 10px 5px;
-	display:block;
-	width:100%;
-	border:none;
-	color:white;
-	border-bottom:1px solid white;
-	background: transparent;
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:100%;
+  border:none;
+  color:white;
+  border-bottom:1px solid white;
+  background: transparent;
 
 }
 
@@ -704,27 +704,27 @@ ul li a:hover {
 
 
 .floating-label {
-	color:white;
-	/*text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);*/
-	font-size:14px;
-	font-weight:normal;
+  color:white;
+  /*text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);*/
+  font-size:14px;
+  font-weight:normal;
   border-color: transparent;
-	position:absolute;
-	pointer-events:none;
-	left:5px;
-	top:10px;
-	transition:0.2s ease all;
-	-moz-transition:0.2s ease all;
-	-webkit-transition:0.2s ease all;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -webkit-transition:0.2s ease all;
 
 }
 
 /* active state */
 .floating-label-input:focus ~ .floating-label,
 .floating-label-input:valid ~ .floating-label 		{
-	top:-20px;
-	font-size:14px;
-	color:#FF3B3F;
+  top:-20px;
+  font-size:14px;
+  color:#FF3B3F;
   opacity: 0.5;
 
 }
@@ -732,25 +732,25 @@ ul li a:hover {
 /* BOTTOM BARS ================================= */
 .bar 	{ position:relative; display:block; width:300px; }
 .bar:before, .bar:after 	{
-	content:"";
-	height:1px;
-	width:0;
-	bottom:1px;
-	position:absolute;
-	background:white;
-	transition:0.2s ease all;
-	-moz-transition:0.2s ease all;
-	-webkit-transition:0.2s ease all;
+  content:"";
+  height:1px;
+  width:0;
+  bottom:1px;
+  position:absolute;
+  background:white;
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -webkit-transition:0.2s ease all;
 
 }
 
 .bar:before {
-	left:50%;
+  left:50%;
 
 }
 
 .bar:after {
-	right:50%;
+  right:50%;
 
 }
 
@@ -764,46 +764,46 @@ ul li a:hover {
 
 /* active state */
 input:focus ~ .bar:before, input:focus ~ .bar:after {
-	width:50%;
+  width:50%;
 
 }
 
 /* HIGHLIGHTER ================================== */
 .highlight {
-	position:absolute;
-	height:60%;
-	width:100px;
-	top:25%;
-	left:0;
-	pointer-events:none;
-	opacity:0.5;
+  position:absolute;
+  height:60%;
+  width:100px;
+  top:25%;
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
 
 }
 
 /* active state */
 .floating-label-input:focus ~ .highlight {
-	-webkit-animation:inputHighlighter 0.3s ease;
-	-moz-animation:inputHighlighter 0.3s ease;
-	animation:inputHighlighter 0.3s ease;
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
 
 }
 
 /* ANIMATIONS ================ */
 @-webkit-keyframes inputHighlighter {
-	from { background:#5264AE; }
-	to 	{ width:0; background:transparent; }
+  from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
 
 }
 
 @-moz-keyframes inputHighlighter {
-	from { background:#5264AE; }
-	to 	{ width:0; background:transparent; }
+  from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
 
 }
 
 @keyframes inputHighlighter {
-	from { background:#5264AE; }
-	to 	{ width:0; background:transparent; }
+  from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
 
 }
 
@@ -833,53 +833,53 @@ nav {
 }
 
 .empty-login-space {
-	height: 80px;
-	width: 100%;
+  height: 80px;
+  width: 100%;
   color: white;
 }
 .empty-register-space {
-	height: 80px;
-	width: 100%;
+  height: 80px;
+  width: 100%;
 }
 .profile-view {
-	background: #176D81;
-	height: 782px;
+  background: #176D81;
+  height: 782px;
 }
 .login-view {
-	height: 782px;
-	width: 100%;
-	background: #0D3446;
+  height: 782px;
+  width: 100%;
+  background: #0D3446;
 }
 
 .register-view {
-	height: 782px;
-	width: 100%;
-	background: #0D3446;
+  height: 782px;
+  width: 100%;
+  background: #0D3446;
 
 }
 .login-container {
 
-	text-align: center;
-	display: block;
-	height: 50%;
-	width: 360px;
-	z-index: 9;
-	margin: auto;
-	border-radius: 2px;
-	/*border: 1.5px solid #71ADB5;*/
-	box-sizing: border-box;
+  text-align: center;
+  display: block;
+  height: 50%;
+  width: 360px;
+  z-index: 9;
+  margin: auto;
+  border-radius: 2px;
+  /*border: 1.5px solid #71ADB5;*/
+  box-sizing: border-box;
 }
 
 .register-container {
-	text-align: center;
-	display: block;
-	height: 50%;
-	width: 360px;
-	z-index: 9;
-	margin: auto;
-	border-radius: 2px;
-	/*border: 1.5px solid #71ADB5;*/
-	box-sizing: border-box;
+  text-align: center;
+  display: block;
+  height: 50%;
+  width: 360px;
+  z-index: 9;
+  margin: auto;
+  border-radius: 2px;
+  /*border: 1.5px solid #71ADB5;*/
+  box-sizing: border-box;
 
 }
 
@@ -888,72 +888,72 @@ nav {
   background: white;
 }
 
- .register-overlay {
- 	position: relative;
-	width: 360px;
-	height: 50%;
-	margin: auto;
-	border-radius: 2px;
-	padding: 0px;
-	box-sizing: border-box;
-	display: block;
-	/*background-color: rgba(0, 0, 0, 0.75);*/
- }
+.register-overlay {
+  position: relative;
+  width: 360px;
+  height: 50%;
+  margin: auto;
+  border-radius: 2px;
+  padding: 0px;
+  box-sizing: border-box;
+  display: block;
+  /*background-color: rgba(0, 0, 0, 0.75);*/
+}
 
- .register-overlay::before {
-	content: "";
-	position: absolute;
-	left: 0;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	background-color: #5190ED;
-	background-repeat: no-repeat;
-	/*background-size: 100vw 100vh;*/
-	width: 360px;
-	height: 400px;
-	background-position: center center;
-	background-attachment: fixed;
-	/*background-color: rgba(0, 0, 0, 0.75);*/
-	/*filter: blur(50px);*/
-	display: block;
-	box-sizing: border-box;
-	z-index: -1;
-	border-radius: 2px;
+.register-overlay::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #5190ED;
+  background-repeat: no-repeat;
+  /*background-size: 100vw 100vh;*/
+  width: 360px;
+  height: 400px;
+  background-position: center center;
+  background-attachment: fixed;
+  /*background-color: rgba(0, 0, 0, 0.75);*/
+  /*filter: blur(50px);*/
+  display: block;
+  box-sizing: border-box;
+  z-index: -1;
+  border-radius: 2px;
 
 }
 
 .login-overlay {
-	position: relative;
-	width: 360px;
-	height: 100%;
-	margin: auto;
-	border-radius: 2px;
-	padding: 0px;
-	box-sizing: border-box;
-	display: block;
+  position: relative;
+  width: 360px;
+  height: 100%;
+  margin: auto;
+  border-radius: 2px;
+  padding: 0px;
+  box-sizing: border-box;
+  display: block;
 }
 
 .login-overlay::before {
-	content: "";
-	position: absolute;
-	left: 0;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	background-color: #5190ED;
-	background-repeat: no-repeat;
-	/*background-size: 100vw 100vh;*/
-	width: 360px;
-	height: 400px;
-	background-position: center center;
-	background-attachment: fixed;
-	/*background-color: rgba(0, 0, 0, 0.75);*/
-	/*filter: blur(50px);*/
-	display: block;
-	box-sizing: border-box;
-	z-index: -1;
-	border-radius: 2px;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #5190ED;
+  background-repeat: no-repeat;
+  /*background-size: 100vw 100vh;*/
+  width: 360px;
+  height: 400px;
+  background-position: center center;
+  background-attachment: fixed;
+  /*background-color: rgba(0, 0, 0, 0.75);*/
+  /*filter: blur(50px);*/
+  display: block;
+  box-sizing: border-box;
+  z-index: -1;
+  border-radius: 2px;
 }
 
 .Login-container {
@@ -1064,12 +1064,12 @@ form {
 }
 
 .bossListHr {
- width: 50%;
- display: block;
- height: 1px;
- border: 0;
- border-top: 1px solid #FF3B3F;
- margin-top: 0px;
+  width: 50%;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #FF3B3F;
+  margin-top: 0px;
 }
 
 .navHr {

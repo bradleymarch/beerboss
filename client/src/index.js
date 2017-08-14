@@ -5,7 +5,6 @@ import store from './store';
 import  App from './App';
 import Dashboard from './components/dashboard/Dashboard'
 import BossList from './components/dashboard/BossList'
-import Root from './components/Root'
 import Login from './components/Login'
 import Register from './components/Register'
 import DemoLogin from './components/DemoLogin'

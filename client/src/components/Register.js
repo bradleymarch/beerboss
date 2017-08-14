@@ -10,7 +10,6 @@ class Register extends React.Component {
 		this.handleRegister = this.handleRegister.bind(this)
   }
   handleRegister(event) {
-    console.log('hi')
     event.preventDefault();
     const usernameInput = this.input.value;
     const passwordInput = this.input2.value;

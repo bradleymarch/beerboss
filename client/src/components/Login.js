@@ -11,7 +11,6 @@ class Login extends React.Component {
 		this.handleLogin = this.handleLogin.bind(this)
   }
   handleLogin(event) {
-    console.log('yeah')
     event.preventDefault();
     const usernameInput = this.input.value;
     const passwordInput = this.input2.value;
