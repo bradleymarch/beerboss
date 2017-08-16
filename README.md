@@ -11,6 +11,8 @@ Create a dream-list of beers that you can add to your favorites list once you've
 beers to try, add them to favorites, or get rid of them if they sucked! Register below to get Bossing today!
 live link to app: https://pure-inlet-71931.herokuapp.com/
 
+![Alt text](/beerbossMobile.png)
+
 This is a full-stack application as part of a capstone project with Thinkful's web development bootcamp. In this 
 project I used HTML, CSS, CSS animations, Javascript, JSX, React, Node, Mongoose, Express, Mocha, and Chai.
 
