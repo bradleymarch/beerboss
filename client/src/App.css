@@ -35,6 +35,7 @@
   }
   .subtitle {
     width: 90% !important;
+    margin: auto;
   }
   .brewery-form, .beerForm {
     margin-bottom: 4px;
