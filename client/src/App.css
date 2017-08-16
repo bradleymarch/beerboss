@@ -29,6 +29,10 @@
   .beer-img {
     margin-left: 0px !important;
   }
+  .landing-footer {
+    background-color: #4ABDAC;
+    height: 96px !important;
+  }
   .brewery-form, .beerForm {
     margin-bottom: 4px;
   }
