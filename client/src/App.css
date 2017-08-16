@@ -7,11 +7,11 @@
 }
 .about-H4 {
   letter-spacing: 4px;
-  color: #5190ED;
+  color: #1A2C56;
   font-size: 20px;
 }
 .url {
-  color: #5190ED;
+  color: #1A2C56;
 }
 .dropdown-container {
   width: 100%;
@@ -62,7 +62,7 @@
     height: 70px;
     box-sizing: border-box;
     padding: 24px;
-    background: #f2c025;
+    background: #4ABDAC;
     position: relative;
     z-index: 11;
   }
@@ -80,7 +80,7 @@
     letter-spacing: 8px;
   }
   .dropdown-label:hover {
-    color: #5190ED;
+    color: #1A2C56;
   }
   .dropdown-label:after {
     content: "";
@@ -109,7 +109,7 @@
     left: 0;
     right: 0;
     z-index: 5;
-    background: #f2c025;
+    background: #4ABDAC;
     box-shadow: 0 1px 2px rgba(0, 0, 0, .2), 0 2px 4px rgba(0, 0, 0, .25);
     overflow-y: scroll;
     max-height: 0;
@@ -124,7 +124,7 @@
   }
   .dropdown-option {
     text-align: center;
-    color: #5190ED;
+    color: #1A2C56;
     padding: 12px;
     margin-left: 15px;
     cursor: pointer;
@@ -134,7 +134,7 @@
     letter-spacing: 4px;
   }
   .dropdown-option:hover {
-    background: #5190ED;
+    background: #1A2C56;
   }
 }
 #container {
@@ -154,8 +154,8 @@
   height: 200px;
 }
 #liquid {
-  background-color: #f2c025;
-  border: 10px solid #f2c025;
+  background-color: #4ABDAC;
+  border: 10px solid #4ABDAC;
   bottom: 0;
   height: 170px;
   overflow: hidden;
@@ -363,7 +363,7 @@
   opacity: 0.25;
 }
 .app-header {
-  background-color: #f2c025;
+  background-color: #4ABDAC;
   height: 70px;
   color: white;
   font-size: 16px;
@@ -375,8 +375,8 @@
 }
 .local-brew-button {
   background: white;
-  color: #5190ED;
-  border: 2px solid #5190ED;
+  color: #1A2C56;
+  border: 2px solid #1A2C56;
   font-size: 20px;
   height: 40px;
   width: 200px;
@@ -393,8 +393,8 @@
   border-radius: 2px;
   background-color: white;
   outline: none;
-  border: solid #FF3B3F 2px;
-  color: #FF3B3F;
+  border: solid #4ABDAC 2px;
+  color: #4ABDAC;
   font-size: 16px;
 }
 .login-button {
@@ -403,8 +403,8 @@
   border-radius: 2px;
   background-color: white;
   outline: none;
-  border: solid #FF3B3F 2px;
-  color: #FF3B3F;
+  border: solid #4ABDAC 2px;
+  color: #4ABDAC;
   font-size: 16px;
 }
 .save-beer-button {
@@ -413,8 +413,8 @@
   border-radius: 2px;
   background-color: white;
   outline: none;
-  border: solid #FF3B3F 2px;
-  color: #FF3B3F;
+  border: solid #4ABDAC 2px;
+  color: #4ABDAC;
   font-size: 16px;
 }
 .welcome-subtitle, .brewery-form-description {
@@ -422,7 +422,8 @@
 }
 .brewery-form-description {
   margin-top: 40px;
-  color: #FF3B3F;
+  color: #4ABDAC;
+  font-size: 24px;
 }
 .clear-results-button {
   width: 120px;
@@ -430,8 +431,8 @@
   border-radius: 2px;
   background-color: white;
   outline: none;
-  border: solid #FF3B3F 2px;
-  color: #FF3B3F;
+  border: solid #4ABDAC 2px;
+  color: #4ABDAC;
   font-size: 16px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -443,8 +444,8 @@
   border-radius: 2px;
   background-color: white;
   outline: none;
-  border: solid #FF3B3F 2px;
-  color: #FF3B3F;
+  border: solid #4ABDAC 2px;
+  color: #4ABDAC;
   font-size: 14px;
   float: right;
   margin-top: -70px;
@@ -458,21 +459,22 @@
   border-radius: 2px;
   background-color: white;
   outline: none;
-  border: solid #FF3B3F 2px;
-  color: #FF3B3F;
+  border: solid #4ABDAC 2px;
+  color: #4ABDAC;
   font-size: 14px;
 }
 .boss-list {
-  border: 2px solid #5190ED;
+  /*border: 2px solid #1A2C56;*/
+  box-shadow: 5px 5px 3px #DFDCE3;
   background-color: white;
 }
 .brewery-form {
-  border: 2px solid #f2c025;
+  box-shadow: 5px 5px 3px #DFDCE3;
   background-color: white;
   margin-top: 0px;
 }
 .beer-form {
-  border: 2px solid #FF3B3F;
+  box-shadow: 5px 5px 3px #DFDCE3;
   background-color: white;
   margin-top: 10px;
 }
@@ -481,9 +483,9 @@
   margin-bottom: 0;
   text-align: center;
   font-size: 70px;
-  font-family: 'Jacques Francois Shadow', cursive;
+  /*font-family: 'Jacques Francois Shadow', cursive;*/
   font-weight: normal;
-  color: #5190ED;
+  color: #1A2C56;
   letter-spacing: 4px;
 }
 .brewery-div {
@@ -493,7 +495,7 @@
   text-align: center;
 }
 .each-beer-result {
-  border: 2px solid #FF3B3F;
+  box-shadow: 5px 5px 3px #DFDCE3;
   width: 75%;
   margin-left: auto;
   margin-right: auto;
@@ -502,7 +504,7 @@
   border-radius: 2px;
 }
 .each-brewery-result {
-  border: 2px solid #f2c025;
+  box-shadow: 5px 5px 3px #DFDCE3;
   width: 75%;
   margin-left: auto;
   margin-right: auto;
@@ -563,7 +565,7 @@ button:hover {
   margin-bottom: 25px;
   margin-left: 20px;
   font-size: 20px;
-  color: #5190ED;
+  color: #1A2C56;
 }
 nav a {
   margin-left: 100px;
@@ -572,9 +574,10 @@ nav a {
   text-decoration: none;
   outline: none;
   letter-spacing: 4px;
+  font-size: 20px;
 }
 nav a:hover {
-  color: #5190ED;
+  color: #1A2C56;
 }
 .dashboard-container {
   height: 100%;
@@ -624,7 +627,7 @@ ul li a {
   color: white;
 }
 ul li a:hover {
-  color: #FF3B3F
+  color: #4ABDAC
 }
 .floating-label-input:focus {
   outline:none;
@@ -646,7 +649,7 @@ ul li a:hover {
 .floating-label-input:valid ~ .floating-label 		{
   top:-20px;
   font-size:14px;
-  color:#FF3B3F;
+  color:#4ABDAC;
   opacity: 0.5;
 }
 .bar 	{ position:relative; display:block; width:300px; }
@@ -708,10 +711,10 @@ input:focus ~ .bar:before, input:focus ~ .bar:after {
   z-index: 9;
 }
 .landing-footer {
-  background-color: #FF3B3F;
+  background-color: #4ABDAC;
   height: 71px;
-  color: white;
-  font-size: 16px;
+  color: #1A2C56;
+  font-size: 20px;
   padding: 0 0 10px 0;
   letter-spacing: 4px;
 }
@@ -786,7 +789,7 @@ nav {
   top: 0;
   right: 0;
   bottom: 0;
-  background-color: #5190ED;
+  background-color: #1A2C56;
   background-repeat: no-repeat;
   width: 360px;
   height: 400px;
@@ -814,7 +817,7 @@ nav {
   top: 0;
   right: 0;
   bottom: 0;
-  background-color: #5190ED;
+  background-color: #1A2C56;
   background-repeat: no-repeat;
   width: 360px;
   height: 400px;
@@ -831,10 +834,10 @@ nav {
 .about-content {
   width: 75%;
   margin: auto;
-  border: 4px solid #FF3B3F;
   padding: 20px;
   background-color: white;
-  color: #FF3B3F;
+  color: #4ABDAC;
+  font-size: 20px;
 }
 .about-content p {
   width: 75%;
@@ -843,14 +846,14 @@ nav {
 }
 .about-container {
   height: 782px;
-  background-color: #5190ED;
+  background-color: #1A2C56;
 }
 .about-header {
   font-size: 48px;
   margin-top: 0px;
-  font-family: 'Jacques Francois Shadow', cursive;
+  /*font-family: 'Jacques Francois Shadow', cursive;*/
   font-weight: normal;
-  color: #f2c025;
+  color: #4ABDAC;
 }
 .empty-about-space {
   height: 80px;
@@ -869,12 +872,12 @@ form {
   margin-bottom: 30px
 }
 .beer-title, .brewery-title {
-  color: #5190ED;
+  color: #1A2C56;
   font-weight: normal;
   font-size: 24px;
 }
 .boss-list-header {
-  color: #5190ED;
+  color: #1A2C56;
   font-weight: normal;
   font-size: 40px;
   margin-top: 5px;
@@ -896,31 +899,32 @@ form {
   margin-bottom: 10px !important;
 }
 .boss-list-items {
-  color: #5190ED;
+  color: #1A2C56;
   font-size: 24px;
 }
 .boss-list-subheader {
   font-size: 20px;
-  color: #FF3B3F;
+  color: #4ABDAC;
   margin-bottom: 4px;
   letter-spacing: 4px;
 }
 .welcome-subtitle {
   width: 75%;
-  color: #5190ED;
-  border: 2px solid #f2c025;
+  color: #1A2C56;
+  box-shadow: 5px 5px 3px #DFDCE3;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
   padding: 4px;
   font-weight: normal;
+  font-size: 24px;
 }
 .boss-list-hr {
   width: 50%;
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #FF3B3F;
+  border-top: 1px solid #4ABDAC;
   margin-top: 0px;
 }
 .nav-hr {
@@ -937,8 +941,8 @@ form {
   border-radius: 2px;
   background-color: white;
   outline: none;
-  border: solid #FF3B3F 1px;
-  color: #FF3B3F;
+  border: solid #4ABDAC 1px;
+  color: #4ABDAC;
   font-size: 10px;
 }
 .delete-button {
@@ -952,7 +956,7 @@ form {
   font-size: 10px;
 }
 #beer_results, #brewery_results {
-  font-family: 'Jacques Francois Shadow', cursive;
+  /*font-family: 'Jacques Francois Shadow', cursive;*/
   font-size: 32px;
   font-weight: normal;
 }
@@ -972,12 +976,13 @@ form {
 .boss-header {
   margin-top: 70px;
   font-size: 92px;
-  color: #5190ED;
-  font-family: 'Jacques Francois Shadow', cursive;
+  color: #1A2C56;
+  /*font-family: 'Jacques Francois Shadow', cursive;*/
   margin-bottom: 20px;
   font-weight: normal;
   z-index: 9;
   position: relative !important;
+  letter-spacing: 8px;
 }
 .subtitle {
   padding-top: 25px;

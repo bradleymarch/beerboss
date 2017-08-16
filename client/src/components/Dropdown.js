@@ -94,7 +94,7 @@ export class Dropdown extends React.Component {
       <div className={className}
         onClick={this.toggleDropdown.bind(this)}>
         <div className="dropdown-label">
-          Menu
+          MENU
           <hr className = "navHr"/>
         </div>
         <div className="dropdown-active">
