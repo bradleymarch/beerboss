@@ -16,6 +16,13 @@ live link to app: https://pure-inlet-71931.herokuapp.com/
 This is a full-stack application as part of a capstone project with Thinkful's web development bootcamp. In this 
 project I used HTML, CSS, CSS animations, Javascript, JSX, React, Node, Mongoose, Express, Mocha, and Chai.
 
+Next steps...
+
+As I continue to iterate on this project, here are some additional features I'd like to implement:
+	1. A separate list for breweries visited will be added.
+	2. A ranking system for favorite beers will be added.
+	3. A simple way to access the brewery or beer official web page will be linked.
+
 Here is some example code from the frontend:
 ```
 import React, { Component } from 'react';
