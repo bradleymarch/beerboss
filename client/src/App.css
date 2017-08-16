@@ -74,14 +74,10 @@
     position: relative;
     z-index: 11;
   }
-
   .dropdown-label {
     cursor: pointer;
-  }
-
-  .dropdown-label {
     position: relative;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 300;
     color: white;
     text-align: center;
