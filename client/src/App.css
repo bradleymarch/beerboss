@@ -984,7 +984,8 @@ form {
 .boss-header {
   margin-top: 70px;
   font-size: 92px;
-  color: #1A2C56;
+  text-shadow: 2px 2px 2px #1A2C56;
+  color: white;
   /*font-family: 'Jacques Francois Shadow', cursive;*/
   margin-bottom: 20px;
   font-weight: normal;
