@@ -33,6 +33,9 @@
     background-color: #4ABDAC;
     height: 96px !important;
   }
+  .subtitle {
+    width: 90% !important;
+  }
   .brewery-form, .beerForm {
     margin-bottom: 4px;
   }
