@@ -55,6 +55,7 @@
   }
   .boss-header {
     font-size: 48px !important;
+    padding-top: 30px !important;
   }
   .logout-button {
     display: none !important;
