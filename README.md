@@ -15,7 +15,7 @@ live link to app: https://pure-inlet-71931.herokuapp.com/
 
 Here is a preliminary sketch of the app's user flows
 
-![Flows](/client/src/beerbossSketch.png)
+![Flows](/client/src/beerbossSketch.JPG)
 
 This is a full-stack application as part of a capstone project with Thinkful's web development bootcamp. In this 
 project I used HTML, CSS, CSS animations, Javascript, JSX, React, Node, Mongoose, Express, Mocha, and Chai.
