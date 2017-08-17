@@ -52,7 +52,7 @@ render() {
                     className="text" maxLength="35" autoComplete="off"
                     placeholder="Search beers?" required
                     ref={input => this.input2 = input} />
-              <label id="beer_label">Enter any beer then click button ->
+              <label id="beer_label">Enter any beer, click button ->
                 <input type="submit" id="beer_button" className="local-brew-button flash-button" name="submit" value="Search Beers" />
               </label>
             </form>
@@ -65,7 +65,7 @@ render() {
                   className="text" maxLength="35" autoComplete="off"
                   placeholder="Where you at?" required
                 ref={input => this.input = input}    />
-            <label id="brewery_label">Enter location then click here ->
+            <label id="brewery_label">Enter location, click button ->
               <input type="submit" id="local_brewery_button" className="local-brew-button flash-button" name="submit" value="Top Local Breweries" />
             </label>
           </form>
