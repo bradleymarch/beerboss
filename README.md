@@ -17,7 +17,7 @@ Here is a preliminary sketch of the app's user flows
 ![Flows](/client/src/beerbossSketch.JPG)
 
 This is a full-stack application as part of a capstone project with Thinkful's web development bootcamp. In this 
-project I used HTML, CSS, CSS animations, Javascript, JSX, React, Node, Mongoose, Express, Mocha, and Chai.
+project I used HTML, CSS, CSS animations, Javascript, JSX, React, Redux, Node, Mongoose, Express, Mocha, and Chai.
 
 Next steps...
 
