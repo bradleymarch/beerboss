@@ -7,8 +7,7 @@ Find the best breweries wherever you are!
 Ever traveled to a new city and find yourself in need of a refreshing cold brew? Look no further than Beer Boss. With help from the Yelp API, Beer Boss tells you the top breweries, as ranked by customers, in your current location!
 When you can't remember those complicated craft brew names, Beer Boss is here for you!
 
-Create a dream-list of beers that you can add to your favorites list once you've tried them. With the Boss List, and help from the BreweryDB API, you'll be able to add, update, add beers to your favorite list whenever! You can add 
-beers to try, add them to favorites, or get rid of them if they sucked! Register below to get Bossing today!
+Create a dream-list of beers that you can add to your favorites list once you've tried them. With the Boss List, and help from the BreweryDB API, you can search for any beer you want and add it to your Boss List of beers to try. Once you've tried it, you can add it as a favorite or can it if it's crap. Register below to get Bossing today! Register below to get Bossing today!
 live link to app: https://pure-inlet-71931.herokuapp.com/
 
 ![Landing Page](/client/src/beerbossMobile.png)
@@ -26,6 +25,7 @@ As I continue to iterate on this project, here are some additional features I'd 
 	1. A separate list for breweries visited will be added.
 	2. A ranking system for favorite beers will be added.
 	3. A simple way to access the brewery or beer official web page will be linked.
+	4. Notes will be added for each favorite selection that you can look at and update later on.
 
 Here is some example code from the frontend:
 ```
