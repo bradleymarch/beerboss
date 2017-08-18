@@ -276,8 +276,8 @@ app.post('/api/brewery-results', (req, res) => {
 
   const { location } = req.body
   const yelp = require('yelp-fusion');
-  const clientId = 'Eeu9AuDLWbVQH5unWKC_vw';
-  const clientSecret = 'f4Wttvy0I56U629yizmoNgv9izdMZrD3TBbTh8i4oMAiFVxBgzlQHuXG8lhiJfd3';
+  const clientId = '***it's***a***secret***';
+  const clientSecret = '***it's***a***secret***';
   const searchRequest = {
     term:'brewery',
     location: location,
@@ -301,7 +301,7 @@ app.get('/api/beer-results', (req, res) => {
   console.log(req.query)
   const axios = require('axios');
   const nameInput = req.query.nameInput;
-  const BREWDB_URL = 'http://api.brewerydb.com/v2/search?q=' + nameInput + '&max=10&type=beer&key=c025cc66880ab6b95ac281345d38fe2c';
+  const BREWDB_URL = 'http://api.brewerydb.com/v2/search?q=' + nameInput + '&max=10&type=beer&key=***it's***a***secret***';
   axios.get(BREWDB_URL)
   .then(function (response) {
     console.log(response)
