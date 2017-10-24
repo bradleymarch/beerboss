@@ -7,12 +7,27 @@ Find the best breweries wherever you are!
 Ever traveled to a new city and find yourself in need of a refreshing cold brew? Look no further than Beer Boss. With help from the Yelp API, Beer Boss tells you the top breweries, as ranked by customers, in your current location!
 When you can't remember those complicated craft brew names, Beer Boss is here for you!
 
-Create a dream-list of beers that you can add to your favorites list once you've tried them. With the Boss List, and help from the BreweryDB API, you'll be able to add, update, add beers to your favorite list whenever! You can add 
-beers to try, add them to favorites, or get rid of them if they sucked! Register below to get Bossing today!
+Create a dream-list of beers that you can add to your favorites list once you've tried them. With the Boss List, and help from the BreweryDB API, you can search for any beer you want and add it to your Boss List of beers to try. Once you've tried it, you can add it as a favorite or can it if it's crap. Register below to get Bossing today! Register below to get Bossing today!
 live link to app: https://pure-inlet-71931.herokuapp.com/
 
+![Landing Page](/client/src/beerbossMobile.png)
+
+Here is a preliminary sketch of the app's user flows
+
+![Flows](/client/src/beerbossSketch.JPG)
+
+Here is a link to the wireframes I created from the mockup sketch: https://gist.github.com/bradleymarch/a8a034bc6091c7c37101579663dfd9f2
+
 This is a full-stack application as part of a capstone project with Thinkful's web development bootcamp. In this 
-project I used HTML, CSS, CSS animations, Javascript, JSX, React, Node, Mongoose, Express, Mocha, and Chai.
+project I used HTML, CSS, CSS animations, Javascript, JSX, React, Redux, Node, Mongoose, Express, Mocha, and Chai.
+
+Next steps...
+
+As I continue to iterate on this project, here are some additional features I'd like to implement:
+	1. A separate list for breweries visited will be added.
+	2. A ranking system for favorite beers will be added.
+	3. A simple way to access the brewery or beer official web page will be linked.
+	4. Notes will be added for each favorite selection that you can look at and update later on.
 
 Here is some example code from the frontend:
 ```
@@ -263,8 +278,8 @@ app.post('/api/brewery-results', (req, res) => {
 
   const { location } = req.body
   const yelp = require('yelp-fusion');
-  const clientId = 'Eeu9AuDLWbVQH5unWKC_vw';
-  const clientSecret = 'f4Wttvy0I56U629yizmoNgv9izdMZrD3TBbTh8i4oMAiFVxBgzlQHuXG8lhiJfd3';
+  const clientId = '***it's***a***secret***';
+  const clientSecret = '***it's***a***secret***';
   const searchRequest = {
     term:'brewery',
     location: location,
@@ -288,7 +303,7 @@ app.get('/api/beer-results', (req, res) => {
   console.log(req.query)
   const axios = require('axios');
   const nameInput = req.query.nameInput;
-  const BREWDB_URL = 'http://api.brewerydb.com/v2/search?q=' + nameInput + '&max=10&type=beer&key=c025cc66880ab6b95ac281345d38fe2c';
+  const BREWDB_URL = 'http://api.brewerydb.com/v2/search?q=' + nameInput + '&max=10&type=beer&key=***it's***a***secret***';
   axios.get(BREWDB_URL)
   .then(function (response) {
     console.log(response)
