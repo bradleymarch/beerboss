@@ -108,7 +108,14 @@ export const addBeerToDb = (value) => (dispatch) => {
   })
   .then(addBeer => {
     dispatch(addBeersToDb(addBeer.data.data));
-    setTimeout(function(){return location.href = '/dashboard'}, 1000);
+    // setTimeout(function(){return location.href = '/dashboard'}, 1000);
+    axios.get('/api/users/me')
+    .then(response => {
+      return response;
+    })
+    .then(response => {
+      dispatch(getLoggedinUser(response.data.user));
+    })
   })
   .catch(error => {
     console.log(error);
@@ -202,7 +209,7 @@ export const getUser = () => (dispatch) => {
   })
   .then(response => {
     dispatch(getLoggedinUser(response.data.user));
-    //setTimeout(function(){return location.href = '/dashboard'}, 1000);
+    // setTimeout(function(){return location.href = '/dashboard'}, 1000);
   })
   .catch(function (error) {
     console.log(error);
