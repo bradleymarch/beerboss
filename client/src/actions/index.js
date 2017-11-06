@@ -209,7 +209,6 @@ export const getUser = () => (dispatch) => {
   })
   .then(response => {
     dispatch(getLoggedinUser(response.data.user));
-    // setTimeout(function(){return location.href = '/dashboard'}, 1000);
   })
   .catch(function (error) {
     console.log(error);
