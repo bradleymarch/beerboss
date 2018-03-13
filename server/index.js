@@ -177,7 +177,8 @@ app.post('/api/brewery-results', (req, res) => {
   const { location } = req.body
   const yelp = require('yelp-fusion');
   const clientId = 'Eeu9AuDLWbVQH5unWKC_vw';
-  const clientSecret = 'f4Wttvy0I56U629yizmoNgv9izdMZrD3TBbTh8i4oMAiFVxBgzlQHuXG8lhiJfd3';
+  const clientSecret = 'xUSTnf01a1QMtVyPT1RqzRbmGa0KrOGC4xDLnYv6QkBg_byHfYebo-_QNzQ8dsDONs2bP60bSE43pzIkBxt7e88lGcfmJKj0B9usABcPwzh6MbJP7M5k5xUnmS6oWnYx';
+
   const searchRequest = {
     term:'brewery',
     location: location,
