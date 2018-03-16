@@ -1,3 +1,21 @@
+Skip to content
+This repository
+Search
+Pull requests
+Issues
+Marketplace
+Explore
+ @bradleymarch
+Sign out
+0
+0 0 bradleymarch/beerboss
+ Code  Issues 0  Pull requests 0  Projects 0  Wiki  Insights  Settings
+beerboss/client/src/App.css
+6e0a59a  on Oct 24, 2017
+@bradleymarch bradleymarch css
+@bradleymarch @oampo
+
+1006 lines (999 sloc)  17.9 KB
 * {
   font-family: 'Signika', sans-serif;
   box-sizing: border-box;
@@ -37,7 +55,7 @@
     width: 90% !important;
     margin: auto;
   }
-  .brewery-form, .beer-form {
+  .brewery-form, .beerForm {
     margin-bottom: 4px;
   }
   .local-brew-button {
@@ -482,12 +500,7 @@
   box-shadow: 5px 5px 3px #DFDCE3;
   background-color: white;
   margin-top: 0px;
-  width: 75%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50px;
-  padding: 10px;
-  border-radius: 2px;
+  margin-bottom: 50px !important;
 }
 .beer-form {
   box-shadow: 5px 5px 3px #DFDCE3;
@@ -528,7 +541,7 @@
   padding: 10px;
   border-radius: 2px;
 }
-.boss-list, .beer-form {
+.boss-list, .brewery-form, .beer-form {
   width: 75%;
   margin-left: auto;
   margin-right: auto;
