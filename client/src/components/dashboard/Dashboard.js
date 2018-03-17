@@ -60,7 +60,7 @@ render() {
               <SpecificBeer className="beer-results-list"/>
             </div>
       <p className="brewery-form-description">You can also search below for the top breweries in your location! (Under Constr.)</p>
-      <p className="notice">FYI, the Yelp authorization protocol has recently changed.  Check back soon for updates</p>
+      <p className="notice">FYI, the Yelp authorization protocol has recently changed.  Check back soon for updates.</p>
       <form className="brewery-form" id="brewery_list" onSubmit={e => this.submitLocation(e)}>
               <input type="text" name="userLocation" id="location_input"
                   className="text" maxLength="35" autoComplete="off"
