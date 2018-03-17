@@ -180,13 +180,13 @@ app.post('/api/brewery-results', (req, res) => {
   const apiKey = 'xUSTnf01a1QMtVyPT1RqzRbmGa0KrOGC4xDLnYv6QkBg_byHfYebo-_QNzQ8dsDONs2bP60bSE43pzIkBxt7e88lGcfmJKj0B9usABcPwzh6MbJP7M5k5xUnmS6oWnYx';
   const searchRequest = {
     headers: {
-    Authorization: Bearer + 'xUSTnf01a1QMtVyPT1RqzRbmGa0KrOGC4xDLnYv6QkBg_byHfYebo-_QNzQ8dsDONs2bP60bSE43pzIkBxt7e88lGcfmJKj0B9usABcPwzh6MbJP7M5k5xUnmS6oWnYx'
+    Authorization: 'Bearer ' + apiKey
     },
     term:'brewery',
     location: location,
   };
 
-    yelp.search(clientId, searchRequest).then(response => {
+    clientId.search(searchRequest).then(response => {
       const topResults = response.jsonBody.businesses;
       const prettyJson = JSON.stringify(topResults, null, 4);
       return res.json(topResults);

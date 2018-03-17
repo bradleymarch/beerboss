@@ -43,6 +43,9 @@
   .local-brew-button {
     margin-top: 8px !important;
   }
+  .beers-button {
+    margin-top: 8px !important;
+  }
   #brewery_label, #beer_label {
     margin-bottom: 8px !important;
   }
@@ -378,7 +381,29 @@
   right: 0;
   z-index: 10;
 }
+.local-brew-button:hover {
+  cursor: pointer;
+  cursor: hand;
+}
+.beers-button:hover {
+  cursor: pointer;
+  cursor: hand;
+}
 .local-brew-button {
+  background: white;
+  color: #1A2C56;
+  border: 2px solid #1A2C56;
+  font-size: 20px;
+  height: 40px;
+  width: 200px;
+  margin-right: 10px;
+  margin-left: 6px;
+  margin-top: -4px;
+  text-decoration: none;
+  outline: none;
+  border-radius: 2px;
+}
+.beers-button {
   background: white;
   color: #1A2C56;
   border: 2px solid #1A2C56;

@@ -53,7 +53,7 @@ render() {
                     placeholder="Search beers?" required
                     ref={input => this.input2 = input} />
               <label id="beer_label">Enter any beer, click button ->
-                <input type="submit" id="beer_button" className="local-brew-button flash-button" name="submit" value="Search Beers" />
+                <input type="submit" id="beer_button" className="beers-button flash-button" name="submit" value="Search Beers" />
               </label>
             </form>
             <div className="beer-results-list" id="beer_results_list">
