@@ -382,8 +382,9 @@
   z-index: 10;
 }
 .notice {
-  font-size: 10px;
+  font-size: 12px;
   color: red;
+  text-align: center;
 }
 .local-brew-button:hover {
   cursor: pointer;
