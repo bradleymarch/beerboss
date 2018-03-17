@@ -381,6 +381,10 @@
   right: 0;
   z-index: 10;
 }
+.notice {
+  font-size: 10px;
+  color: red;
+}
 .local-brew-button:hover {
   cursor: pointer;
   cursor: hand;
