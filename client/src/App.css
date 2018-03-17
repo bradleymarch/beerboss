@@ -954,6 +954,7 @@ form {
 .add-fave-button {
   width: 50px;
   height: 18px;
+  padding-top: 2px;
   border-radius: 2px;
   background-color: white;
   outline: none;
@@ -963,6 +964,7 @@ form {
 }
 .delete-button {
   width: 50px;
+  padding-top: 2px;
   height: 18px;
   border-radius: 2px;
   background-color: white;
