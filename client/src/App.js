@@ -66,7 +66,7 @@ class App extends Component {
       </div>
       <div>
       <header>
-      <h4 className="about-H4">When you can't remember those complicated craft brew names, Beer Boss is here for you!</h4>
+      <h4 className="about-H4">When you can't recall those darn craft beer names, Beer Boss is here for you!</h4>
       </header>
       <p>With Beer Boss you can search for any beer you want and add it to your Boss List of beers to try.  Once you've tried it, you can add it as a favorite or can it if it's crap.  Register below to get Bossing today!</p>
       </div>
