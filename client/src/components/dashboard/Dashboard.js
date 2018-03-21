@@ -59,7 +59,7 @@ render() {
             <div className="beer-results-list" id="beer_results_list">
               <SpecificBeer className="beer-results-list"/>
             </div>
-      <p className="brewery-form-description">You can also search below for the top breweries in your location! (Under Constr.)</p>
+      <p className="brewery-form-description">You can also search below for the top breweries in your location!</p>
       <form className="brewery-form" id="brewery_list" onSubmit={e => this.submitLocation(e)}>
               <input type="text" name="userLocation" id="location_input"
                   className="text" maxLength="35" autoComplete="off"
