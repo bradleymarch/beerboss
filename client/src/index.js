@@ -22,7 +22,6 @@ ReactDOM.render(
     <Provider store={store}>
     <Router>
         <div>
-
           <nav className="app-header">
             <a href="/">Home</a>
             <a href="/login">Login</a>
