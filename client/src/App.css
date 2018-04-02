@@ -391,10 +391,18 @@ button:hover {
 .local-brew-button:hover {
   cursor: pointer;
   cursor: hand;
+  color: white;
+  background-color: #0BC095;
+  outline: none;
+  border: none;
 }
 .beers-button:hover {
   cursor: pointer;
   cursor: hand;
+  color: white;
+  background-color: #0BC095;
+  outline: none;
+  border: none;
 }
 .local-brew-button {
   background: white;
