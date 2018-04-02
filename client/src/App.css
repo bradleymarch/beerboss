@@ -441,7 +441,7 @@ button:hover {
   outline: none;
   border: solid #0BC095 2px;
   color: #0BC095;
-  font-size: 16px;
+  font-size: 12px;
 }
 .login-button, .register-button {
   width: 80px;
@@ -450,7 +450,7 @@ button:hover {
   background-color: white;
   outline: none;
   color: #0BC095;
-  font-size: 16px;
+  font-size: 12px;
 }
 .save-beer-button {
   width: 80px;
