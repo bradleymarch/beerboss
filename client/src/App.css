@@ -26,9 +26,6 @@
   nav a {
     display: none;
   }
-  .beer-img {
-    margin-left: 0px !important;
-  }
   .landing-footer {
     background-color: #0BC095;
     height: 96px !important;
@@ -910,7 +907,6 @@ nav {
   width: 40px;
   box-sizing: border-box;
   animation: App-logo-spin infinite 20s linear;
-  margin-left: 20px;
 }
 form {
   text-align: center;
