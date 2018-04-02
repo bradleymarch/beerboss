@@ -39,7 +39,7 @@ class Login extends React.Component {
     					<span className="bar"></span>
     					<label className="floating-label" htmlFor="login_form_password">Password</label>
     				</div>
-    				<button className="login-button js-login-button" type="submit">Enter</button>
+    				<button className="login-button js-login-button" type="submit">ENTER</button>
     			</form>
 
     			<a href="/register" className="register js-register">Not registered? Click here</a>
