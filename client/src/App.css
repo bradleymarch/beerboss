@@ -5,6 +5,11 @@
 .app {
   text-align: center;
 }
+button:hover {
+  color: white;
+  background-color: #0BC095;
+  outline: none;
+}
 .about-H4 {
   letter-spacing: 4px;
   color: #0D2235;
@@ -437,14 +442,6 @@
   outline: none;
   color: #0BC095;
   font-size: 16px;
-}
-.login-button:hover {
-  color: white;
-  background-color: #0BC095;
-}
-.register-button:hover {
-  color: white;
-  background-color: #0BC095;
 }
 .save-beer-button {
   width: 80px;
