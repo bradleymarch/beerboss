@@ -9,6 +9,7 @@ button:hover {
   color: white;
   background-color: #0BC095;
   outline: none;
+  border: none;
 }
 .about-H4 {
   letter-spacing: 4px;
