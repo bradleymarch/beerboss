@@ -47,7 +47,7 @@ render() {
         <section>
           <BossList />
         </section>
-        <form className="beer-form" onSubmit={e => this.submitBeer(e)}>
+            <form className="beer-form" onSubmit={e => this.submitBeer(e)}>
                 <input type="text" name="userBeer" id="beer_input"
                     className="text" maxLength="35" autoComplete="off"
                     placeholder="Search beers?" required
@@ -60,7 +60,7 @@ render() {
               <SpecificBeer className="beer-results-list"/>
             </div>
       <p className="brewery-form-description">You can also search below for the top breweries in your location!</p>
-      <form className="brewery-form" id="brewery_list" onSubmit={e => this.submitLocation(e)}>
+          <form className="brewery-form" id="brewery_list" onSubmit={e => this.submitLocation(e)}>
               <input type="text" name="userLocation" id="location_input"
                   className="text" maxLength="35" autoComplete="off"
                   placeholder="Where you at?" required
