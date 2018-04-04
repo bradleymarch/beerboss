@@ -451,6 +451,7 @@ button:hover {
   outline: none;
   color: #0BC095;
   font-size: 12px;
+  border: none;
 }
 .save-beer-button {
   width: 80px;
