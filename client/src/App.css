@@ -503,7 +503,7 @@ button:hover {
 }
 .logout-button {
   margin-top: 25px;
-  position: fixed;
+  position: absolute;
   margin-left: 520px;
   width: 60px;
   height: 30px;
