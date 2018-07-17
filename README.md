@@ -18,7 +18,7 @@ Here is a preliminary sketch of the app's user flows
 
 Here is a link to the wireframes I created from the mockup sketch: https://gist.github.com/bradleymarch/a8a034bc6091c7c37101579663dfd9f2
 
-This is a full-stack application as part of a capstone project with Thinkful's web development bootcamp. In this 
+This is a full-stack application as part of a capstone project with Thinkful's web development bootcamp. In this
 project I used HTML, CSS, CSS animations, Javascript, JSX, React, Redux, Node, Mongoose, Express, Mocha, and Chai.
 
 Next steps...
@@ -146,7 +146,6 @@ const basicStrategy = new BasicStrategy((username, password, callback) => {
 
 // POST for creating new user account
 app.post('/api/users/register', (req, res) => {
-console.log('hi');
   if (!req.body) {
     return res.status(400).json({message: 'No request body'});
   }
@@ -180,7 +179,6 @@ console.log('hi');
   if (password === '') {
     return res.status(422).json({message: 'Incorrect field length: password'});
   }
-console.log('eh');
 User
   .find({username})
   .count()
@@ -231,7 +229,6 @@ app.post('/api/users/login',
   passport.authenticate('basic', {session: true}),
   (req, res, err) => {
     console.log(err);
-    console.log('hello');
     res.json({user: req.user.apiRepr(), message: 'Sign in successful'});
 });
 
@@ -255,7 +252,6 @@ app.get('/api/logout', function (req, res){
 });
 
 app.post('/api/users/beerlist', loggedIn, (req, res) => {
-    console.log('yep');
     console.log(req.body);
     User
     .findByIdAndUpdate(req.user._id,
@@ -326,10 +322,8 @@ app.post('/api/delete-fave', loggedIn, (req, res) => {
   User
   .findByIdAndUpdate(req.user._id,
      { $pull: {beerRating: req.body.beerRating} }, { new: true }, (err, user) => {
-       console.log('eh');
     if (err) res.send(err);
     res.json(user);
-     console.log('hmm');
   });
 });
 
@@ -348,7 +342,6 @@ function runServer(databaseUrl=DATABASE_URL, port=PORT) {
 
 	return new Promise((resolve, reject) => {
 		mongoose.connect(databaseUrl, err => {
-      console.log(databaseUrl, 'ok');
 
 			if (err) {
 				return reject(err);
