@@ -4,6 +4,7 @@ export const fetchBrewerySuccess = localBreweries => ({
     type: FETCH_BREWERY_SUCCESS,
     localBreweries
 });
+
 export const FETCH_BEER_SUCCESS = 'FETCH_BEER_SUCCESS';
 export const fetchBeerSuccess = specificBeer => ({
   type: FETCH_BEER_SUCCESS,
@@ -180,6 +181,7 @@ export const registerUser = (usernameInput, passwordInput) => (dispatch) => {
           setTimeout(function(){return location.href = '/login'}, 1000);
       })
       .catch(function (error) {
+        alert('Error occurred.  Please try again.')
         console.log(error);
       });
 };
