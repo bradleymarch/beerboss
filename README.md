@@ -42,18 +42,18 @@ import '../../App.css';
 class Dashboard extends Component {
 
   submitLocation(event) {
-        event.preventDefault();
-        const value = this.input.value;
-        this.props.dispatch(fetchLocalBrewery(value));
-        event.target.userLocation.value = '';
-        window.location = "#brewery_list";
+    event.preventDefault();
+    const value = this.input.value;
+    this.props.dispatch(fetchLocalBrewery(value));
+    event.target.userLocation.value = '';
+    window.location = "#brewery_list";
   }
   submitBeer(event) {
-      event.preventDefault();
-      const Value = this.input2.value;
-      this.props.dispatch(fetchSpecificBeer(Value));
-      event.target.userBeer.value = '';
-      window.location = "#beer_results_list";
+    event.preventDefault();
+    const Value = this.input2.value;
+    this.props.dispatch(fetchSpecificBeer(Value));
+    event.target.userBeer.value = '';
+    window.location = "#beer_results_list";
   }
   logout(event) {
     event.preventDefault();
