@@ -29,28 +29,28 @@ export class DropdownMenu extends React.Component {
     }
 
     return <ul className={className}>
-          <li className="dropdown-option">
-            <a href="/">Home</a>
-          </li>
-          <li className="dropdown-option">
-            <a href="/demo-login">Demo</a>
-          </li>
-          <li className="dropdown-option">
-            <a href="/login">Login</a>
-          </li>
-          <li className="dropdown-option">
-            <a href="/#about">About</a>
-          </li>
-          <li className="dropdown-option">
-            <a href="/dashboard">Dashboard</a>
-          </li>
-          <li className="dropdown-option">
-            <a href="/register">Register</a>
-          </li>
-          <li className="dropdown-option">
-          <a href="/"><input type="hidden" onSubmit={(e) => this.logout(e)}/>Logout</a>
-          </li>
-        </ul>
+            <li className="dropdown-option">
+              <a href="/">Home</a>
+            </li>
+            <li className="dropdown-option">
+              <a href="/demo-login">Demo</a>
+            </li>
+            <li className="dropdown-option">
+              <a href="/login">Login</a>
+            </li>
+            <li className="dropdown-option">
+              <a href="/#about">About</a>
+            </li>
+            <li className="dropdown-option">
+              <a href="/dashboard">Dashboard</a>
+            </li>
+            <li className="dropdown-option">
+              <a href="/register">Register</a>
+            </li>
+            <li className="dropdown-option">
+            <a href="/"><input type="hidden" onSubmit={(e) => this.logout(e)}/>Logout</a>
+            </li>
+           </ul>
   }
 }
 

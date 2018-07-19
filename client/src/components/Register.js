@@ -42,7 +42,7 @@ class Register extends React.Component {
           <div className="error-message js-error-message"></div>
           <div className="success-message js-success-message"></div>
       </div>
-    </div>
+      </div>
     )
   }
 

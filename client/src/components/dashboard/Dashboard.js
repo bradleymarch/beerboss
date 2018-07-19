@@ -72,7 +72,7 @@ class Dashboard extends Component {
             <div id="brewery_results_list" className="brewery-list">
               <LocalBreweries className="brewery-results-list" id="brewery_results_list"/>
             </div>
-      </div>
+        </div>
       )
     }
   }

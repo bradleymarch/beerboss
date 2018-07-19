@@ -44,8 +44,8 @@ class Login extends React.Component {
 
     			<a href="/register" className="register js-register">Not registered? Click here</a>
     			<div className="error-message js-error-message"></div>
-          </div>
         </div>
+      </div>
     )
   }
 

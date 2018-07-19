@@ -1,6 +1,8 @@
-import React, { Component } from 'react'; import { addSpecificBeer, saveRating,
-deleteToTry, deleteFave } from '../../actions'; import { connect } from
-'react-redux'; import SpecificBeer from './SpecificBeer' import '../../App.css';
+import React, { Component } from 'react';
+import { addSpecificBeer, saveRating,
+deleteToTry, deleteFave } from '../../actions';
+import { connect } from 'react-redux';
+import SpecificBeer from './SpecificBeer' import '../../App.css';
 
 class BossList extends Component {
   constructor() {
@@ -69,7 +71,7 @@ class BossList extends Component {
         )
       })}
 
-        </div>
+     </div>
     )
   }
 }
