@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import {fetchLocalBrewery, fetchSpecificBeer} from './actions';
 import { connect } from 'react-redux';
-import Dashboard from './components/dashboard/Dashboard'
-import LocalBreweries from './components/dashboard/LocalBreweries'
-import SpecificBeer from './components/dashboard/SpecificBeer'
-import Register from './components/Register'
+import Dashboard from './components/dashboard/Dashboard';
+import LocalBreweries from './components/dashboard/LocalBreweries';
+import SpecificBeer from './components/dashboard/SpecificBeer';
+import Register from './components/Register';
 import './App.css';
 
 class App extends Component {

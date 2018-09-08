@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { fetchLocalBrewery, fetchSpecificBeer, getUser, logout } from '../../actions';
 import { connect } from 'react-redux';
-import LocalBreweries from './LocalBreweries'
-import SpecificBeer from './SpecificBeer'
-import BossList from './BossList'
+import LocalBreweries from './LocalBreweries';
+import SpecificBeer from './SpecificBeer';
+import BossList from './BossList';
 import '../../App.css';
 
 class Dashboard extends Component {

@@ -1,7 +1,7 @@
-import React from 'react'
-import { connect } from 'react-redux'
-import { registerUser } from '../actions'
-import '../App.css'
+import React from 'react';
+import { connect } from 'react-redux';
+import { registerUser } from '../actions';
+import '../App.css';
 
 class Register extends React.Component {
   constructor() {

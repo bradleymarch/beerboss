@@ -1,6 +1,6 @@
-import React from 'react'
-import {connect} from 'react-redux'
-import logout from '../actions'
+import React from 'react';
+import {connect} from 'react-redux';
+import logout from '../actions';
 
 export class DropdownItem extends React.Component{
   render() {
