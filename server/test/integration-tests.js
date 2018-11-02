@@ -1,35 +1,35 @@
-const chai = require('chai');
-const chaiHttp = require('chai-http');
-const mongoose = require('mongoose');
-const faker = require('faker');
-const bcrypt = require('bcryptjs');
-const should = chai.should();
-const {User} = require('../models');
-const {app, runServer, closeServer} = require('../server');
-const {TEST_DATABASE_URL} = require('../config');
-
-chai.use(chaiHttp);
-
-function seedUserData() {
-	const username = 'testuser';
-	const password = 'password';
-	const seedData = [];
-
-	for (let i=1; i<=10; i++) {
-		seedData.push(generateUserData());
-	}
-
-	// set one record with known username and password for testing log in
-	seedData[5].username = username;
-	seedData[5].password = password;
-	const hashedPassword = bcrypt.hash(password, 10);
-	return hashedPassword
-	.then(_hashedPassword => {
-		seedData[5].password = _hashedPassword;
-		console.warn('\n Seeding database');
-		return User.create(seedData);
-	})
-}
+// const chai = require('chai');
+// const chaiHttp = require('chai-http');
+// const mongoose = require('mongoose');
+// const faker = require('faker');
+// const bcrypt = require('bcryptjs');
+// const should = chai.should();
+// const {User} = require('../models');
+// const {app, runServer, closeServer} = require('../server');
+// const {TEST_DATABASE_URL} = require('../config');
+//
+// chai.use(chaiHttp);
+//
+// function seedUserData() {
+// 	const username = 'testuser';
+// 	const password = 'password';
+// 	const seedData = [];
+//
+// 	for (let i=1; i<=10; i++) {
+// 		seedData.push(generateUserData());
+// 	}
+//
+// 	// set one record with known username and password for testing log in
+// 	seedData[5].username = username;
+// 	seedData[5].password = password;
+// 	const hashedPassword = bcrypt.hash(password, 10);
+// 	return hashedPassword
+// 	.then(_hashedPassword => {
+// 		seedData[5].password = _hashedPassword;
+// 		console.warn('\n Seeding database');
+// 		return User.create(seedData);
+// 	})
+// }
 
 
 
