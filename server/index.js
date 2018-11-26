@@ -179,8 +179,8 @@ app.post('/api/brewery-results', (req, res) => {
 
   const clientId = 'Eeu9AuDLWbVQH5unWKC_vw';
   const apiKey = 'xUSTnf01a1QMtVyPT1RqzRbmGa0KrOGC4xDLnYv6QkBg_byHfYebo-_QNzQ8dsDONs2bP60bSE43pzIkBxt7e88lGcfmJKj0B9usABcPwzh6MbJP7M5k5xUnmS6oWnYx';
-  const clientId = secretCID;
-  const clientSecret = secretVar;
+  // const clientId = secretCID;
+  // const clientSecret = secretVar;
   const searchRequest = {
     term:'brewery',
     location: location,
@@ -199,10 +199,12 @@ app.post('/api/brewery-results', (req, res) => {
 });
 
 app.get('/api/beer-results', (req, res) => {
-  //console.log(req.query)
+  // console.log(req.query)
+  console.log('hi');
   const axios = require('axios');
   const nameInput = req.query.nameInput;
-  const BREWDB_URL = 'https://sandbox-api.brewerydb.com/v2/?key=c025cc66880ab6b95ac281345d38fe2c/search?q=' + nameInput + '&type=beer';
+  const key = 'c025cc66880ab6b95ac281345d38fe2c';
+  const BREWDB_URL = 'https://sandbox-api.brewerydb.com/v2/search?q=' + nameInput + '&max=10&type=beer&key=' + key;
   axios.get(BREWDB_URL)
   .then(function (response) {
     console.log(response)

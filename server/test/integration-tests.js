@@ -33,93 +33,93 @@
 
 
 
-function generateUserData() {
-	return {
-		username: faker.internet.userName(),
-		password: faker.internet.password(),
-
-	}
-}
-
-function tearDownDb() {
-	console.warn('Deleting database\n');
-	return mongoose.connection.dropDatabase();
-}
-
-describe('Users API resource', function() {
-	before(function() {
-		return runServer(TEST_DATABASE_URL);
-	});
-
-	beforeEach(function() {
-		return seedUserData();
-	});
-
-	afterEach(function() {
-		return tearDownDb();
-	});
-
-	after(function() {
-		return closeServer();
-	});
-
-
-	describe('POST endpoint for login', function() {
-
-		it('should login user and return user account', function() {
-			let res;
-			let agent = chai.request.agent(app);
-			return agent
-			.post('/users/login')
-			.auth('testuser', 'password')
-			.then(_res => {
-				res = _res;
-				res.should.have.status(200);
-				res.body.user.username.should.equal('testuser');
-				res.body.user.should.include.keys(
-					'username', 'password');
-			})
-		});
-	});
-
-	describe('GET endpoint to logout', function() {
-
-		it('should sign out the user and redirect', function() {
-			let agent = chai.request.agent(app);
-			return agent
-				.get('/users/logout')
-				.auth('testuser', 'password')
-				.then(() => {
-					return agent.get('/users/logout')
-					.then(res => {
-						res.should.have.status(200);
-						res.redirects.should.have.lengthOf(1);
-					})
-				});
-			});
-	});
-
-	describe('POST endpoint to create new user', function() {
-
-		it('should create a new user', function() {
-
-			let testUsername = 'testuser2010';
-			let testPassword = 'password123';
-
-			return chai.request(app)
-			.post('/users/register')
-			.send({username: testUsername, password: testPassword})
-			.then(res => {
-				res.should.have.status(201);
-				res.body.user.username.should.equal(testUsername);
-				res.body.user.should.include.keys(
-					'username', 'password');
-				User.findOne({username: testUsername})
-				.then(user => {
-					user.should.exist;
-					user.username.should.equal(testUsername);
-				})
-			});
-		});
-	});
-});
+// function generateUserData() {
+// 	return {
+// 		username: faker.internet.userName(),
+// 		password: faker.internet.password(),
+//
+// 	}
+// }
+//
+// function tearDownDb() {
+// 	console.warn('Deleting database\n');
+// 	return mongoose.connection.dropDatabase();
+// }
+//
+// describe('Users API resource', function() {
+// 	before(function() {
+// 		return runServer(TEST_DATABASE_URL);
+// 	});
+//
+// 	beforeEach(function() {
+// 		return seedUserData();
+// 	});
+//
+// 	afterEach(function() {
+// 		return tearDownDb();
+// 	});
+//
+// 	after(function() {
+// 		return closeServer();
+// 	});
+//
+//
+// 	describe('POST endpoint for login', function() {
+//
+// 		it('should login user and return user account', function() {
+// 			let res;
+// 			let agent = chai.request.agent(app);
+// 			return agent
+// 			.post('/users/login')
+// 			.auth('testuser', 'password')
+// 			.then(_res => {
+// 				res = _res;
+// 				res.should.have.status(200);
+// 				res.body.user.username.should.equal('testuser');
+// 				res.body.user.should.include.keys(
+// 					'username', 'password');
+// 			})
+// 		});
+// 	});
+//
+// 	describe('GET endpoint to logout', function() {
+//
+// 		it('should sign out the user and redirect', function() {
+// 			let agent = chai.request.agent(app);
+// 			return agent
+// 				.get('/users/logout')
+// 				.auth('testuser', 'password')
+// 				.then(() => {
+// 					return agent.get('/users/logout')
+// 					.then(res => {
+// 						res.should.have.status(200);
+// 						res.redirects.should.have.lengthOf(1);
+// 					})
+// 				});
+// 			});
+// 	});
+//
+// 	describe('POST endpoint to create new user', function() {
+//
+// 		it('should create a new user', function() {
+//
+// 			let testUsername = 'testuser2010';
+// 			let testPassword = 'password123';
+//
+// 			return chai.request(app)
+// 			.post('/users/register')
+// 			.send({username: testUsername, password: testPassword})
+// 			.then(res => {
+// 				res.should.have.status(201);
+// 				res.body.user.username.should.equal(testUsername);
+// 				res.body.user.should.include.keys(
+// 					'username', 'password');
+// 				User.findOne({username: testUsername})
+// 				.then(user => {
+// 					user.should.exist;
+// 					user.username.should.equal(testUsername);
+// 				})
+// 			});
+// 		});
+// 	});
+// });
