@@ -204,7 +204,7 @@ app.get('/api/beer-results', (req, res) => {
   const axios = require('axios');
   const nameInput = req.query.nameInput;
   const key = 'c025cc66880ab6b95ac281345d38fe2c';
-  const BREWDB_URL = 'https://sandbox-api.brewerydb.com/v2/search?q=' + nameInput + '&max=10&type=beer&key=' + key;
+  const BREWDB_URL = 'https://sandbox-api.brewerydb.com/v2/search?q=' + nameInput + '&type=beer&key=' + key;
   axios.get(BREWDB_URL)
   .then(function (response) {
     console.log(response)
