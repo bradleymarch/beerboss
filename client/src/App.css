@@ -470,7 +470,7 @@ button:hover {
   margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 4px;
+  padding: 9.99px;
   width: 75%;
   color: #0BC095;
   font-size: 20px;
@@ -970,7 +970,7 @@ form {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
-  padding: 4px;
+  padding: 9.99px;
   border-radius: 100px;
   font-weight: normal;
   font-size: 18px;
