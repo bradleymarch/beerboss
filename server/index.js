@@ -199,13 +199,15 @@ app.post('/api/brewery-results', (req, res) => {
 });
 
 app.get('/api/beer-results', (req, res) => {
-  // console.log(req.query)
-  console.log('hi');
+
   const axios = require('axios');
   const nameInput = req.query.nameInput;
-  const key_brew = 'c025cc66880ab6b95ac281345d38fe2c';
-  const BREWDB_URL = 'https://sandbox-api.brewerydb.com/v2/search?q=' + nameInput + '&type=beer&key=' + key_brew;
+  const brewdb_key = 'c025cc66880ab6b95ac281345d38fe2c';
+  const BREWDB_URL = 'https://sandbox-api.brewerydb.com/v2/search?q=' + nameInput + '&type=beer&key=' + brewdb_key;
   // const fullURL = 'https://sandbox-api.brewerydb.com/v2/search?q=coors&max=10&type=beer&key=c025cc66880ab6b95ac281345d38fe2c';
+  // const BREWDB_URL = 'http://www.thebeerspot.com/api/search?q=' + nameInput + 'dev_key=' + key_brew;
+  // const BREWDB_URL = 'https://api.punkapi.com/v2/beers&beer_name=' + nameInput
+
   axios.get(BREWDB_URL)
   .then(function (response) {
     console.log(response)

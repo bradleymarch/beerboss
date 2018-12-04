@@ -15,6 +15,7 @@
     "axios": "^0.16.2",
     "bcrypt": "^1.0.2",
     "bcryptjs": "^2.4.3",
+    "beer": "0.0.8",
     "body-parser": "^1.17.2",
     "brewerydb-node": "0.0.1",
     "express": "^4.14.1",

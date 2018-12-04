@@ -86,14 +86,15 @@ export const fetchLocalBrewery = (locationInput) => (dispatch) => {
 };
 
 export const fetchSpecificBeer = (beerInput) => (dispatch) => {
-
+  console.log('before');
   axios.get(`/api/beer-results?nameInput=${beerInput}`)
     .then(function (response) {
       return response;
     })
     .then(specificBeer => {
-
         dispatch(fetchBeerSuccess(specificBeer.data.data));
+        console.log('after');
+
     })
     .catch(function (error) {
       console.log(error);
