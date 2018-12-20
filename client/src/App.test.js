@@ -1,9 +1,16 @@
-import React from 'react';
-import {shallow} from 'enzyme';
-import App from './App';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import App from './App'
+import {Provider} from 'react-redux'
+import store from './store'
 
 describe('<App />', () => {
-    it('Renders without crashing', () => {
-        shallow(<App />);
-    });
+  it('renders without crashing', () => {
+    const div = document.createElement('div')
+    ReactDOM.render(
+      <Provider store={store}>
+        <App />
+      </Provider>,
+      div)
+  });
 });
