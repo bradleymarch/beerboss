@@ -156,9 +156,9 @@ export const deleteToTry = (value) => (dispatch) => {
   });
 }
 
-export const deleteFave = (value) => (dispatch) => {
+export const deleteFave = (name, beerScore) => (dispatch) => {
   axios.post('/api/delete-fave', {
-    beerRating: value
+    beerRating: {name: name, beerScore: beerScore}
   })
   .then(response => {
     return response;

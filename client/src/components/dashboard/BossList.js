@@ -25,7 +25,8 @@ class BossList extends Component {
   deleteToTry(event) {
     event.preventDefault();
     const nameToDelete = event.target.beername.value
-    this.props.dispatch(deleteToTry(nameToDelete))
+    const beerScoreToDelete = event.target.beername.title
+    this.props.dispatch(deleteToTry(nameToDelete, beerScoreToDelete))
     location.href = "/dashboard/dashboard_section"
   }
   deleteFave(event) {
@@ -67,7 +68,7 @@ class BossList extends Component {
 
             <div className="boss-list-items">{fave.name}: {fave.beerScore} stars</div>
             <form className="delete-fave-form" onSubmit={(e) => this.deleteFave(e)}>
-              <input type="hidden" name="faveName" value={fave.name} />
+              <input type="hidden" name="faveName" value={fave.name} title={fave.beerScore} />
               <button type="submit" className="delete-button" value={fave.name}>Remove</button>
             </form>
           </div>
