@@ -89,6 +89,7 @@ export const fetchSpecificBeer = (beerInput) => (dispatch) => {
   console.log('before');
   axios.get(`/api/beer-results?nameInput=${beerInput}`)
     .then(function (response) {
+      console.log(response);
       return response;
     })
     .then(specificBeer => {
@@ -226,7 +227,7 @@ export const logout = () => (dispatch) => {
   .then(response => {
     dispatch(logout());
   })
-  .catch(function (error) {
+  .catch(error => {
     console.log(error);
   });
 };
