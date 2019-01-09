@@ -24,14 +24,14 @@ class BossList extends Component {
   deleteToTry(event) {
     event.preventDefault();
     const nameToDelete = event.target.beername.value
-    const beerScoreToDelete = event.target.beername.title
-    this.props.dispatch(deleteToTry(nameToDelete, beerScoreToDelete))
+    this.props.dispatch(deleteToTry(nameToDelete))
     location.href = "/dashboard/dashboard_section"
   }
   deleteFave(event) {
     event.preventDefault();
     const faveToDelete = event.target.faveName.value
-    this.props.dispatch(deleteFave(faveToDelete))
+    const beerScoreToDelete = event.target.faveName.title
+    this.props.dispatch(deleteFave(faveToDelete, beerScoreToDelete))
     location.href = "/dashboard/dashboard_section"
   }
 
