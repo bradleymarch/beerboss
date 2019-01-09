@@ -32,8 +32,9 @@ class SpecificBeer extends React.Component {
 									<h2 className="beer-title">{beer.name}</h2>
 									<a href="#dashboard_section"><button className="top-of-results-button">To Top</button></a>
 									{beer.style.ibuMax ? <p>IBUs: {beer.style.ibuMax}</p> : <span></span>}
-									<p>ABV: {beer.abv}</p>
-									<p>Description: {beer.description}</p>
+									{beer.abv ? <p>ABV: {beer.abv}</p> : <span></span>}
+									{beer.style.category.name ? <p>Style: {beer.style.category.name}</p> : <span></span>}
+									{beer.description ? <p>Description: {beer.description}</p> : <span></span>}
 									<button className="add-beer-button" onClick={() => this.addBeer(beer)}>Add Beer</button>
 								</div>
 						)
