@@ -18,6 +18,7 @@ class BossList extends Component {
     const nameOfFave = event.target.beerName.value
     this.props.dispatch(saveRating(nameOfFave))
     this.props.dispatch(deleteToTry(nameOfFave))
+    prompt('Rate this beer 1 to 5 stars')
     location.href = "/dashboard/dashboard_section"
   }
   deleteToTry(event) {

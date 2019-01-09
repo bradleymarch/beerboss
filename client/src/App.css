@@ -250,6 +250,7 @@ button:hover {
   color: #0BC095;
   font-size: 20px;
   border-radius: 100px;
+  border-bottom-left-radius: 0px;
   box-shadow: 5px 5px 3px #DFDCE3;
 }
 .clear-results-button {
@@ -305,6 +306,7 @@ button:hover {
   margin-bottom: 50px;
   padding: 10px;
   border-radius: 100px;
+  border-bottom-left-radius: 0px;
 }
 .beer-form {
   box-shadow: 5px 5px 3px #DFDCE3;
@@ -333,6 +335,7 @@ button:hover {
   margin-bottom: 10px;
   padding: 10px;
   border-radius: 100px;
+  border-bottom-left-radius: 0px;
 }
 .each-brewery-result {
   box-shadow: 5px 5px 3px #DFDCE3;
@@ -342,6 +345,7 @@ button:hover {
   margin-bottom: 10px;
   padding: 10px;
   border-radius: 100px;
+  border-bottom-left-radius: 0px;
 }
 .boss-list, .beer-form {
   width: 75%;
@@ -350,6 +354,7 @@ button:hover {
   margin-bottom: 10px;
   padding: 10px;
   border-radius: 100px;
+  border-bottom-left-radius: 0px;
 }
 button:hover {
   cursor: pointer;
@@ -747,6 +752,7 @@ form {
   margin-bottom: 10px;
   padding: 9.99px;
   border-radius: 100px;
+  border-bottom-left-radius: 0px;
   font-weight: normal;
   font-size: 18px;
 }
