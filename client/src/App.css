@@ -5,6 +5,9 @@
 .app {
   text-align: center;
 }
+button {
+  padding: 2px 0 2px 0 !important;
+}
 button:hover {
   color: white;
   background-color: #0BC095;
@@ -181,6 +184,7 @@ button:hover {
   border: none;
 }
 .local-brew-button {
+  padding: 2px;
   background: white;
   color: #0D2235;
   border: 2px solid #0D2235;
@@ -195,6 +199,7 @@ button:hover {
   border-radius: 100px;
 }
 .beers-button {
+  padding: 2px;
   background: white;
   color: #0D2235;
   border: 2px solid #0D2235;
