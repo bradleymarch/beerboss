@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { fetchLocalBrewery, fetchSpecificBeer, getUser, logout } from '../../actions';
+import { fetchLocalBrewery, fetchSpecificBeer, getUser, logout, deleteUser } from '../../actions';
 import { connect } from 'react-redux';
 import LocalBreweries from './LocalBreweries';
 import SpecificBeer from './SpecificBeer';
@@ -25,9 +25,11 @@ class Dashboard extends Component {
   logout(event) {
     event.preventDefault();
     this.props.dispatch(logout());
-    location.href = "/";
   }
-
+  deleteUser(event) {
+    event.preventDefault();
+    this.props.dispatch(deleteUser());
+  }
   componentDidMount() {
     this.props.dispatch(getUser())
   }
@@ -38,6 +40,9 @@ class Dashboard extends Component {
         <div>
           <form className="logout-form" onSubmit={(e) => this.logout(e)}>
             <button className="logout-button">Logout</button>
+          </form>
+          <form className="delete-user-form" onSubmit={(e) => this.deleteUser(e)}>
+            <button className="delete-user-button">Delete Account</button>
           </form>
         <header>
           <h1 className="welcome-header">Welcome, {this.props.username}! </h1>

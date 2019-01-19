@@ -235,6 +235,17 @@ app.post('/api/delete-fave', loggedIn, (req, res) => {
   });
 });
 
+app.delete('/api/user', (req, res) => {
+  console.log(req.user._id);
+  User
+  .findByIdAndRemove(req.user._id)
+  .exec()
+  .then(doc => {
+    return res.status(200).end();
+  })
+  .catch(err => next(err));
+});
+
 app.use(express.static(path.resolve(__dirname, '../client/build')));
 
 // Unhandled requests which aren't for the API should serve index.html so

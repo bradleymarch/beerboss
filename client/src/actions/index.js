@@ -225,8 +225,29 @@ export const logout = () => (dispatch) => {
   .then(response => {
     return response;
   })
+  .then(() => {
+    window.location.href='/'
+  })
+  .catch(error => {
+    console.log(error);
+  });
+};
+
+export const deleteUser = () => (dispatch) => {
+  axios.get('/api/users/me')
   .then(response => {
-    dispatch(logout());
+    return response;
+  })
+  .then(response => {
+    console.log(response);
+    axios.delete('/api/user', {data: response.data.user})
+    .then(response => {
+      alert("Your account has been deleted")
+      return response;
+    })
+    .then(() => {
+      window.location.href='/'
+    })
   })
   .catch(error => {
     console.log(error);
