@@ -30,6 +30,9 @@ class Dashboard extends Component {
     event.preventDefault();
     this.props.dispatch(deleteUser());
   }
+  downInDemo(event) {
+    alert('This functionality is only available in the non-demo world!')
+  }
   componentDidMount() {
     this.props.dispatch(getUser())
   }
@@ -41,9 +44,12 @@ class Dashboard extends Component {
           <form className="logout-form" onSubmit={(e) => this.logout(e)}>
             <button className="logout-button">Logout</button>
           </form>
-          <form className="delete-user-form" onSubmit={(e) => this.deleteUser(e)}>
+          {this.props.username !== 'Boss' ? <form className="delete-user-form" onSubmit={(e) => this.deleteUser(e)}>
             <button className="delete-user-button">Delete Account</button>
-          </form>
+          </form> :
+          <form className="delete-user-form" onSubmit={(e) => this.downInDemo(e)}>
+            <button className="delete-user-button">Delete Account</button>
+          </form>}
         <header>
           <h1 className="welcome-header">Welcome, {this.props.username}! </h1>
             <p className="welcome-subtitle">Search for any beer below.  Add it to the Boss List if you wanna try it.<br/>  Move it to favorites if it was great OR remove it if it sucked!</p>
