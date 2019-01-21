@@ -37,7 +37,7 @@ class Register extends React.Component {
             <span className="bar"></span>
             <label className="floating-label" htmlFor="register_form_password">New Password</label>
           </div>
-          <button id="create-username" className="register-button js-login-button" type="submit">CREATE</button>
+          <button id="create-username" className="register-button" type="submit">CREATE</button>
         </form>
           <div className="error-message js-error-message"></div>
           {this.props.success ? <div className="success-message js-success-message">User created!  Redirecting to login...</div> : <div></div>}
