@@ -40,7 +40,7 @@ class Register extends React.Component {
           <button id="create-username" className="register-button js-login-button" type="submit">CREATE</button>
         </form>
           <div className="error-message js-error-message"></div>
-          <div className="success-message js-success-message"></div>
+          {this.props.success ? <div className="success-message js-success-message">User created!  Redirecting to login...</div> : <div></div>}
       </div>
       </div>
     )
@@ -48,4 +48,10 @@ class Register extends React.Component {
 
 }
 
-export default connect()(Register);
+const mapStateToProps = state => {
+  return {
+    success: state.userCreatedReducer.userCreatedSuccess,
+  }
+}
+
+export default connect(mapStateToProps)(Register);

@@ -105,7 +105,6 @@ User
     return res.status(201).json({user: user.apiRepr(), message: 'New account created!'});
   })
   .catch(err => {
-
     res.status(500).json({message: 'Internal server error'});
   });
 });
