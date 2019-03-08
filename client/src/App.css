@@ -426,8 +426,7 @@ button:hover {
   color: #0D2235;
 }
 nav a {
-  margin-left: 100px;
-  margin-right: 100px;
+  margin: 7.77%;
   color: white;
   text-decoration: none;
   outline: none;
@@ -717,6 +716,7 @@ nav {
   height: 80px;
 }
 .beer-img {
+  margin-left: 2.22%;
   margin-top: 14px;
   height: 50px;
   width: 40px;
