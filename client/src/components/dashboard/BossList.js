@@ -57,24 +57,22 @@ class BossList extends Component {
               </form>
               </div>
             </div>
-        )
-      })}
-      <h3 className="boss-list-subheader">Here are your Favorite Beers!</h3>
-      <hr className="boss-list-hr"/>
-      {this.props.beerRating.map((fave, index) => {
-      return (
-          <div key={index}>
-
-            <div className="boss-list-items">{fave.name}: {fave.beerScore} stars</div>
-            <form className="delete-fave-form" onSubmit={(e) => this.deleteFave(e)}>
-              <input type="hidden" name="faveName" value={fave.name} title={fave.beerScore} />
-              <button type="submit" className="delete-button" value={fave.name}>Remove</button>
-            </form>
-          </div>
-        )
-      })}
-
-     </div>
+          )
+        })}
+        <h3 className="boss-list-subheader">Here are your Favorite Beers!</h3>
+        <hr className="boss-list-hr"/>
+        {this.props.beerRating.map((fave, index) => {
+          return (
+            <div key={index}>
+              <div className="boss-list-items">{fave.name}: {fave.beerScore} stars</div>
+              <form className="delete-fave-form" onSubmit={(e) => this.deleteFave(e)}>
+                <input type="hidden" name="faveName" value={fave.name} title={fave.beerScore} />
+                <button type="submit" className="delete-button" value={fave.name}>Remove</button>
+              </form>
+            </div>
+          )
+        })}
+      </div>
     )
   }
 }

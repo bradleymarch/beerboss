@@ -92,20 +92,20 @@ class Dashboard extends Component {
               <div className="beer-results-list" id="beer_results_list">
                 <SpecificBeer className="beer-results-list"/>
               </div>
-        <p className="brewery-form-description">You can also search below for the top breweries in your location!</p>
-            <form className="brewery-form" id="brewery_list" onSubmit={e => this.submitLocation(e)}>
+              <p className="brewery-form-description">You can also search below for the top breweries in your location!</p>
+              <form className="brewery-form" id="brewery_list" onSubmit={e => this.submitLocation(e)}>
                 <input type="text" name="userLocation" id="location_input"
                     className="text" maxLength="35" autoComplete="off"
                     placeholder="Where you at?" required
                   ref={input => this.input = input}    />
-              <label id="brewery_label">Enter location, click button ->
+                <label id="brewery_label">Enter location, click button ->
                 <input type="submit" id="local_brewery_button" className="local-brew-button flash-button" name="submit" value="Top Local Breweries" />
-              </label>
-            </form>
-            <div id="brewery_results_list" className="brewery-list">
+                </label>
+              </form>
+              <div id="brewery_results_list" className="brewery-list">
               <LocalBreweries className="brewery-results-list" id="brewery_results_list"/>
             </div>
-      </div>
+         </div>
       )
     }
   }
