@@ -56,7 +56,7 @@ class Dashboard extends Component {
           </header>
         </div>
         <section>
-        <BossList />
+          <BossList />
         </section>
           <form className="beer-form" onSubmit={e => this.submitBeer(e)}>
             <input type="text" name="userBeer" id="beer_input"
