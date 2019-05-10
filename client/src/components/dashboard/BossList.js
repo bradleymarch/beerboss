@@ -78,30 +78,27 @@ class BossList extends Component {
 }
 
 const mapStateToProps = (state) => {
-
   let beerList;
+  if (state.getUserReducer.user.beerlist) {
+    beerList = state.getUserReducer.user.beerlist
+  }
+  else {
+    beerList = []
+  }
 
-    if (state.getUserReducer.user.beerlist) {
-      beerList = state.getUserReducer.user.beerlist
+  let beerrating;
+    if (state.getUserReducer.user.beerRating) {
+      beerrating = state.getUserReducer.user.beerRating
     }
     else {
-      beerList = []
+      beerrating = []
     }
-
-    let beerrating;
-
-      if (state.getUserReducer.user.beerRating) {
-        beerrating = state.getUserReducer.user.beerRating
-      }
-      else {
-        beerrating = []
-      }
-
-  return {beers: state.specificBeerReducer.beers,
-          beerlist: state.addSpecificBeerReducer.beerlist,
-          bosslist: beerList,
-          beerRating: beerrating,}
-
+  return {
+      beers: state.specificBeerReducer.beers,
+      beerlist: state.addSpecificBeerReducer.beerlist,
+      bosslist: beerList,
+      beerRating: beerrating
+    }
 }
 
 export default connect(mapStateToProps)(BossList);
