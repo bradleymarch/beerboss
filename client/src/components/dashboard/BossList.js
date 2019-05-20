@@ -98,7 +98,7 @@ const mapStateToProps = (state) => {
       beerlist: state.addSpecificBeerReducer.beerlist,
       bosslist: beerList,
       beerRating: beerrating
-    }
+  }
 }
 
 export default connect(mapStateToProps)(BossList);
