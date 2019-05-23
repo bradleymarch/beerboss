@@ -61,7 +61,8 @@ class BossList extends Component {
         })}
         <h3 className="boss-list-subheader">Here are your Favorite Beers!</h3>
         <hr className="boss-list-hr"/>
-        {this.props.beerRating.map((fave, index) => {
+        {
+          this.props.beerRating.sort((a, b) => parseInt(b.beerScore) - parseInt(a.beerScore)).map((fave, index) => {
           return (
             <div key={index}>
               <div className="boss-list-items">{fave.name}: {fave.beerScore} stars</div>
