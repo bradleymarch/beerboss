@@ -40,7 +40,9 @@ class BossList extends Component {
     return (
       <div className="boss-list">
         <h2 className="boss-list-header">Boss List</h2>
-        <h3 className="boss-list-subheader">Here are your Beers To Try...</h3>
+        <h3 className="boss-list-subheader">
+          Here {this.props.bosslist.length == 1 ? <span>is</span> : <span>are</span>} your {this.props.bosslist.length == 1 ? <span>Beer</span> : <span>Beers</span>} To Try...
+        </h3>
         {this.props.bosslist.map((beer, index) => {
         return (
             <div className="boss-items" key={index}>
