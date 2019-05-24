@@ -6,7 +6,6 @@ import LocalBreweries from './components/dashboard/LocalBreweries';
 import SpecificBeer from './components/dashboard/SpecificBeer';
 import Register from './components/Register';
 import './App.css';
-import '../public/assets/css/Animation.css';
 
 class App extends Component {
 
