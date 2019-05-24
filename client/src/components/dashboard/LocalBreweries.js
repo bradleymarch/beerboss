@@ -1,7 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { clearBreweryResults } from '../../actions';
-import '../../App.css';
 
 class LocalBreweries extends React.Component {
 	constructor() {

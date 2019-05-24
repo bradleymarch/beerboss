@@ -3,7 +3,6 @@ import { addSpecificBeer, saveRating,
 deleteToTry, deleteFave, addNote } from '../../actions';
 import { connect } from 'react-redux';
 import SpecificBeer from './SpecificBeer';
-import '../../App.css';
 
 class BossList extends Component {
   constructor() {

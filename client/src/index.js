@@ -14,7 +14,7 @@ import {
   Route,
   Link
 } from 'react-router-dom'
-import './App.css'
+import '../public/assets/css/app.css'
 import './index.css';
 
 ReactDOM.render(
