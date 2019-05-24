@@ -6,7 +6,6 @@ class DemoLogin extends React.Component {
 
   constructor() {
 		super()
-
 		this.handleLogin = this.handleLogin.bind(this)
   }
   handleLogin(event) {
@@ -17,12 +16,10 @@ class DemoLogin extends React.Component {
   }
 
   render() {
-
     return (
       <div id="login_page">
         <div className="empty-login-space"></div>
     		<div className="login-container js-login-container login-overlay js-login-overlay">
-
     			<h3 className="login-logo js-login-logo">Demo Login</h3>
     			<form className="login-form js-login-form" onSubmit={(e) => this.handleLogin(e)}>
     				<div className="form-group">
@@ -31,7 +28,6 @@ class DemoLogin extends React.Component {
     					<span className="bar"></span>
     					<label className="floating-label" htmlFor="login_form_username">Demo Username</label>
     				</div>
-
     				<div className="form-group">
     					<input className="floating-label-input" value="123" id="login_form_password" type="password" required ref={input => this.input2 = input} />
     					<span className="highlight"></span>
@@ -40,14 +36,12 @@ class DemoLogin extends React.Component {
     				</div>
     				<button className="login-button js-login-button" type="submit">ENTER</button>
     			</form>
-
     			<a href="/register" className="register js-register">Not registered? Click here</a>
     			<div className="error-message js-error-message"></div>
           </div>
         </div>
     )
   }
-
 }
 
 export default connect()(DemoLogin)
