@@ -65,8 +65,11 @@ class BossList extends Component {
           this.props.beerRating.sort((a, b) => parseInt(b.beerScore) - parseInt(a.beerScore)).map((fave, index) => {
           return (
             <div className="boss-items" key={index}>
-              <div className="boss-list-items">{fave.name}: {fave.beerScore} stars</div>
-              <div>Notes: {fave.beerNote}</div>
+              <div className="boss-list-items">
+                <span>{fave.name}</span>
+                {fave.beerScore !== '' ? <span>: {fave.beerScore} stars</span> : <span></span>}
+              </div>
+              {fave.beerNote !== '' ? <div>Notes: {fave.beerNote}</div> : <span></span>}
               <form className="delete-fave-form" onSubmit={(e) => this.deleteFave(e)}>
                 <input type="hidden" name="faveName" value={fave.name} title={fave.beerScore} />
                 <button type="submit" className="delete-button" value={fave.name}>Remove</button>
