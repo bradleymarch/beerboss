@@ -39,6 +39,12 @@ const saveRatingSuccess = (beerRating, beerScore) => ({
   beerRating, beerScore
 })
 
+const ADD_NOTE_SUCCESS = 'ADD_NOTE_SUCCESS'
+const addNoteSuccess = (beerRating, beerNote) => ({
+  type: ADD_NOTE_SUCCESS,
+  beerRating, beerNote
+})
+
 export const REGISTER_USER_SUCCESS = 'REGISTER_USER_SUCCESS';
 export const registerUserSuccess = registeredUser => ({
   type: REGISTER_USER_SUCCESS,
@@ -125,16 +131,33 @@ export const addBeerToDb = (value) => (dispatch) => {
   });
 };
 
-export const saveRating = (beerRating, beerScore) => (dispatch) => {
+export const saveRating = (beerRating, beerScore, beerNote) => (dispatch) => {
   axios.post('/api/users/rating', {
     beerRating: beerRating,
-    beerScore: beerScore
+    beerScore: beerScore,
+    beerNote: beerNote
+  })
+  .then(response => {
+    return response;
+  })
+  .then(response => {
+    dispatch(saveRatingSuccess(beerRating.data.user, beerScore.data.user, beerNote.data.user));
+  })
+  .catch(error => {
+    console.log(error);
+  });
+}
+
+export const addNote = (beerRating, beerNote) => (dispatch) => {
+  axios.post('/api/users/note', {
+    beerRating: beerRating,
+    beerNote: beerNote
   })
   .then(response => {
     return response;
   })
   .then(beerRating => {
-    dispatch(saveRatingSuccess(beerRating.data.user, beerScore.data.user));
+    dispatch(addNoteSuccess(beerRating.data.user, beerNote.data.user));
   })
   .catch(error => {
     console.log(error);

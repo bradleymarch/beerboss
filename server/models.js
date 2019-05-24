@@ -9,8 +9,7 @@ const userSchema = mongoose.Schema({
 	username: {type: String, required: true},
 	password: {type: String, required: true},
 	beerlist: {type: Array, default: []},
-	beerRating: {type: Array, default: []},
-
+	beerRating: {type: Array, default: []}
 });
 
 userSchema.methods.apiRepr = function() {

@@ -165,7 +165,7 @@ app.post('/api/users/beerlist', loggedIn, (req, res) => {
 app.post('/api/users/rating', loggedIn, (req,res) => {
   User
   .findByIdAndUpdate(req.user._id,
-    { $push: {beerRating: {name: req.body.beerRating, beerScore: req.body.beerScore}} }, { new: true }, (err, user) => {
+    { $push: {beerRating: {name: req.body.beerRating, beerScore: req.body.beerScore, beerNote: req.body.beerNote}} }, { new: true }, (err, user) => {
       if (err) res.send(err);
       res.json(user);
     });

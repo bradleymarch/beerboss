@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { addSpecificBeer, saveRating,
-deleteToTry, deleteFave } from '../../actions';
+deleteToTry, deleteFave, addNote } from '../../actions';
 import { connect } from 'react-redux';
 import SpecificBeer from './SpecificBeer';
 import '../../App.css';
@@ -17,8 +17,9 @@ class BossList extends Component {
     event.preventDefault();
     const nameOfFave = event.target.beerName.value
     const beerScore = prompt('Rate this beer 1 to 5 stars')
+    const beerNote = prompt('Enter Notes Below')
     this.props.dispatch(deleteToTry(nameOfFave))
-    this.props.dispatch(saveRating(nameOfFave, beerScore))
+    this.props.dispatch(saveRating(nameOfFave, beerScore, beerNote))
     location.href = "/dashboard/dashboard_section"
   }
   deleteToTry(event) {
@@ -41,10 +42,9 @@ class BossList extends Component {
       <div className="boss-list">
         <h2 className="boss-list-header">Boss List</h2>
         <h3 className="boss-list-subheader">Here are your Beers To Try...</h3>
-        <hr className="boss-list-hr"/>
         {this.props.bosslist.map((beer, index) => {
         return (
-            <div key={index}>
+            <div className="boss-items" key={index}>
                 <div className="boss-list-items">{beer}</div>
               <div className="boss-list-forms-div">
               <form className="add-fave-form" onSubmit={(e) => this.addFave(e)}>
@@ -59,13 +59,13 @@ class BossList extends Component {
             </div>
           )
         })}
-        <h3 className="boss-list-subheader">Here are your Favorite Beers!</h3>
-        <hr className="boss-list-hr"/>
+        <h3 className="boss-list-subheader boss-list-padding-top">Here are your Favorite Beers!</h3>
         {
           this.props.beerRating.sort((a, b) => parseInt(b.beerScore) - parseInt(a.beerScore)).map((fave, index) => {
           return (
-            <div key={index}>
+            <div className="boss-items" key={index}>
               <div className="boss-list-items">{fave.name}: {fave.beerScore} stars</div>
+              <div>Notes: {fave.beerNote}</div>
               <form className="delete-fave-form" onSubmit={(e) => this.deleteFave(e)}>
                 <input type="hidden" name="faveName" value={fave.name} title={fave.beerScore} />
                 <button type="submit" className="delete-button" value={fave.name}>Remove</button>
@@ -98,7 +98,7 @@ const mapStateToProps = (state) => {
       beers: state.specificBeerReducer.beers,
       beerlist: state.addSpecificBeerReducer.beerlist,
       bosslist: beerList,
-      beerRating: beerrating
+      beerRating: beerrating,
   }
 }
 

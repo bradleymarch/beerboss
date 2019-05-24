@@ -765,7 +765,10 @@ form {
   margin-bottom: 4px;
   letter-spacing: 4px;
 }
-.welcome-subtitle {
+.boss-list-padding-top {
+  padding-top: 30px;
+}
+.welcome-subtitle, .boss-items {
   width: 75%;
   color: #0D2235;
   box-shadow: 5px 5px 3px #DFDCE3;
@@ -794,7 +797,7 @@ form {
   border-top: 1px solid white;
   margin-top: 0px;
 }
-.add-fave-button {
+.add-fave-button, .add-note-button {
   width: 50px;
   height: 18px;
   padding-top: 2px;
