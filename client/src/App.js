@@ -14,39 +14,39 @@ class App extends Component {
     return (
       <div className="app">
         <section className="logo-container">
-        <div id="container">
-        <div id="top">
-        <div className="beer-foam">
-        <div className="foam-1"></div>
-        <div className="foam-2"></div>
-        <div className="foam-3"></div>
-        <div className="foam-4"></div>
-        <div className="foam-5"></div>
-        <div className="foam-6"></div>
-        <div className="foam-7"></div>
-        <div className="foam-8"></div>
-        <div className="foam-9"></div>
-        <div className="foam-10"></div>
-        <div className="foam-11"></div>
-        <div className="foam-12"></div>
-        <div className="foam-13"></div>
-        <div className="foam-14"></div>
-        <div className="foam-15"></div>
-        </div>
-        <div id="liquid">
-        <div className="bubble bubble1"></div>
-        <div className="bubble bubble2"></div>
-        <div className="bubble bubble3"></div>
-        <div className="bubble bubble4"></div>
-        <div className="bubble bubble5"></div>
-        </div>
-        </div>
-        <div className="boss-header">Beer Boss</div>
-        </div>
-        <img src={require("./boss.png")} className="boss-logo" alt="Boss-logo"/>
-        <footer className="landing-footer">
-        <p className="subtitle">The beer boss tells you what beers and breweries to try!</p>
-        </footer>
+          <div id="container">
+            <p id="top">
+              <p className="beer-foam">
+                <p className="foam-1"></p>
+                <p className="foam-2"></p>
+                <p className="foam-3"></p>
+                <p className="foam-4"></p>
+                <p className="foam-5"></p>
+                <p className="foam-6"></p>
+                <p className="foam-7"></p>
+                <p className="foam-8"></p>
+                <p className="foam-9"></p>
+                <p className="foam-10"></p>
+                <p className="foam-11"></p>
+                <p className="foam-12"></p>
+                <p className="foam-13"></p>
+                <p className="foam-14"></p>
+                <p className="foam-15"></p>
+              </p>
+              <p id="liquid">
+                <p className="bubble bubble1"></p>
+                <p className="bubble bubble2"></p>
+                <p className="bubble bubble3"></p>
+                <p className="bubble bubble4"></p>
+                <p className="bubble bubble5"></p>
+              </p>
+            </p>
+            <p className="boss-header">Beer Boss</p>
+          </div>
+          <img src={require("./boss.png")} className="boss-logo" alt="Boss-logo"/>
+          <footer className="landing-footer">
+          <p className="subtitle">The beer boss tells you what beers and breweries to try!</p>
+          </footer>
         </section>
         <section id="about" className="about-container">
         <header>
