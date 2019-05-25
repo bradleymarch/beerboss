@@ -60,7 +60,7 @@ class Dashboard extends Component {
           <form className="beer-form" onSubmit={e => this.submitBeer(e)}>
             <input type="text" name="userBeer" id="beer_input"
                 className="text" maxLength="35" autoComplete="off"
-                placeholder="Search beers?" required
+                placeholder="i.e. Budweiser" required
                 ref={input => this.input2 = input} />
             <label id="beer_label">Enter any beer, click button ->
               <input type="submit" id="beer_button" className="beers-button flash-button" name="submit" value="Search Beers" />
