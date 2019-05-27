@@ -44,9 +44,9 @@ class App extends Component {
             <p className="boss-header">Beer Boss</p>
           </div>
           <img src={require("./boss.png")} className="boss-logo" alt="Boss-logo"/>
-          <footer className="landing-footer">
-          <p className="subtitle">The beer boss tells you what beers and breweries to try!</p>
-          </footer>
+          <div className="landing-footer">
+            <p className="subtitle">The beer boss tells you what beers and breweries to try!</p>
+          </div>
         </section>
         <section id="about" className="about-container">
         <header>
