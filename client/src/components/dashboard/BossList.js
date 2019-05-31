@@ -64,7 +64,15 @@ class BossList extends Component {
             </div>
           )
         })}
-        <h3 className="boss-list-subheader boss-list-padding-top">Here are your Favorite Beers!</h3>
+        {this.props.beerRating.length > 0 ?
+        <h3 className="boss-list-subheader boss-list-padding-top">
+          Here {this.props.beerRating.length == 1 ? <span>is </span> : <span>are </span>}
+          your {this.props.beerRating.length == 1 ? <span>Favorite Beer</span> : <span>Favorite Beers</span>}!
+        </h3>
+        :
+        <h3 className="boss-items">
+          **You Have No Favorite Beers... Please add beers to try, then rate and add faves**
+        </h3>}
         {
           this.props.beerRating.sort((a, b) => parseInt(b.beerScore) - parseInt(a.beerScore)).map((fave, index) => {
           return (
