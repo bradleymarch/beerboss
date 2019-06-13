@@ -89,7 +89,7 @@ class BossList extends Component {
 }
 
 const mapStateToProps = (state) => {
-  let beerList;
+  let beerList
   if (state.getUserReducer.user.beerlist) {
     beerList = state.getUserReducer.user.beerlist
   }
@@ -97,7 +97,7 @@ const mapStateToProps = (state) => {
     beerList = []
   }
 
-  let beerrating;
+  let beerrating
     if (state.getUserReducer.user.beerRating) {
       beerrating = state.getUserReducer.user.beerRating
     }
