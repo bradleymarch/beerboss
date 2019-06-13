@@ -1,38 +1,29 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import { addSpecificBeer, saveRating,
-deleteToTry, deleteFave, addNote } from '../../actions';
-import { connect } from 'react-redux';
-import SpecificBeer from './SpecificBeer';
+deleteToTry, deleteFave, addNote } from '../../actions'
+import { connect } from 'react-redux'
+import SpecificBeer from './SpecificBeer'
 
 class BossList extends Component {
   constructor() {
     super()
-
-    this.addFave = this.addFave.bind(this)
-    this.deleteToTry = this.deleteToTry.bind(this)
   }
 
   addFave(event) {
-    event.preventDefault();
     const nameOfFave = event.target.beerName.value
     const beerScore = prompt('Rate this beer 1 to 5 stars')
     const beerNote = prompt('Enter Notes Below')
     this.props.dispatch(deleteToTry(nameOfFave))
     this.props.dispatch(saveRating(nameOfFave, beerScore, beerNote))
-    location.href = "/dashboard/dashboard_section"
   }
   deleteToTry(event) {
-    event.preventDefault();
     const nameToDelete = event.target.beername.value
     this.props.dispatch(deleteToTry(nameToDelete))
-    location.href = "/dashboard/dashboard_section"
   }
   deleteFave(event) {
-    event.preventDefault();
     const faveToDelete = event.target.faveName.value
     const beerScoreToDelete = event.target.faveName.title
     this.props.dispatch(deleteFave(faveToDelete, beerScoreToDelete))
-    location.href = "/dashboard/dashboard_section"
   }
 
   render() {
@@ -42,7 +33,8 @@ class BossList extends Component {
         <h2 className="boss-list-header">Boss List</h2>
         {this.props.bosslist.length > 0 ?
         <h3 className="boss-list-subheader">
-          Here {this.props.bosslist.length == 1 ? <span>is</span> : <span>are</span>} your {this.props.bosslist.length == 1 ? <span>Beer</span> : <span>Beers</span>} To Try...
+          Here {this.props.bosslist.length == 1 ? <span>is</span> : <span>are</span>} your
+          {this.props.bosslist.length == 1 ? <span>Beer</span> : <span>Beers</span>} To Try...
         </h3> :
         <h3 className="boss-items">
           **You Have No Beers To Try... Please search for & add beers below!**
@@ -54,7 +46,9 @@ class BossList extends Component {
               <div className="boss-list-forms-div">
               <form className="add-fave-form" onSubmit={(e) => this.addFave(e)}>
                 <input type="hidden" name="beerName" value={beer} />
-                <button type="submit" className="add-fave-button flash-button" onSubmit={(e) => this.deleteToTry(e)} value={beer}>Favorite</button>
+                <button type="submit" className="add-fave-button flash-button"
+                  onSubmit={(e) => this.deleteToTry(e)} value={beer}>Favorite
+                </button>
               </form>
               <form className="delete-to-try-form" onSubmit={(e) => this.deleteToTry(e)}>
                 <input type="hidden" name="beername" value={beer} />
@@ -118,4 +112,4 @@ const mapStateToProps = (state) => {
   }
 }
 
-export default connect(mapStateToProps)(BossList);
+export default connect(mapStateToProps)(BossList)
