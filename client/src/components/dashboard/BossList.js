@@ -108,7 +108,7 @@ const mapStateToProps = (state) => {
       beers: state.specificBeerReducer.beers,
       beerlist: state.addSpecificBeerReducer.beerlist,
       bosslist: beerList,
-      beerRating: beerrating,
+      beerRating: beerrating
   }
 }
 
