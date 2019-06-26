@@ -34,7 +34,7 @@ class BossList extends Component {
         {this.props.bosslist.length > 0 ?
         <h3 className="boss-list-subheader">
           Here {this.props.bosslist.length == 1 ? <span>is</span> : <span>are</span>} your
-          {this.props.bosslist.length == 1 ? <span>Beer</span> : <span>Beers</span>} To Try...
+          {this.props.bosslist.length == 1 ? <span> Beer</span> : <span> Beers</span>} To Try...
         </h3> :
         <h3 className="boss-items">
           **You Have No Beers To Try... Please search for & add beers below!**
