@@ -88,9 +88,11 @@ class LocalBreweries extends React.Component {
 								<p>Yelp Rating: {this.props.breweries.data[9].rating} stars</p>
 								<p>Address: {this.props.breweries.data[9].location.address1}</p>
 								<p>City: {this.props.breweries.data[9].location.city}</p>
-								<a href="#dashboard_section"><button className="top-of-results-button">To Top</button></a>
 					</section>
-					{this.props.breweries.data.length>0? <button className="clear-results-button" onClick={() => this.clearResults()}>Clear Results</button> : <div></div>}
+					{this.props.breweries.data.length>0? <div>
+					<button className="clear-results-button" onClick={() => this.clearResults()}>Clear Results</button>
+					<a href="#dashboard_section"><button className="top-of-results-button">Top</button></a>
+					</div> : <div></div>}
 				</div>
 			)
 		}

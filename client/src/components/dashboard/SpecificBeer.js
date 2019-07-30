@@ -30,7 +30,6 @@ class SpecificBeer extends React.Component {
 						return (
 								<div className="each-beer-result" key={index}>
 									<h2 className="beer-title">{beer.name}</h2>
-									<a href="#dashboard_section"><button className="top-of-results-button">To Top</button></a>
 									{beer.style.ibuMax ? <p>IBUs: {beer.style.ibuMax}</p> : <span></span>}
 									{beer.abv ? <p>ABV: {beer.abv}</p> : <span></span>}
 									{beer.style.category.name ? <p>Style: {beer.style.category.name}</p> : <span></span>}
@@ -39,8 +38,11 @@ class SpecificBeer extends React.Component {
 								</div>
 						)
 					})}
-					{this.props.beers.length>0? <button className="clear-results-button" onClick={() => this.clearResults()}>Clear Results</button> : <div></div>}
-					</div>
+					{this.props.beers.length>0? <div>
+					<button className="clear-results-button" onClick={() => this.clearResults()}>Clear Results</button>
+					<a href="#dashboard_section"><button className="top-of-results-button">Top</button></a>
+					</div> : <div></div>}
+				</div>
 
 			)
 	}
