@@ -27,7 +27,14 @@ class Dashboard extends Component {
   }
   deleteUser(event) {
     event.preventDefault();
-    this.props.dispatch(deleteUser());
+    const verifyUsername = prompt('This action will permanently delete your account.  Please enter your complete username to proceed (case sensitive).')
+    if (verifyUsername === this.props.username) {
+      this.props.dispatch(deleteUser());
+    }
+    else {
+      console.log('Error.  Incorrect username entered.')
+      window.location.reload()
+    }
   }
   downInDemo(event) {
     alert('This functionality is only available in the non-demo world!')
