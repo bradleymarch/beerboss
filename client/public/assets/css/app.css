@@ -337,6 +337,7 @@ button:hover {
   margin-top: 10px;
 }
 .welcome-header {
+  padding-top: 32px;
   margin-bottom: 0;
   text-align: center;
   font-size: 70px;
