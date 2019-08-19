@@ -23,8 +23,8 @@ class DemoLogin extends React.Component {
     			<h3 className="login-logo js-login-logo">Demo Login</h3>
     			<form className="login-form js-login-form" onSubmit={(e) => this.handleLogin(e)}>
     				  <div style={{padding: '40px', color: 'white'}}>Click ENTER to proceed to secure login. Use credentials below.<br /><br />
-                <div>Demo Username: Boss</div>
-    					  <div>Demo Password: 123</div>
+                <div>Username: Boss</div>
+    					  <div>Password: 123</div>
               </div>
     				<button className="login-button js-login-button" type="submit">ENTER</button>
     			</form>

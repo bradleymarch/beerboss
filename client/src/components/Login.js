@@ -22,7 +22,7 @@ class Login extends React.Component {
     		<div className="login-container js-login-container login-overlay js-login-overlay">
     			<h3 className="login-logo js-login-logo">Login</h3>
     			<form className="login-form js-login-form" onSubmit={(e) => this.handleLogin(e)}>
-    				<div style={{padding: '40px', color: 'white'}}>Click ENTER to proceed to secure login with PassportJS.</div>
+    				<div style={{padding: '40px', color: 'white'}}>Click ENTER to proceed to secure login via Passport Authentication.</div>
     				<button className="login-button js-login-button" type="submit">ENTER</button>
     			</form>
     			<a href="/register" className="register js-register">Not registered? Click here</a>
