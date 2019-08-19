@@ -11,10 +11,13 @@ class BossList extends Component {
 
   addFave(event) {
     const nameOfFave = event.target.beerName.value
-    const beerScore = prompt('Rate this beer 1 to 5 stars')
-    const beerNote = prompt('Enter Notes Below')
-    this.props.dispatch(deleteToTry(nameOfFave))
-    this.props.dispatch(saveRating(nameOfFave, beerScore, beerNote))
+    let beerScore = prompt('Rate this beer 1 to 5 stars')
+    if (beerScore >= 1 && beerScore <= 5) {
+      const beerNote = prompt('Enter Notes Below')
+      this.props.dispatch(deleteToTry(nameOfFave))
+      this.props.dispatch(saveRating(nameOfFave, beerScore, beerNote))
+    }
+    else alert('Please try again & enter a numeric value between 1 and 5')
   }
   deleteToTry(event) {
     const nameToDelete = event.target.beername.value

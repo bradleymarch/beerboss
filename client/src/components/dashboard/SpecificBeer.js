@@ -43,7 +43,6 @@ class SpecificBeer extends React.Component {
 					<a href="#dashboard_section"><button className="top-of-results-button">Top</button></a>
 					</div> : <div></div>}
 				</div>
-
 			)
 	}
 }
