@@ -10,9 +10,7 @@ class Login extends React.Component {
   }
   handleLogin(event) {
     event.preventDefault();
-    const usernameInput = '';
-    const passwordInput = '';
-    this.props.dispatch(loginUser(usernameInput, passwordInput));
+    this.props.dispatch(loginUser());
   }
 
   render() {

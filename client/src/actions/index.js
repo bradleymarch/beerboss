@@ -212,11 +212,8 @@ export const registerUser = (usernameInput, passwordInput) => (dispatch) => {
       });
 };
 
-export const loginUser = (usernameInput, passwordInput) => (dispatch) => {
-    axios.post('/api/users/login', {
-      username: usernameInput,
-      password: passwordInput,
-      })
+export const loginUser = () => (dispatch) => {
+    axios.post('/api/users/login')
       .then(response => {
         return response;
       })
