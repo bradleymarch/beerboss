@@ -3,6 +3,7 @@ const express = require('express');
 const app = express();
 const morgan = require('morgan');
 const mongoose = require('mongoose');
+const session = require('express-session');
 const { merge } = require("lodash");
 mongoose.Promise = global.Promise;
 const {PORT, DATABASE_URL} = require('./config');
@@ -108,11 +109,18 @@ User
     res.status(500).json({message: 'Internal server error'});
   });
 });
-app.use(require('express-session')({
+app.set('trust proxy', 1)
+app.use(session({
   secret: 'something something',
   resave: false,
-  saveUninitialized: false
+  saveUninitialized: true,
+  cookie: { secure: true }
 }));
+// app.use(require('express-session')({
+//   secret: 'something something',
+//   saveUninitialized: false,
+//   resave: false
+// }));
 
 passport.use(basicStrategy);
 app.use(passport.initialize());
@@ -146,11 +154,15 @@ function loggedIn(req, res, next) {
 	}
 }
 
-app.get('/api/logout', function (req, res){
-  req.session.destroy(function (err) {
-    res.clearCookie('connect.sid');
-    res.redirect('/');
-  });
+app.get('/api/logout', (req,res) => {
+    req.session.destroy((err) => {
+        if(err) {
+            return console.log(err);
+        }
+        req.logout();
+        res.clearCookie('connect.sid', { path: '/', httpOnly: true, secure: true, maxAge: null });
+        res.redirect('/');
+    });
 });
 
 app.post('/api/users/beerlist', loggedIn, (req, res) => {
