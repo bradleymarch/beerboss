@@ -16,7 +16,7 @@ class App extends Component {
         <section className="logo-container">
           <div id="container">
             <p id="top">
-              <p className="beer-foam">
+              <p className="beer-foam" id="beer_foam">
                 <p className="foam-1"></p>
                 <p className="foam-2"></p>
                 <p className="foam-3"></p>
