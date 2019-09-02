@@ -13,7 +13,7 @@ class App extends Component {
   render() {
     return (
       <div className="app">
-        <section className="logo-container">
+        <section className="logo-container" id="logo_container">
           <div id="container">
             <p id="top">
               <p className="beer-foam" id="beer_foam">
