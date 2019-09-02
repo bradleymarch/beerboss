@@ -33,7 +33,7 @@ class App extends Component {
                 <p className="foam-14"></p>
                 <p className="foam-15"></p>
               </p>
-              <p id="liquid">
+              <p id="liquid" id="liquid">
                 <p className="bubble bubble1"></p>
                 <p className="bubble bubble2"></p>
                 <p className="bubble bubble3"></p>
