@@ -12,7 +12,6 @@ class Login extends React.Component {
     event.preventDefault();
     this.props.dispatch(loginUser());
   }
-
   render() {
     return (
       <div id="login_page">
@@ -31,4 +30,10 @@ class Login extends React.Component {
   }
 }
 
-export default connect()(Login)
+const mapStateToProps = state => {
+
+  return {user: state.getUserReducer.user}
+
+}
+
+export default connect(mapStateToProps)(Login)

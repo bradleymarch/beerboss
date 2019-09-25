@@ -11,7 +11,7 @@ export class DropdownItem extends React.Component{
   }
 }
 
-export class DropdownMenu extends React.Component {
+class DropdownMenu extends React.Component {
   constructor() {
     super()
     this.logout = this.logout.bind(this)
@@ -22,37 +22,50 @@ export class DropdownMenu extends React.Component {
     this.props.dispatch(logout());
     location.href = "/";
   }
+
   render() {
     let className="dropdown-select";
     if (this.props.toggled) {
       className += " open";
     }
 
-    return <ul className={className}>
-            <li className="dropdown-option">
-              <a href="/">Home</a>
-            </li>
-            <li className="dropdown-option">
-              <a href="/demo-login">Demo</a>
-            </li>
-            <li className="dropdown-option">
-              <a href="/login">Login</a>
-            </li>
-            <li className="dropdown-option">
-              <a href="/#about">About</a>
-            </li>
-            <li className="dropdown-option">
-              <a href="/dashboard">Dashboard</a>
-            </li>
-            <li className="dropdown-option">
-              <a href="/register">Register</a>
-            </li>
-            <li className="dropdown-option">
-            <a href="/"><input type="hidden" onSubmit={(e) => this.logout(e)}/>Logout</a>
-            </li>
-           </ul>
+    return (
+      <div>
+        <ul className={className}>
+          <li className="dropdown-option">
+            <a href="/">Home</a>
+          </li>
+          <li className="dropdown-option">
+            <a href="/demo-login">Demo</a>
+          </li>
+          <li className="dropdown-option">
+            <a href="/login">Login</a>
+          </li>
+          <li className="dropdown-option">
+            <a href="/#about">About</a>
+          </li>
+          {this.props.user != undefined ? <li className="dropdown-option">
+            <a href="/dashboard">Dashboard</a>
+          </li> : <span></span>}
+          <li className="dropdown-option">
+            <a href="/register">Register</a>
+          </li>
+          <li className="dropdown-option">
+          <a href="/"><input type="hidden" onSubmit={(e) => this.logout(e)}/>Logout</a>
+          </li>
+        </ul>
+      </div>
+    )
   }
 }
+
+const mapStateToProps = state => {
+  return {
+    user: state.getUserReducer.user
+  }
+}
+export default connect(mapStateToProps)(DropdownMenu)
+
 
 export class Dropdown extends React.Component {
   constructor (){
@@ -94,13 +107,13 @@ export class Dropdown extends React.Component {
       <div className={className}
         onClick={this.toggleDropdown.bind(this)}>
         <div className="dropdown-label">
-          MENU
+          {!this.state.toggled ? <span>MENU</span> : <span>Close <strong>[X]</strong></span>}
           <hr className = "navHr"/>
         </div>
         <div className="dropdown-active">
           {this.props.children[this.state.selected]}
         </div>
-        <DropdownMenu toggled={this.state.toggled} >
+        <DropdownMenu toggled={this.state.toggled}>
           {dropdown}
         </DropdownMenu>
       </div>

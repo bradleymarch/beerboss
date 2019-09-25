@@ -91,7 +91,7 @@ class BossList extends Component {
   }
 }
 
-const mapStateToProps = (state) => {
+const mapStateToProps = state => {
   let beerList
   if (state.getUserReducer.user.beerlist) {
     beerList = state.getUserReducer.user.beerlist
