@@ -49,7 +49,9 @@ class SpecificBeer extends React.Component {
 
 const mapStateToProps = state => {
 
-		return {beers: state.specificBeerReducer.beers,
-						beerlist: state.addSpecificBeerReducer.beerlist}
+		return {
+				beers: state.specificBeerReducer.beers,
+				beerlist: state.addSpecificBeerReducer.beerlist
+		}
 }
 export default connect(mapStateToProps)(SpecificBeer);
