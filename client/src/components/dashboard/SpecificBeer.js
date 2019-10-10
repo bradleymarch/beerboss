@@ -15,12 +15,11 @@ class SpecificBeer extends React.Component {
 		this.props.dispatch(addBeerToDb(value));
 		this.props.dispatch(addSpecificBeer(value));
 		window.scrollTo(0,0);
-		}
-
- clearResults() {
+	}
+  clearResults() {
 	 	const results = this.props.beers;
 	 	this.props.dispatch(clearBeerResults(results))
- }
+	}
 
 	render() {
 			return (

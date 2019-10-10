@@ -1,8 +1,8 @@
 import axios from 'axios'
 export const FETCH_BREWERY_SUCCESS = 'FETCH_BREWERY_SUCCESS';
 export const fetchBrewerySuccess = localBreweries => ({
-    type: FETCH_BREWERY_SUCCESS,
-    localBreweries
+  type: FETCH_BREWERY_SUCCESS,
+  localBreweries
 });
 
 export const FETCH_BEER_SUCCESS = 'FETCH_BEER_SUCCESS';
@@ -78,7 +78,6 @@ const deleteFaveSuccess = faveListItem  => ({
 export const fetchLocalBrewery = (locationInput) => (dispatch) => {
     axios.post('/api/brewery-results', {
       location: locationInput,
-
       })
       .then(function (response) {
         return response;
@@ -92,7 +91,6 @@ export const fetchLocalBrewery = (locationInput) => (dispatch) => {
 };
 
 export const fetchSpecificBeer = (beerInput) => (dispatch) => {
-  console.log('before');
   axios.get(`/api/beer-results?nameInput=${beerInput}`)
     .then(function (response) {
       console.log(response);
@@ -100,8 +98,6 @@ export const fetchSpecificBeer = (beerInput) => (dispatch) => {
     })
     .then(specificBeer => {
         dispatch(fetchBeerSuccess(specificBeer.data.data));
-        console.log('after');
-
     })
     .catch(function (error) {
       console.log(error);
@@ -117,7 +113,6 @@ export const addBeerToDb = (value) => (dispatch) => {
   })
   .then(addBeer => {
     dispatch(addBeersToDb(addBeer.data.data));
-    // setTimeout(function(){return location.href = '/dashboard'}, 1000);
     axios.get('/api/users/me')
     .then(response => {
       return response;
