@@ -30,7 +30,7 @@ class SpecificBeer extends React.Component {
 								<div className="each-beer-result" key={index}>
 									<h2 className="beer-title">{beer.name}</h2>
 									{beer.style.ibuMax ? <p>IBUs: {beer.style.ibuMax}</p> : <span></span>}
-									{beer.abv ? <p>ABV: {beer.abv}</p> : <span></span>}
+									{beer.abv ? <p>ABV: {beer.abv}%</p> : <span></span>}
 									{beer.style.category.name ? <p>Style: {beer.style.category.name}</p> : <span></span>}
 									{beer.description ? <p>Description: {beer.description}</p> : <span></span>}
 									<button className="add-beer-button" onClick={() => this.addBeer(beer)}>Add Beer</button>
