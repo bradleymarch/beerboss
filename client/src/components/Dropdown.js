@@ -44,7 +44,7 @@ class DropdownMenu extends React.Component {
           <li className="dropdown-option">
             <a href="/#about">About</a>
           </li>
-          {this.props.user != undefined ? <li className="dropdown-option">
+          {typeof this.props.user !== 'undefined' ? <li className="dropdown-option">
             <a href="/dashboard">Dashboard</a>
           </li> : <span></span>}
           <li className="dropdown-option">
@@ -107,7 +107,7 @@ export class Dropdown extends React.Component {
       <div className={className}
         onClick={this.toggleDropdown.bind(this)}>
         <div className="dropdown-label">
-          {!this.state.toggled ? <span>MENU</span> : <span>Close <strong>[X]</strong></span>}
+          {!this.state.toggled ? <span><img src={require("../burger.png")} alt="Hamburger Dropdown Icon" className="burger" /></span> : <span>Close <strong>[X]</strong></span>}
           <hr className = "navHr"/>
         </div>
         <div className="dropdown-active">

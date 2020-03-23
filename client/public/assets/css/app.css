@@ -10,7 +10,7 @@ button {
 }
 button:hover {
   color: white;
-  background-color: #0BC095;
+  background-color:  #0BC095;
   outline: none;
   border: none;
 }
@@ -39,7 +39,7 @@ button:hover {
     display: none;
   }
   .landing-footer {
-    background-color: #0BC095;
+    background-color:  #0BC095;
     height: 96px !important;
   }
   .subtitle {
@@ -83,7 +83,7 @@ button:hover {
     height: 70px;
     box-sizing: border-box;
     padding: 24px;
-    background: #0BC095;
+    background:  #0BC095;
     position: relative;
     z-index: 11;
   }
@@ -126,7 +126,7 @@ button:hover {
     left: 0;
     right: 0;
     z-index: 5;
-    background: #0BC095;
+    background:  #0BC095;
     box-shadow: 0 1px 2px rgba(0, 0, 0, .2), 0 2px 4px rgba(0, 0, 0, .25);
     overflow-y: scroll;
     max-height: 0;
@@ -155,7 +155,7 @@ button:hover {
   }
 }
 .app-header {
-  background-color: #0BC095;
+  background-color:  #0BC095;
   height: 90px;
   color: white;
   font-size: 16px;
@@ -174,7 +174,7 @@ button:hover {
   cursor: pointer;
   cursor: hand;
   color: white;
-  background-color: #0BC095;
+  background-color:  #0BC095;
   outline: none;
   border: none;
 }
@@ -182,7 +182,7 @@ button:hover {
   cursor: pointer;
   cursor: hand;
   color: white;
-  background-color: #0BC095;
+  background-color:  #0BC095;
   outline: none;
   border: none;
 }
@@ -222,8 +222,8 @@ button:hover {
   border-radius: 100px;
   background-color: white;
   outline: none;
-  border: solid #0BC095 2px;
-  color: #0BC095;
+  border: solid  #0BC095 2px;
+  color:  #0BC095;
   font-size: 16px;
 }
 .login-button, .register-button {
@@ -233,7 +233,7 @@ button:hover {
   border-radius: 100px;
   background-color: white;
   outline: none;
-  color: #0BC095;
+  color:  #0BC095;
   font-size: 12px;
   border: none;
 }
@@ -243,8 +243,8 @@ button:hover {
   border-radius: 100px;
   background-color: white;
   outline: none;
-  border: solid #0BC095 2px;
-  color: #0BC095;
+  border: solid  #0BC095 2px;
+  color:  #0BC095;
   font-size: 16px;
 }
 .welcome-subtitle, .brewery-form-description {
@@ -256,7 +256,7 @@ button:hover {
   margin-right: auto;
   padding: 9.99px;
   width: 75%;
-  color: #0BC095;
+  color:  #0BC095;
   font-size: 20px;
   border-radius: 100px;
   border-bottom-left-radius: 0px;
@@ -268,8 +268,8 @@ button:hover {
   border-radius: 100px;
   background-color: white;
   outline: none;
-  border: solid #0BC095 2px;
-  color: #0BC095;
+  border: solid  #0BC095 2px;
+  color:  #0BC095;
   font-size: 16px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -281,8 +281,8 @@ button:hover {
   border-radius: 100px;
   background-color: white;
   outline: none;
-  border: solid #0BC095 2px;
-  color: #0BC095;
+  border: solid  #0BC095 2px;
+  color:  #0BC095;
   font-size: 16px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -296,8 +296,8 @@ button:hover {
   border-radius: 100px;
   background-color: white;
   outline: none;
-  border: solid #0BC095 2px;
-  color: #0BC095;
+  border: solid  #0BC095 2px;
+  color:  #0BC095;
   font-size: 14px;
 }
 .delete-user-button {
@@ -308,8 +308,8 @@ button:hover {
   border-radius: 100px;
   background-color: white;
   outline: none;
-  border: solid #0BC095 2px;
-  color: #0BC095;
+  border: solid  #0BC095 2px;
+  color:  #0BC095;
   font-size: 14px;
 }
 .boss-list {
@@ -484,7 +484,7 @@ ul li a {
   color: white;
 }
 ul li a:hover {
-  color: #0BC095
+  color:  #0BC095
 }
 .floating-label-input:focus {
   outline:none;
@@ -506,7 +506,7 @@ ul li a:hover {
 .floating-label-input:valid ~ .floating-label 		{
   top:-20px;
   font-size:14px;
-  color:#0BC095;
+  color: #0BC095;
   opacity: 0.5;
 }
 .bar 	{ position:relative; display:block; width:300px; }
@@ -568,7 +568,7 @@ input:focus ~ .bar:before, input:focus ~ .bar:after {
   z-index: 9;
 }
 .landing-footer {
-  background-color: #0BC095;
+  background-color:  #0BC095;
   height: 71px;
   color: #0D2235;
   font-size: 20px;
@@ -692,7 +692,7 @@ nav {
   margin: auto;
   padding: 60px 20px 100px 20px;
   background-color: white;
-  color: #0BC095;
+  color:  #0BC095;
   font-size: 20px;
 }
 .about-content p {
@@ -709,7 +709,7 @@ nav {
   margin-top: 0px;
   /*font-family: 'Jacques Francois Shadow', cursive;*/
   font-weight: normal;
-  color: #0BC095;
+  color:  #0BC095;
 }
 .empty-about-space {
   height: 80px;
@@ -760,7 +760,7 @@ form {
 }
 .boss-list-subheader {
   font-size: 20px;
-  color: #0BC095;
+  color:  #0BC095;
   margin-bottom: 4px;
   letter-spacing: 4px;
 }
@@ -785,8 +785,12 @@ form {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #0BC095;
+  border-top: 1px solid  #0BC095;
   margin-top: 0px;
+}
+.burger {
+  height: 2rem;
+  width: 2rem;
 }
 .nav-hr {
   width: 90%;
@@ -803,8 +807,8 @@ form {
   border-radius: 100px;
   background-color: white;
   outline: none;
-  border: solid #0BC095 1px;
-  color: #0BC095;
+  border: solid  #0BC095 1px;
+  color:  #0BC095;
   font-size: 10px;
 }
 .delete-button {

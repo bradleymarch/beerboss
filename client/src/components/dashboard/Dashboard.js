@@ -95,7 +95,9 @@ class Dashboard extends Component {
   }
   const mapStateToProps = state => {
 
-    return {username: state.getUserReducer.user.username}
+    return {
+      username: state.getUserReducer.user.username
+    }
 
   }
 
