@@ -44,7 +44,7 @@ class DropdownMenu extends React.Component {
           <li className="dropdown-option">
             <a href="/#about">About</a>
           </li>
-          {typeof this.props.user !== 'undefined' ? <li className="dropdown-option">
+          {this.props.user != undefined ? <li className="dropdown-option">
             <a href="/dashboard">Dashboard</a>
           </li> : <span></span>}
           <li className="dropdown-option">
