@@ -10,7 +10,7 @@ const rootReducer = combineReducers({
   specificBeerReducer,
   addSpecificBeerReducer,
   getUserReducer,
-  userCreatedReducer
+  userCreatedReducer,
 
 })
 
