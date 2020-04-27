@@ -8,14 +8,14 @@ const specificBeerReducer = (state=initialState, action) => {
 
     return {
       ...state,
-      beers: action.specificBeer
+      beers: action.specificBeer,
     }
   }
 
   if (action.type === 'CLEAR_BEER_RESULTS') {
     return {
       ...state,
-      beers: []
+      beers: [],
     }
   }
   else {
