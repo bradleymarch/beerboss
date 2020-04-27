@@ -8,7 +8,7 @@ const getUserReducer = (state=initialState, action) => {
 
     return {
       ...state,
-      user: action.user
+      user: action.user,
     }
   }
   else {
