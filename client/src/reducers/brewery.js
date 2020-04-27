@@ -8,17 +8,17 @@ const breweryReducer = (state=initialState, action) => {
 
     return {
       ...state,
-      breweries: action.localBreweries
+      breweries: action.localBreweries,
     }
   }
   if (action.type === 'CLEAR_BREWERY_RESULTS') {
     return {
       ...state,
-      breweries: []
+      breweries: [],
     }
   }
   else {
-    return state;
+    return state
   }
 };
 
