@@ -218,8 +218,8 @@ app.post('/api/brewery-results', (req, res) => {
   const { location } = req.body
   const yelp = require('yelp-fusion');
 
-  const clientId = 'Eeu9AuDLWbVQH5unWKC_vw';
-  const apiKey = 'xUSTnf01a1QMtVyPT1RqzRbmGa0KrOGC4xDLnYv6QkBg_byHfYebo-_QNzQ8dsDONs2bP60bSE43pzIkBxt7e88lGcfmJKj0B9usABcPwzh6MbJP7M5k5xUnmS6oWnYx';
+  const clientId = 'CLIENT_ID';
+  const apiKey = 'API_KEY;
   // const clientId = secretCID;
   // const clientSecret = secretVar;
   const searchRequest = {
