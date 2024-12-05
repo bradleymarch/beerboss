@@ -218,8 +218,8 @@ app.post('/api/brewery-results', (req, res) => {
   const { location } = req.body
   const yelp = require('yelp-fusion');
 
-  const clientId = 'CLIENT_ID';
-  const apiKey = 'API_KEY;
+  const clientId = undefined; //update to actual when needing to run app, ideally we have this as a var stored elsewhere
+  const apiKey = undefined; //update to actual when needing to run app, ideally we have this as a var stored elsewhere
   // const clientId = secretCID;
   // const clientSecret = secretVar;
   const searchRequest = {
