@@ -16,11 +16,6 @@ Here is a preliminary sketch of the app's user flows
 
 ![Flows](/client/src/beerbossSketch.JPG)
 
-Here is a link to the wireframes I created from the mockup sketch: https://gist.github.com/bradleymarch/a8a034bc6091c7c37101579663dfd9f2
-
-This is a full-stack application as part of a capstone project with Thinkful's web development bootcamp. In this
-project I used HTML, CSS, CSS animations, Javascript, JSX, React, Redux, Node, Mongoose, Express, Mocha, and Chai.
-
 Next steps...
 
 As I continue to iterate on this project, here are some additional features I'd like to implement:
